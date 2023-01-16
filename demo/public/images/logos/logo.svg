@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.3 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f15a29;
+      }
+
+      .cls-2 {
+        fill: #fbb040;
+      }
+
+      .cls-3 {
+        fill: #002e47;
+      }
+
+      .cls-4 {
+        fill: #bcbec0;
+      }
+    </style>
+  </defs>
+  <g id="Group_4" data-name="Group 4" transform="translate(-869 -519)">
+    <g id="XMLID_5_" transform="translate(869 519.1)">
+      <path id="Path_2" data-name="Path 2" class="cls-1" d="M14.8,31.8l14.8-9.6V11.1L14.8,20.7Z"/>
+    </g>
+    <g id="XMLID_1_" transform="translate(869 519)">
+      <g id="Group_2" data-name="Group 2">
+        <path id="Path_4" data-name="Path 4" class="cls-2" d="M0,11.2l14.8,9.6V9.6L0,0Z"/>
+      </g>
+    </g>
+    <g id="Group_3" data-name="Group 3" transform="translate(869 519)">
+      <path id="Path_5" data-name="Path 5" class="cls-3" d="M41,11.2V33.5h5.3V20.8l6.6,4,6.6-4V33.5h5.3V11.2L52.9,18.7Z"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-3" width="5.3" height="22" transform="translate(148.1 11.5)"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-3" width="15.2" height="4.9" transform="translate(73.4 11.5)"/>
+      <path id="Path_6" data-name="Path 6" class="cls-3" d="M78.8,24.8H88V19.9H73.4V33.5H88.9v-5H78.8Z"/>
+      <path id="Path_7" data-name="Path 7" class="cls-3" d="M95.4,16.3H102V33.5h5.2V16.3h6.6V11.5H95.4Z"/>
+      <path id="Path_8" data-name="Path 8" class="cls-3" d="M139.9,19c0-3.9-3.1-7.5-8.8-7.5H120.5v4.9h11.2c1.8,0,3,.9,3,2.6q0,2.7-3,2.7H120.5V33.6h5.3V26.3h4.4l5.1,7.3h6.2l-6.1-8A7.163,7.163,0,0,0,139.9,19Z"/>
+      <path id="Path_9" data-name="Path 9" class="cls-3" d="M174.5,22.5h0l-7.7-11h-6.1l7.7,11-7.8,11h6.1Z"/>
+      <path id="Path_10" data-name="Path 10" class="cls-3" d="M182.2,11.5h-6.1l-2.3,3.3,3.1,4.3Z"/>
+      <path id="Path_11" data-name="Path 11" class="cls-3" d="M176.9,25.8l-3.1,4.3,2.3,3.4h6.2Z"/>
+    </g>
+    <g id="XMLID_7_" transform="translate(868.9 519)">
+      <path id="Path_1" data-name="Path 1" class="cls-3" d="M29.7,22.2,14.9,31.8V43l14.8-9.6Z"/>
+    </g>
+    <g id="XMLID_3_" transform="translate(869 519)">
+      <g id="Group_1" data-name="Group 1">
+        <path id="Path_3" data-name="Path 3" class="cls-4" d="M0,33.4,14.8,43V31.8L0,22.2Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

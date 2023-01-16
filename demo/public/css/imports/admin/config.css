@@ -1,0 +1,35 @@
+:root {
+    --admin-dark-accent: 38,53,68;
+    --sidebar-active-category: 29,37,49;
+    --sidebar-active-sub-category: 34,45,59;
+    --sidebar-active-color: 66,165,245;
+}
+
+/** Scrollbar */
+    html > ::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    body > ::-webkit-scrollbar,
+    body > ::-webkit-scrollbar-corner,
+    body > ::-webkit-scrollbar-track-piece {
+        background: rgba(var(--admin-dark-accent),1);
+    }
+
+    body > ::-webkit-scrollbar {
+        width: 10px;
+        height: 20px;
+    }
+
+    body > ::-webkit-scrollbar-thumb {
+        background: rgba(var(--kompot-dark-gray),.4);
+    }
+
+    body > ::-webkit-scrollbar-thumb:hover {
+        background: rgba(var(--kompot-dark-gray),.8);
+    }
+
+    body > ::-webkit-scrollbar-thumb:active {
+        background: rgba(var(--kompot-dark-gray),1);
+    }
+/** Scrollbar */

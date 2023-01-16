@@ -1,0 +1,233 @@
+/** About */
+    .about-us-main-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .about-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding-right: 30px;
+    }
+
+    /** About Left Side */
+        .about-left-side-wrapper {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            width: 72.5%;
+        }
+    /** About Left Side */
+
+    /** About Right Side */
+        .about-right-side-wrapper {
+            width: 25%;
+        }
+        .about-right-navigation {
+            position: sticky;
+            top: 110px;
+            background-color: rgba(var(--metrix-light-gray-background),1);
+        }
+
+        .about-right-navigation:hover {
+            background: transparent !important;
+        }
+
+        .about-right-navigation .about-navigation-item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 12px 20px;
+            color: rgba(var(--kompot-dark-gray),1);
+            border-bottom: 1px solid rgba(var(--border-color),1);
+            background: rgba(var(--metrix-light-gray-background),1);
+            text-decoration: none;
+        }
+
+        .about-right-navigation .about-navigation-item p {
+            font-size: .75rem;
+            font-family: var(--BoldSpecial);
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-left: 15px;
+        }
+
+        .about-right-navigation .about-navigation-item span {
+            width: 45px;
+            color: rgba(var( --metrix-secondary-accent),1);
+            border-right: 1px solid rgba(var(--border-color),1);
+            font-size: 2rem;
+        }
+    /** About Right Side */
+
+    .about-content-wrapper .company-wrapper,
+    .about-content-wrapper .team-wrapper,
+    .about-content-wrapper .mission-wrapper {
+        display: none;
+        margin-top: 30px;
+        flex-direction: column;
+        transition: opacity .6s;
+    }
+
+    .about-content-wrapper .company-wrapper.show,
+    .about-content-wrapper .team-wrapper.show,
+    .about-content-wrapper .mission-wrapper.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    .about-content-wrapper .company-wrapper.show {
+        flex-direction: row;
+    }
+
+    .about-content-wrapper .company-wrapper.clicked,
+    .about-content-wrapper .team-wrapper.clicked,
+    .about-content-wrapper .mission-wrapper.clicked {
+        opacity: 0;
+    }
+
+    /** Company */
+        .about-content-wrapper .company-wrapper .company-img-wrapper {
+            width: 35%;
+            margin-right: 30px;
+        }
+        .about-content-wrapper .company-wrapper .company-img-wrapper img {
+            width: 100%;
+        }
+
+        .about-content-wrapper .company-wrapper .company-description {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-bottom: 20px;
+        }
+
+        .about-content-wrapper .company-wrapper .company-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(var(--metrix-main-accent),1);
+            color: rgba(var(--metrix-secondary-accent),1);
+            font-size: .8rem;
+            font-family: var(--Bold);
+            margin-top: auto;
+            padding: 15px;
+        }
+    /** Company */
+  
+    /** Team */
+        .team-wrapper {
+            width: 100%;
+        }
+
+        .team-wrapper .team-text {
+            font-size: .8rem;
+            font-family: var(--Bold);
+            text-align: center;
+            align-self: center;
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        .team-wrapper .team-bloks {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .team-wrapper .team-block {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .member-img {
+            width: 180px !important;
+            height: 180px;
+            border-radius: 100%;
+            overflow: hidden;
+            border: 6px solid rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .member-img img {
+            width: 100%;
+        }
+        
+        .member-name {
+            background-color: rgba(var(--metrix-main-accent),1);
+            color: rgba(var(--metrix-secondary-accent),1);
+            font-size: .8rem;
+            font-family: var(--Bold);
+            padding: 8px 12px 9px 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .member-position {
+            margin-top: 10px;
+            font-size: .7rem;
+        }
+    /** Team */
+
+    /** Mission */
+        .mission-wrapper {
+            align-items: center;
+        }
+
+        .mission-wrapper h3 {
+            margin-top: 30px;
+            font-size: 1.8rem;
+            font-family: var(--Bold);
+            text-align: center;
+        }
+
+        .mission-wrapper p {
+            width: 50%;
+            margin-top: 30px;
+            font-size: .88rem;
+            line-height: 2rem;
+            font-family: var(--Bold);
+            text-align: center;
+        }
+
+        .mission-wrapper p {
+            line-height: 1.5rem;
+            color: rgba(var(--kompot-dark-gray),1);
+            font-size: 15px;
+        }
+
+        .mission-wrapper .mission-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 120px;
+            margin-top: 55px;
+            background-color: rgba(var(--metrix-main-accent),1);
+            text-align: center;
+        }
+
+        .mission-wrapper .mission-btn span {
+            margin-top: 15px;
+            font-family: var(--Bold);
+            font-size: .9rem;
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .mission-wrapper .mission-btn p {
+            margin-top: 10px;
+            color: rgba(var(--kompot-dark-gray),1);
+            font-family: var(--Regular);
+        }
+    /** Mission */
+    /** Admin */
+        .admin-content-wrapper .about-left-side-wrapper {
+            width: 100%;
+        }
+    /** Admin */
+/** About */

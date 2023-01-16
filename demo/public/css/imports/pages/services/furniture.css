@@ -1,0 +1,238 @@
+/** Furniture */
+    .furniture-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .furniture-wrapper .furniture-links-wrapper {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .furniture-wrapper .furniture-links-wrapper a,
+    .furniture-wrapper .furniture-links-wrapper button {
+        width: 100%;
+        font-size: .9rem;
+        border: none;
+        color: rgba(var(--kompot-pure-white),1);
+        background: rgba(var(--metrix-secondary-accent),1);
+        text-align: center;
+        padding: 10px 0;
+        margin: 0 10px;
+        text-decoration: none;
+    }
+
+    .furniture-wrapper .furniture-links-wrapper a:first-child {margin-left: 0;}
+    .furniture-wrapper .furniture-links-wrapper button:first-child {margin-left: 0;}
+    .furniture-wrapper .furniture-links-wrapper a:last-child {margin-right: 0;}
+    .furniture-wrapper .furniture-links-wrapper button:last-child {margin-right: 0;}
+
+    .furniture-wrapper .furniture-links-wrapper a.active,
+    .furniture-wrapper .furniture-links-wrapper button.active,
+    .furniture-wrapper .furniture-links-wrapper a:hover,
+    .furniture-wrapper .furniture-links-wrapper button:hover {
+        background: rgba(var(--metrix-main-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .furniture-wrapper .furniture-links-wrapper a.active {
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+    .furniture-wrapper .furniture-bottom-wrapper {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .furniture-wrapper .furniture-bottom-wrapper > div {
+        width: 45%;
+        position: relative;
+    }
+
+    .furniture-wrapper .furniture-bottom-wrapper > div  img {
+        width: 100%;
+    }
+
+    .furniture-wrapper .furniture-bottom-wrapper > div a:not(.split-button) {
+        position: absolute;
+        display: table;
+        left: -30px;
+        bottom: 50px;
+        padding: 10px 10px;
+        padding-bottom: 5px;
+        color: rgba(var(--metrix-secondary-accent),1);
+        background: rgba(var(--metrix-main-accent),1);
+        text-decoration: none;
+        font-family: var(--BoldSpecial);
+        font-weight: bold;
+    }
+
+    .admin-content-wrapper .furniture-wrapper .furniture-bottom-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .admin-content-wrapper .furniture-wrapper .furniture-bottom-links a.split-button {
+        width: 48%;
+        margin-top: 20px;
+    }
+
+    /** Furniture Materials */
+        .furniture-materials-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .furniture-materials-wrapper .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .furniture-materials-wrapper .content-wrapper img,
+        .admin-content-wrapper .furniture-materials-wrapper .content-wrapper label {
+            width: 48%;
+            height: 500px;
+        }
+
+        .admin-content-wrapper .furniture-materials-wrapper .content-wrapper label img {
+            width: 100%;
+        }
+
+        .furniture-materials-wrapper .content-wrapper p,
+        .furniture-materials-wrapper .content-wrapper .note-editor {
+            width: 48%;
+            word-break: break-word;
+        }
+
+        .furniture-materials-wrapper .catalogue-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .furniture-materials-wrapper .catalogue-wrapper .catalogue {
+            display: flex;
+            position: relative;
+            align-items: center;
+            background-color: rgba(var(--metrix-light-gray-background),1);
+            border: 1px solid rgba(var(--border-color),1);
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+        .furniture-materials-wrapper .catalogue-wrapper .catalogue .image {
+            width: 15%;
+        }
+
+        .furniture-materials-wrapper .catalogue-wrapper .catalogue a {
+            text-decoration: none;
+            color: rgba(var(--kompot-dark-gray),1);
+            font-family: var(--Bold);
+            font-size: .8rem;
+            margin-left: 30px;
+        }
+
+        .furniture-materials-wrapper .catalogue-wrapper .catalogue .pdf-icon-wrapper {
+            margin-left: auto;
+        }
+
+        .furniture-materials-wrapper .catalogue-wrapper .catalogue .pdf-icon-wrapper .pdf_icon, 
+        .admin-content-wrapper .furniture-materials-wrapper .catalogue-wrapper .catalogue label[for*="catalogue-file"] {
+            display: table !important;
+            width: auto;
+            height: 50px;
+            margin-left: auto;
+        }
+
+        .admin-content-wrapper .furniture-materials-wrapper .catalogue-wrapper .catalogue {
+            margin-bottom: 50px;
+        }
+
+        .admin-content-wrapper .furniture-materials-wrapper .catalogue-wrapper .remove-catalogue {
+            position: absolute;
+            top: -30px;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            border: none;
+            color: var(--white);
+            background: var(--danger);
+        }
+
+        .admin-content-wrapper .furniture-materials-wrapper .catalogue-wrapper .catalogue label {
+            width: 15%;
+        }
+
+        .admin-content-wrapper .furniture-materials-wrapper .catalogue-wrapper .catalogue img:not(.pdf_icon) {
+            width: 100%;
+        }
+    /** Furniture Materials */
+    /** Furniture Gallery */
+        .furniture-gallery-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .furniture-gallery-wrapper .furniture-gallery {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(17%, 1fr));
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .admin-content-wrapper .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item {
+            display: none;
+        }
+
+        .admin-content-wrapper .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item.show {
+            display: initial;
+        }
+
+        .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item img {
+            width: 100%;
+        }
+
+        .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item a div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(var(--kompot-dark-gray),.5);
+            transform: scale(0);
+            transition: transform .3s;
+        }
+
+        .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item a:hover div {
+            transform: scale(1);
+        }
+
+        .furniture-gallery-wrapper .furniture-gallery .furniture-gallery-item a div span {
+            color: rgba(var(--kompot-pure-white),1);
+            font-size: 2rem;
+        }
+
+        .admin-content-wrapper .furniture-gallery-wrapper .remove-this-gallery-item {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--danger);
+            color: rgba(var(--kompot-pure-white),1);
+            z-index: 5;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 0 4px rgba(var(--kompot-pure-white),1);
+        }
+    /** Furniture Gallery */
+/** Furniture */

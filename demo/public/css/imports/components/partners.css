@@ -1,0 +1,19 @@
+/** Partners */
+    .partners {
+        padding: 0 40px;
+    }
+
+    .partners .carousel-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .partners .carousel-block span {
+        margin-top: 10px;
+        text-align: center;
+        font-family: var(--BoldSpecial);
+        font-weight: bold;
+        color: rgba(var(--partners-text-color),1);
+        font-size: .7rem;
+    }
+/** Partners */

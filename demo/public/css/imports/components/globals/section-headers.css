@@ -1,0 +1,45 @@
+/** Section Headers */
+    /** Section */
+        h2.section-title {
+            font-family: var(--BoldSpecial);
+            font-size: .92rem;
+            text-align: center;
+            margin: 60px 0 30px 0;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+    /** Section */
+
+    /** Page */
+        .page-title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .page-title-wrapper .page-title-line {
+            width: 50%;
+            height: 30px;
+            background: rgba(var(--metrix-light-gray-background),1);
+        }
+
+        .page-title-wrapper h3.page-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: var(--BoldSpecial);
+            font-weight: bold;
+            font-size: 1.1rem;
+            letter-spacing: .5px;
+            white-space: nowrap;
+            padding: 5px 20px;
+            padding-top: 8px;
+            margin: 0;
+            min-height: 30px;
+            color: rgba(var(--metrix-secondary-accent),1);
+            background-color: rgba(var(--metrix-main-accent),1);
+        }
+    /** Page */
+/** Section Headers */

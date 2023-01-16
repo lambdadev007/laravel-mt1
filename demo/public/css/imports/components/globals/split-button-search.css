@@ -1,0 +1,82 @@
+/** Split Button */
+    .split-button {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        background: none;
+        border: none;
+        outline: none !important;
+        text-decoration: none !important;
+        cursor: pointer;
+    }
+
+    .split-button span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        font-size: .7rem;
+        padding: 0 10px;
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+    .split-button .anchor-text {
+        font-size: .7rem;
+        padding: 0 16px;
+    }
+
+    .split-button span[class*="dire"] {
+        font-size: 1rem;
+        font-weight: bold;
+        background: rgba(var(--metrix-main-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .split-button span:hover {
+        background: rgba(var(--metrix-main-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .split-button.disabled span {
+        background: rgba(var(--metrix-secondary-accent),.25);
+        color: rgba(var(--metrix-secondary-accent),.75);
+    }
+
+    .split-button.disabled span[class*="dire"] {
+        background: rgba(var(--metrix-main-accent),.25);
+        color: rgba(var(--metrix-secondary-accent),.75);
+    }
+
+    /** Split Search */
+        .split-search {
+            width: 100%;
+            display: flex;
+            text-decoration: none;
+            align-items: center;
+            background: none;
+            border: none;
+            outline: none;
+        }
+
+        .split-search body input[type="text"] {
+            width: 100%;
+            font-size: .7rem;
+        }
+
+        .split-search button[class*="dire"] {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            padding: 8px 12px;
+            outline: none;
+            border: none;
+            background: rgba(var(--metrix-main-accent),1);
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .split-search button[class*="dire"]:hover {
+            color: rgba(var(--kompot-pure-white),1);
+        }
+    /** Split Search */
+/** Split Button */

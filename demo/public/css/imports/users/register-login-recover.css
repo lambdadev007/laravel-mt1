@@ -1,0 +1,45 @@
+/** Register */
+    .user-form-wrapper .form-field .row {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .user-form-wrapper .form-field .login.row {
+        width: 35%;
+    }
+
+    .user-form-wrapper .form-field .row .col-sm-12 .register-info-span {
+        color: rgba(var(--kompot-dark-gray),1);
+        font-size: .7rem;
+    }
+
+    .user-form-wrapper .form-field .row .col-sm-12 .register-info-span a {
+        color: rgba(var(--metrix-secondary-accent),1) !important;
+        font-family: var(--Bold);
+    }
+
+    .user-form-wrapper .form-field .row .col-sm-12 h5 {
+        font-size: .9rem;
+        font-family: var(--Bold);
+        color: rgba(var(--kompot-dark-gray),1);
+        margin-top: 20px;
+    }
+
+    .user-form-wrapper .form-field .row .col-sm-12 h5 {
+        font-size: .9rem;
+        font-family: var(--Bold);
+        color: rgba(var(--kompot-dark-gray),1);
+        margin-top: 20px;
+    }
+
+    .user-form-wrapper .form-field .row .col-sm-12 a[href="/password-recovery"] {
+        font-size: .7rem;
+        font-family: var(--Bold);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .user-form-wrapper .form-field .row .col-sm-12 p {
+        font-size: .65rem;
+        color: rgba(var(--kompot-dark-gray),1);
+    }
+/** Register */

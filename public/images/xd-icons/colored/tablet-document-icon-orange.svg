@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38.488" height="50.202" viewBox="0 0 38.488 50.202">
+  <g id="Tablet-Smartphone-File-Document-Planning" transform="translate(-9 -2)">
+    <path id="Path_53" data-name="Path 53" d="M41.631,2H14.857A5.864,5.864,0,0,0,9,7.857V46.345A5.864,5.864,0,0,0,14.857,52.2H41.631a5.864,5.864,0,0,0,5.857-5.857V7.857A5.864,5.864,0,0,0,41.631,2Zm4.183,44.345a4.188,4.188,0,0,1-4.183,4.183H14.857a4.188,4.188,0,0,1-4.183-4.183V7.857a4.188,4.188,0,0,1,4.183-4.183H41.631a4.188,4.188,0,0,1,4.183,4.183Z" fill="#f15a29"/>
+    <path id="Path_54" data-name="Path 54" d="M23,6h1.673V7.673H23Z" transform="translate(-2.286 -0.653)" fill="#f15a29"/>
+    <path id="Path_55" data-name="Path 55" d="M27,6h8.367V7.673H27Z" transform="translate(-2.94 -0.653)" fill="#f15a29"/>
+    <path id="Path_56" data-name="Path 56" d="M32.857,52H29.51a2.51,2.51,0,1,0,0,5.02h3.347a2.51,2.51,0,0,0,0-5.02Zm0,3.347H29.51a.837.837,0,0,1,0-1.673h3.347a.837.837,0,0,1,0,1.673Z" transform="translate(-2.94 -8.165)" fill="#f15a29"/>
+    <path id="Path_57" data-name="Path 57" d="M40.264,23.877h-.837v-9.2A1.673,1.673,0,0,0,37.754,13H21.02a1.673,1.673,0,0,0-1.673,1.673v5.02H18.51A2.51,2.51,0,0,0,16,22.2V38.937a2.51,2.51,0,0,0,2.51,2.51H40.264a2.51,2.51,0,0,0,2.51-2.51V26.387A2.51,2.51,0,0,0,40.264,23.877Zm0,1.673a.837.837,0,0,1,.837.837V28.06H39.427V25.55Zm-2.51-10.877V28.06h-8.1l-5.638-4.028a.837.837,0,0,0-.486-.156H21.02v-9.2ZM18.51,21.367h.837v2.51H17.673V22.2A.837.837,0,0,1,18.51,21.367ZM41.1,38.937a.837.837,0,0,1-.837.837H18.51a.837.837,0,0,1-.837-.837V25.55h5.589L28.9,29.578a.837.837,0,0,0,.486.156H41.1Z" transform="translate(-1.143 -1.796)" fill="#f15a29"/>
+    <path id="Path_58" data-name="Path 58" d="M24,17h1.673v1.673H24Z" transform="translate(-2.45 -2.45)" fill="#f15a29"/>
+    <path id="Path_59" data-name="Path 59" d="M28,17h3.347v1.673H28Z" transform="translate(-3.103 -2.45)" fill="#f15a29"/>
+    <path id="Path_60" data-name="Path 60" d="M24,21H37.387v1.673H24Z" transform="translate(-2.45 -3.103)" fill="#f15a29"/>
+    <path id="Path_61" data-name="Path 61" d="M30,25h5.02v1.673H30Z" transform="translate(-3.429 -3.756)" fill="#f15a29"/>
+    <path id="Path_62" data-name="Path 62" d="M38,25h1.673v1.673H38Z" transform="translate(-4.736 -3.756)" fill="#f15a29"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+/** Pages */
+    @import url('homepage.css');
+    @import url('about.css');
+    
+    @import url('articles.css');
+    @import url('offer.css');
+    @import url('projects.css');
+
+    @import url('services/consultation.css');
+    @import url('services/design.css');
+    @import url('services/repairs.css');
+    @import url('services/furniture.css');
+    @import url('services/vip-master.css');
+    @import url('services/cleaning.css');
+
+    @import url('payment.css');
+    @import url('delivery.css');
+    @import url('vacancies.css');
+    @import url('contact.css');
+/** Pages */

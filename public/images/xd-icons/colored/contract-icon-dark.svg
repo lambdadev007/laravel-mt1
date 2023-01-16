@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.998" height="24" viewBox="0 0 23.998 24">
+  <g id="contract" transform="translate(-0.018)">
+    <g id="Group_112" data-name="Group 112" transform="translate(0.018)">
+      <g id="Group_111" data-name="Group 111">
+        <path id="Path_100" data-name="Path 100" d="M23.4,7.553a2.112,2.112,0,0,0-2.983,0L18.3,9.67V4.1a2.1,2.1,0,0,0-.618-1.492L15.693.618A2.1,2.1,0,0,0,14.2,0H2.127A2.112,2.112,0,0,0,.018,2.109V21.891A2.112,2.112,0,0,0,2.127,24H16.19A2.112,2.112,0,0,0,18.3,21.891V15.639l5.1-5.1A2.108,2.108,0,0,0,23.4,7.553ZM14.081,1.406a.767.767,0,0,1,.618.206L16.687,3.6a.767.767,0,0,1,.206.618H14.081Zm2.812,20.484a.7.7,0,0,1-.7.7H2.127a.7.7,0,0,1-.7-.7V2.109a.7.7,0,0,1,.7-.7H12.674V4.922a.7.7,0,0,0,.7.7h3.516v5.453l-2.075,2.076-.994.994a.7.7,0,0,0-.17.275l-.994,2.983a.7.7,0,0,0,.889.889l2.983-.994a.7.7,0,0,0,.275-.17l.085-.085v4.845Z" transform="translate(-0.018)" fill="#232f47"/>
+      </g>
+    </g>
+    <g id="Group_114" data-name="Group 114" transform="translate(2.831 7.031)">
+      <g id="Group_113" data-name="Group 113">
+        <path id="Path_101" data-name="Path 101" d="M70.565,150H60.721a.7.7,0,0,0,0,1.406h9.844a.7.7,0,0,0,0-1.406Z" transform="translate(-60.018 -150)" fill="#232f47"/>
+      </g>
+    </g>
+    <g id="Group_116" data-name="Group 116" transform="translate(2.831 9.844)">
+      <g id="Group_115" data-name="Group 115">
+        <path id="Path_102" data-name="Path 102" d="M67.752,210H60.721a.7.7,0,0,0,0,1.406h7.031a.7.7,0,0,0,0-1.406Z" transform="translate(-60.018 -210)" fill="#232f47"/>
+      </g>
+    </g>
+    <g id="Group_118" data-name="Group 118" transform="translate(2.831 12.656)">
+      <g id="Group_117" data-name="Group 117">
+        <path id="Path_103" data-name="Path 103" d="M67.752,270H60.721a.7.7,0,0,0,0,1.406h7.031a.7.7,0,0,0,0-1.406Z" transform="translate(-60.018 -270)" fill="#232f47"/>
+      </g>
+    </g>
+    <g id="Group_120" data-name="Group 120" transform="translate(2.831 15.469)">
+      <g id="Group_119" data-name="Group 119">
+        <path id="Path_104" data-name="Path 104" d="M67.752,330H60.721a.7.7,0,0,0,0,1.406h7.031a.7.7,0,0,0,0-1.406Z" transform="translate(-60.018 -330)" fill="#232f47"/>
+      </g>
+    </g>
+    <g id="Group_122" data-name="Group 122" transform="translate(8.456 19.781)">
+      <g id="Group_121" data-name="Group 121">
+        <path id="Path_105" data-name="Path 105" d="M184.94,422h-4.219a.7.7,0,1,0,0,1.406h4.219a.7.7,0,0,0,0-1.406Z" transform="translate(-180.018 -422)" fill="#232f47"/>
+      </g>
+    </g>
+  </g>
+</svg>

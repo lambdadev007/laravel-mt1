@@ -1,0 +1,110 @@
+/** Globals */
+    /** Admin Panel */
+        .panel-body {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 0;
+        }
+
+        .action-and-sort-wrapper {
+            display: flex;
+        }
+
+        .action-and-sort-wrapper .admin-sort-wrapper {
+            margin-left: auto;
+            display: flex;
+        }
+
+        .action-and-sort-wrapper .action-modal-caller button[disabled] .modal-caller-icon {
+            background: rgba(var(--kompot-dark-gray),.25);
+        }
+
+        .action-and-sort-wrapper .action-modal-caller button[disabled] .modal-caller-text {
+            background: rgba(var(--kompot-dark-gray),.25);
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .action-and-sort-wrapper .action-modal-caller button .modal-caller-icon {
+            background: var(--warning);
+            transition: background .3s;
+        }
+
+        .action-and-sort-wrapper .action-modal-caller button .modal-caller-text {
+            background: var(--danger);
+            transition: background .3s;
+        }
+
+        .check-for-action-checkbox {
+            display: none;
+        }
+
+        .check-for-action-label {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 5px 10px;
+            font-size: .8rem;
+            background: var(--warning);
+            color: rgba(var(--metrix-secondary-accent),1);
+            box-shadow: 0px 0px 0 4px rgba(var(--kompot-pure-white),1);
+        }
+
+        .check-for-action-label.active {
+            background: var(--danger);
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .delete-status {
+            position: absolute;
+            right: 0;
+            top: 40px;
+            padding: 5px 10px;
+            font-size: .8rem;
+            background: var(--info);
+            color: rgba(var(--kompot-pure-white),1);
+            box-shadow: 0px 0px 0 4px rgba(var(--kompot-pure-white),1);
+        }
+
+        .delete-status.true {
+            background: var(--danger);
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .remove-this-slide {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            color: rgba(var(--metrix-secondary-accent),1);
+            box-shadow: 0px 0px 0 4px rgba(var(--kompot-pure-white),1);
+            z-index: 10;
+        }
+
+        .slug-in-use {
+            border: 1px solid red !important;
+            box-shadow: 0 0 0 .15rem rgba(255,0,0,.5) !important;
+        }
+
+        .locale-collapser {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            outline: none;
+            border: none;
+            background: rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+            padding: 20px 30px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: box-shadow .3s;
+        }
+
+        .locale-collapser:focus {box-shadow: 0 0 0 3px rgba(var(--metrix-main-accent),.8)}
+
+        .locale-collapser .dire-right-arrow-s {transition: transform .3s}
+
+        .locale-collapser:hover .dire-right-arrow-s {transform: rotate(45deg)}
+
+        .locale-collapser[aria-expanded="true"] .dire-right-arrow-s {transform: rotate(90deg)}
+    /** Admin Panel */
+/** Globals */

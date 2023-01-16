@@ -1,0 +1,204 @@
+/** Content Wrapper */
+    .admin-content-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 100px;
+        padding: 20px 50px;
+        transition: width .3s;
+    }
+
+    html body .admin-content-wrapper .btn-fullscreen {
+        display: none;
+    }
+
+    .admin-content-wrapper .create-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .admin-content-wrapper .create-form .form-section {
+        margin: 20px 0;
+    }
+
+    .admin-content-wrapper .create-form .multi-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: 1px solid rgba(var(--admin-dark-accent),1);
+    }
+
+    .admin-content-wrapper .create-form .multi-section:first-child {
+        padding-left: 0;
+    }
+
+    .admin-content-wrapper .create-form .multi-section:last-child {
+        padding-right: 0;
+    }
+
+    .admin-content-wrapper .create-form .multi-section .multi-section-2 {
+        width: 45%;
+    }
+
+    .admin-content-wrapper .create-form .multi-section .multi-section-3 {
+        width: 30%;
+    }
+    
+    .admin-content-wrapper .create-form h5 {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+    .admin-content-wrapper .create-form .form-control {
+        border-radius: 0;
+    }
+
+    .admin-content-wrapper .create-form input[type], .admin-content-wrapper .create-form select {
+        font-size: .8rem;
+        padding: 8px;
+        border-color: rgba(var(--admin-dark-accent),.4);
+        transition: border .3s, box-shadow .3s;
+    }
+
+    .admin-content-wrapper .create-form input[type="file"] {
+        width: 100%;
+        padding: 10px 30px;
+        border: 1px solid rgba(var(--admin-dark-accent),.4);
+    }
+
+    .admin-content-wrapper .create-form .form-control:focus {
+        box-shadow: 0 0 0 .15rem rgba(var(--admin-dark-accent),.5);
+        border: 1px solid rgba(var(--admin-dark-accent),0);
+        outline: none;
+    }
+
+    .admin-content-wrapper .page-title-wrapper {
+        margin: 10px 0 30px 0;
+    }
+
+    .page-title-wrapper .split-button {
+        white-space: nowrap;
+    }
+
+    /** Image Notifier */
+        .admin-image-wrapper {
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hover-edit-notifier {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%) scale(0);
+            width: 100%;
+            height: 100%;
+            background: rgba(var(--kompot-dark-gray),.5);
+            transition: transform .3s;
+        }
+
+        .hover-edit-notifier .dire-edit {
+            font-size: 2rem;
+            color: rgba(var(--kompot-pure-white),1)
+        }
+
+        .admin-image-wrapper:hover .hover-edit-notifier {
+            transform: translateX(-50%) scale(1);
+        }
+
+    /** Image Notifier */
+
+    /** Articles */
+        /** Sub Section */
+            .form-sub-section .sub-section-collapse,
+            .slides-collapse-wrapper .slides-collapse {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                border: none;
+                outline: none;
+                background: rgba(var(--admin-dark-accent),1);
+                color: rgba(var(--kompot-pure-white),1);
+                outline: 1px solid rgba(var(--admin-dark-accent),1);
+                font-family: var(--Bold);
+                cursor: pointer;
+                transition: box-shadow .3s;
+            }
+
+            .form-sub-section .sub-section-collapse:hover,
+            .slides-collapse-wrapper .slides-collapse:hover {
+                background: rgba(var(--kompot-pure-white),1);
+                color: rgba(var(--admin-dark-accent),1);
+                outline: 1px solid rgba(var(--admin-dark-accent),1);
+            }
+
+            .form-sub-section .sub-section-collapse:focus,
+            .slides-collapse-wrapper .slides-collapse:focus {
+                background: rgba(var(--admin-dark-accent),1);
+                color: rgba(var(--kompot-pure-white),1);
+                box-shadow: 0 0 0 .3rem rgba(var(--admin-dark-accent),.6);
+            }
+
+            .form-sub-section .sub-section-collapse span,
+            .slides-collapse-wrapper .slides-collapse span {
+                transition: transform .3s;
+            }
+
+            .form-sub-section .sub-section-collapse[aria-expanded="true"] span.dire-right-arrow-s,
+            .slides-collapse-wrapper .slides-collapse[aria-expanded="true"] span.dire-right-arrow-s {
+                transform: rotate(90deg) scale(1);
+            }
+
+            .form-sub-section .sub-section-collapse[aria-expanded="false"] span.dire-right-arrow-s,
+            .slides-collapse-wrapper .slides-collapse[aria-expanded="false"] span.dire-right-arrow-s {
+                transform: rotate(90deg) scale(-1);
+            }
+
+            .form-sub-section .collapse.show,
+            .slides-collapse-wrapper .collapse.show {
+                display: flex;
+                flex-direction: column;
+                padding: 15px 20px;
+            }
+
+            .form-sub-section .collapsing,
+            .slides-collapse-wrapper .collapsing {
+                padding: 15px 20px;
+                transition: none;
+            }
+        /** Sub Section And Project Slides */
+    /** Articles */
+    
+    /** Offers */
+        .special-offers-wrapper {
+            grid-template-columns: repeat(auto-fill, 48%);
+        }
+
+        .special-offers-wrapper .offer-card-wrapper.admin-offer-card-wrapper {
+            border-top: none !important;
+        }
+
+        .admin-offer-card-wrapper > a.split-button, .admin-offer-card-wrapper > form {
+            position: absolute;
+            right: 0;
+            bottom: 80px;
+        }
+
+        .admin-offer-card-wrapper > form {
+            bottom: calc(75px + 50px);
+        }
+
+        .admin-offer-card-wrapper > span.offer-validity.category {
+            top: calc( 25px + 25px );
+        }
+    /** Offers */
+
+    /** Users */
+    /** Users */
+/** Content Wrapper */

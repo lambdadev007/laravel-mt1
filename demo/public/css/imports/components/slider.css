@@ -1,0 +1,135 @@
+/** Slider */
+    /** Slider Top */
+        .universal-slider {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 20px;
+        }
+
+        .index-slider .universal-slider {
+            padding-top: 20px;
+            background: rgba(var(--metrix-light-gray-background),1);
+        }
+
+        .universal-slider .static-image {
+            width: 33%;
+            margin-top: auto;
+            margin-bottom: auto;
+            /* height: 350px; */
+            overflow: hidden;
+        }
+
+        .universal-slider .static-image.with-important-text {
+            position: relative;
+        }
+
+        .universal-slider .static-image.with-important-text .important-text-wrapper {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .universal-slider .owl-carousel {
+            width: 66%;
+            margin-top: auto;
+            margin-bottom: auto;
+            /* max-width: 1400px; */
+            /* height: 350px; */
+            overflow: hidden;
+        }
+
+        .universal-slider img {
+            width: 100%;
+            /* height: 350px; */
+        }
+    /** Slider Top */
+
+    /** Slider Bottom */
+        .index-slider .index-slider-bottom .index-slider-navigation {
+            position: relative;
+            width: 100%;
+            margin: 0;
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-navigation-top-border {
+            background: rgba(var(--metrix-main-accent),1);
+            height: .3rem;
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-links-wrapper {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-link {
+            text-decoration: none;
+            width: 100%;
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-icon-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.7rem;
+            width: 100%;
+            height: 5rem;
+            margin-top: 6px;
+            color: rgba(var(--kompot-pure-white),1);
+            border-right: 1px solid rgba(var(--kompot-pure-white),.3);
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-slide-title {
+            display: flex;
+            justify-content: center;
+            font-size: .8rem;
+            letter-spacing: 1px;
+            font-weight: bold;
+            font-family: var(--BoldSpecial);
+            padding: .6rem 0;
+            border-bottom: .3rem solid rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-icon-wrapper.active {
+            font-size: 3.2rem;
+            color: rgba(var(--metrix-secondary-accent),1);
+            background: rgba(var(--metrix-main-accent),1);
+            border-right: 1px solid rgba(var(--metrix-main-accent),1);
+        }
+
+        .index-slider .index-slider-bottom .index-slider-navigation .index-slider-slide-title.active {
+            border-bottom: .3rem solid rgba(var(--metrix-main-accent),1);
+        }
+
+    /** Slider Bottom */
+
+    /** Slider Background */
+
+        .index-slider .index-slider-navigation-bg {
+            width: 100%;
+            height: 150px;
+        }
+
+        .index-slider .index-slider-navigation-bg .upper-bg {
+            height: 100px;
+            background-color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .index-slider .index-slider-navigation-bg .middle-bg {
+            height: 48px;
+        }
+
+        .index-slider .index-slider-navigation-bg .lower-bg {
+            height: 6px;
+            background-color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+    /** Slider Background */
+/** Slider */

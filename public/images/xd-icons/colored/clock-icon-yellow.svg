@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="clock_1_" data-name="clock (1)" transform="translate(-1 -1)">
+    <path id="Path_117" data-name="Path 117" d="M25,1C11.183,1,1,11.181,1,25S11.181,49,25,49,49,38.819,49,25,38.819,1,25,1Zm0,46.07A22.07,22.07,0,1,1,47.07,25,22.1,22.1,0,0,1,25,47.07Z" fill="#fbb040"/>
+    <circle id="Ellipse_6" data-name="Ellipse 6" cx="1" cy="1" r="1" transform="translate(24 7)" fill="#fbb040"/>
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="1" cy="1" r="1" transform="translate(7 24)" fill="#fbb040"/>
+    <circle id="Ellipse_8" data-name="Ellipse 8" cx="1" cy="1" r="1" transform="translate(41 24)" fill="#fbb040"/>
+    <circle id="Ellipse_9" data-name="Ellipse 9" cx="1" cy="1" r="1" transform="translate(24 41)" fill="#fbb040"/>
+    <path id="Path_118" data-name="Path 118" d="M182,143.672l-6.546,6.569a4.411,4.411,0,0,0-4.118.284l-4.226-3.533a1.465,1.465,0,1,0-1.879,2.248l4.277,3.576a4.4,4.4,0,1,0,8.072-.557l6.5-6.519A1.465,1.465,0,1,0,182,143.672Zm-7.3,11.615a1.465,1.465,0,1,1,0-2.072A1.467,1.467,0,0,1,174.7,155.286Z" transform="translate(-148.617 -129.252)" fill="#fbb040"/>
+  </g>
+</svg>

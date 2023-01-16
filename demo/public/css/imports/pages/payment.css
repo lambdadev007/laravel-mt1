@@ -1,0 +1,14 @@
+/** Payments */
+    .payment-content .text-page h2 {
+        font-family: var(--BoldSpecial);
+        font-weight: bold;
+        font-size: 1.04rem;
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .payment-content .text-page p {
+        line-height: 1.5rem;
+        color: rgba(var(--kompot-dark-gray),1);
+        font-size: .75rem;
+    }
+/** Payments */

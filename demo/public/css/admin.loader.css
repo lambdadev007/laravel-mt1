@@ -1,0 +1,12 @@
+/** Admin Loader */
+    @import url('imports/admin/config.css');
+    @import url('imports/admin/globals.css');
+    @import url('imports/admin/login-form.css');
+    @import url('imports/admin/navbar.css');
+    @import url('imports/admin/sidebar.css');
+    @import url('imports/admin/content.css');
+    @import url('imports/admin/notifications.css');
+    @import url('imports/admin/users.css');
+    @import url('imports/admin/logs.css');
+    @import url('imports/admin/responsive.css');
+/** Admin Loader */

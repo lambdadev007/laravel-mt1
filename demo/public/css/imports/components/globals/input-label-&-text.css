@@ -1,0 +1,59 @@
+/** Input Label and Necessary Text */
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(var(--metrix-light-gray-background),1);
+        padding: 30px;
+    }
+
+    .modal-body .form-field {
+        padding: 15px;
+    }
+
+    .form-field ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+
+    .form-field ul li {
+        width: 49%;
+        list-style: none;
+    }
+
+    .form-field ul li.d-flex .service-modal-li-item {
+        width: 48%;
+    }
+
+    .form-field ul li.d-flex .service-modal-li-item .metrix-selector-wrapper select {
+        width: 100%;
+    }
+
+    .form-field label {
+        font-family: var(--Bold);
+        font-size: .65rem;
+        color: rgba(var(--kompot-dark-gray),1);
+        margin-bottom: 10px;
+    }
+
+    .form-field b {
+        color: rgba(var(--metrix-main-accent),1);
+        margin-left: 3px;
+    }
+
+    .form-field input,
+    .form-field textarea,
+    .form-field .metrix-selector-wrapper {
+        margin-bottom: 20px;
+        font-size: .65rem !important;
+    }
+
+    span.is-necessary {
+        font-size: .65rem;
+        color: rgba(var(--kompot-dark-gray),1);
+        margin: 20px 0;
+    }
+/** Input Label and Necessary Text */

@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'dire-icons';
+  src:  url('Raw/Icons/dire-icons.eot?16kzis');
+  src:  url('Raw/Icons/dire-icons.eot?16kzis#iefix') format('embedded-opentype'),
+  url('Raw/Icons/dire-icons.ttf?16kzis') format('truetype'),
+  url('Raw/Icons/dire-icons.woff?16kzis') format('woff'),
+  url('Raw/Icons/dire-icons.svg?16kzis#dire-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="dire-"], [class*=" dire-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dire-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.dire-after_renovation:before {
+  content: "\e940";
+}
+.dire-chemical_cleaning:before {
+  content: "\e941";
+}
+.dire-cleaner_woman:before {
+  content: "\e942";
+}
+.dire-complex_cleaning:before {
+  content: "\e943";
+}
+.dire-during_renovation:before {
+  content: "\e944";
+}
+.dire-every_day_cleaning:before {
+  content: "\e945";
+}
+.dire-facade_cleaning:before {
+  content: "\e946";
+}
+.dire-floor_cleaning:before {
+  content: "\e947";
+}
+.dire-furniture_cleaning:before {
+  content: "\e948";
+}
+.dire-window_cleaning:before {
+  content: "\e949";
+}
+.dire-area:before {
+  content: "\e93c";
+}
+.dire-clock:before {
+  content: "\e93d";
+}
+.dire-date:before {
+  content: "\e93e";
+}
+.dire-pin:before {
+  content: "\e93f";
+}
+.dire-star:before {
+  content: "\e93a";
+}
+.dire-star_empty:before {
+  content: "\e93b";
+}
+.dire-edit:before {
+  content: "\e938";
+}
+.dire-trash:before {
+  content: "\e939";
+}
+.dire-close-s:before {
+  content: "\e921";
+}
+.dire-conditioning:before {
+  content: "\e922";
+}
+.dire-door-window:before {
+  content: "\e923";
+}
+.dire-electricity:before {
+  content: "\e924";
+}
+.dire-exclamamtion:before {
+  content: "\e925";
+  color:#002e47;
+}
+.dire-house-technic:before {
+  content: "\e926";
+}
+.dire-m1 .path1:before {
+  content: "\e927";
+  color: rgb(0, 112, 140);
+}
+.dire-m1 .path2:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: rgb(230, 230, 230);
+}
+.dire-m1-a .path1:before {
+  content: "\e929";
+  color: rgb(230, 230, 230);
+}
+.dire-m1-a .path2:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: rgb(0, 112, 140);
+}
+.dire-m2 .path1:before {
+  content: "\e92b";
+  color: rgb(0, 112, 140);
+}
+.dire-m2 .path2:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: rgb(230, 230, 230);
+}
+.dire-m2-a .path1:before {
+  content: "\e92d";
+  color: rgb(230, 230, 230);
+}
+.dire-m2-a .path2:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: rgb(0, 112, 140);
+}
+.dire-m3 .path1:before {
+  content: "\e92f";
+  color: rgb(0, 112, 140);
+}
+.dire-m3 .path2:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: rgb(230, 230, 230);
+}
+.dire-m3-a .path1:before {
+  content: "\e931";
+  color: rgb(230, 230, 230);
+}
+.dire-m3-a .path2:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: rgb(0, 112, 140);
+}
+.dire-master-icon:before {
+  content: "\e933";
+}
+.dire-masters-icon:before {
+  content: "\e934";
+}
+.dire-pipes:before {
+  content: "\e935";
+}
+.dire-universal:before {
+  content: "\e936";
+}
+.dire-water-suply:before {
+  content: "\e937";
+}
+.dire-close:before {
+  content: "\e911";
+}
+.dire-user:before {
+  content: "\e920";
+}
+.dire-add-to-cart:before {
+  content: "\e900";
+}
+.dire-cart:before {
+  content: "\e901";
+}
+.dire-cart_new:before {
+  content: "\e902";
+}
+.dire-phone:before {
+  content: "\e914";
+}
+.dire-search:before {
+  content: "\e919";
+}
+.dire-shop-online:before {
+  content: "\e91a";
+}
+.dire-shop-online-s:before {
+  content: "\e91b";
+}
+.dire-consulting:before {
+  content: "\e906";
+}
+.dire-consulting-s:before {
+  content: "\e907";
+}
+.dire-design:before {
+  content: "\e908";
+}
+.dire-design-s:before {
+  content: "\e909";
+}
+.dire-renovation:before {
+  content: "\e915";
+}
+.dire-renovation-s:before {
+  content: "\e916";
+}
+.dire-furniture:before {
+  content: "\e90c";
+}
+.dire-furniture-s:before {
+  content: "\e90d";
+}
+.dire-master:before {
+  content: "\e912";
+}
+.dire-master-s:before {
+  content: "\e913";
+}
+.dire-cleaning:before {
+  content: "\e903";
+}
+.dire-cleaning-s:before {
+  content: "\e904";
+}
+.dire-up-arrow:before {
+  content: "\e91c";
+}
+.dire-up-arrow-s:before {
+  content: "\e91d";
+}
+.dire-right-arrow:before {
+  content: "\e917";
+}
+.dire-right-arrow-s:before {
+  content: "\e918";
+}
+.dire-down-arrow:before {
+  content: "\e90a";
+}
+.dire-down-arrow-s:before {
+  content: "\e90b";
+}
+.dire-left-arrow:before {
+  content: "\e90f";
+}
+.dire-left-arrow-s:before {
+  content: "\e910";
+}
+.dire-view:before {
+  content: "\e91e";
+}
+.dire-wishlist:before {
+  content: "\e91f";
+}
+.dire-compare:before {
+  content: "\e905";
+}
+.dire-lari:before {
+  content: "\e90e";
+}

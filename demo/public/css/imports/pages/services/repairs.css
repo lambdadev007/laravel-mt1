@@ -1,0 +1,127 @@
+/** Repairs */
+    .repairs-wrapper .row .col-sm-12 .category-wrapper h5 {
+        padding: 20px 0;
+        font-family: var(--Bold);
+        font-size: 1em;
+        text-align: center;
+        color: rgba(var(--kompot-pure-white),1);
+        word-wrap: break-word;
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper,
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .admin-content-wrapper .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .remove-this-sub-category,
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper div.sub-category-text .remove-this-sub-category-text {
+        display: flex;
+        width: 25px;
+        height: 25px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        font-size: .8rem;
+        background: var(--warning);
+        color: rgba(var(--kompot-dark-gray),1);
+        box-shadow: -1px 1px 0 2px rgba(var(--kompot-pure-white),1);
+        border: none;
+        transition: color .3s, background .3s;
+    }
+
+    .admin-content-wrapper .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .remove-sub-category:hover,
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper div.sub-category-text .remove-this-sub-category-text:hover {
+        background: var(--danger);
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category span.title {
+        text-align: center;
+        color: rgba(var(--kompot-pure-white),1);
+        padding: 10px 0;
+        font-size: .75rem;
+        font-family: var(--Bold);
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: 1px solid rgba(var(--border-color),1);
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper div.sub-category-text {
+        display: flex;
+        position: relative;
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper div.sub-category-text .remove-this-sub-category-text {
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper div.sub-category-text span {
+        width: 100%;
+        text-align: center;
+        color: rgba(var(--kompot-dark-gray),1);
+        border: 1px solid rgba(var(--border-color),1);
+        padding: 10px 0;
+        margin-top: -1px;
+        font-size: .65rem;
+        border-bottom: 1px solid rgba(var(--border-color),1);
+    }
+
+    .repairs-wrapper .row .col-sm-12 .sub-category-wrapper .sub-category .sub-category-text-wrapper div.sub-category-text span:last-child {
+        border-bottom: none;
+    }
+
+    .repairs-wrapper .row .first.col-sm-12 .category-wrapper h5,
+    .repairs-wrapper .row .first.col-sm-12 .sub-category-wrapper .sub-category span.title {
+        background: rgba(var(--metrix-yellow-accent),1);
+    }
+
+    .repairs-wrapper .row .second.col-sm-12 .category-wrapper h5,
+    .repairs-wrapper .row .second.col-sm-12 .sub-category-wrapper .sub-category span.title {
+        background: rgba(var(--metrix-orange-accent),1);
+    }
+
+    .repairs-wrapper .row .third.col-sm-12 .category-wrapper h5,
+    .repairs-wrapper .row .third.col-sm-12 .sub-category-wrapper .sub-category span.title {
+        background: rgba(var(--metrix-dark-blue-accent),1);
+    }
+
+    .repairs-wrapper .row .col-sm-12 .category-wrapper span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--Bold);
+        font-size: 1.5rem;
+        color: rgba(var(--kompot-dark-gray),1);
+        margin-bottom: 10px;
+    }
+
+    .repairs-wrapper .row .col-sm-12 .category-wrapper p {
+        color: rgba(var(--kompot-dark-gray),1);
+        font-size: .65rem;
+        text-align: center;
+    }
+
+    .exclamation-text {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        font-size: .6rem;
+    }
+
+    .exclamation-text .dire-exclamamtion {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+/** Repairs */

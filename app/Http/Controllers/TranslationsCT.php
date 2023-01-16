@@ -1,0 +1,265 @@
+<?php
+
+namespace App\Http\Controllers;
+
+// * Included Models
+    use Illuminate\Http\Request;
+    use Illuminate\Support\Str;
+    use Illuminate\Support\Facades\DB;
+    use Illuminate\Support\Facades\Hash;
+    use Illuminate\Support\Facades\Crypt;
+    use Illuminate\Support\Facades\Route;
+    use Illuminate\Support\Facades\Cookie;
+    use Illuminate\Support\Facades\Storage;
+    use Illuminate\Support\Facades\Session;
+// * Included Models
+
+class TranslationsCT extends HelpersCT
+{
+
+    public function translate($keyword) {
+        $translation = [
+            'ka' => [
+                'repeating_start' => null,
+                    'services' => 'მომსახურება',
+                    'designer' => 'დიზაინერი',
+                    'design' => 'დიზაინი',
+                    'repairs' => 'რემონტი',
+                    'furniture_crafting' => 'ავეჯის დამზადება',
+                    'furniture' => 'ავეჯის დამზადება',
+                    'vip_master' => 'VIP მასტერი',
+                    'featured_works' => 'ნამუშევრები',
+                    'about_us' => 'ჩვენს შესახებ',
+                    'vacancies' => 'ვაკანსიები',
+                    'terms_of_service' => 'უსაფრთხოების პოლიტიკა',
+                    'detailed' => 'დაწვრილებით',
+                    'learn_more' => 'მეტის გაგება',
+                    'all' => 'ყველა',
+                    'your_name' => 'თქვენი სახელი',
+                    'last_name' => 'გვარი',
+                    'email' => 'ელ. ფოსტა',
+                    'phone_number' => 'ტელეფონის ნომერი',
+                    'sms_code' => 'SMS კოდი',
+                'repeating_end' => null,
+
+                'navbar_start' => null,
+                    'profile' => 'პროფილი',
+                    'login' => 'შესვლა',
+                    'looking_for_something' => 'ეძებთ რამეს ?',
+                    'materials' => 'მასალები',
+                    'blog' => 'ბლოგი',
+                    'contact' => 'კონტაქტი',
+                'navbar_end' => null,
+
+                'cart_start' => null,
+                    'cart' => 'კალათა',
+                    'products' => 'პროდუქტი',
+                    'full_view' => 'სრულად ნახვა',
+                    'total' => 'სულ',
+                    'purchase' => 'ყიდვა',
+                    'product_list' => 'პროდუქტთა სია',
+                    'measuring_unit' => 'ზომის ერთ',
+                    'price' => 'ფასი',
+                    'amount' => 'რაოდენობა',
+                'cart_end' => null,
+
+                'footer_start' => null,
+                    'all_rights_reserved' => 'ყველა უფლება დაცულია',
+                    'how_to_contact_us' => 'როგორ დაგიკავშირდეთ?',
+                    'contact_form' => 'კონტაქტის ფორმა',
+                    'what_do_we_provide' => 'რას გთავაზობთ?',
+                'footer_end' => null,
+
+                'homepage_start' => null,
+                    'about_metrix' => 'მეტრიქსის შესახებ',
+                    'befriend_us' => 'დაგვიმეგობრდი',
+                    'about_service' => 'სერვისის შესახებ',
+                    'brands' => 'ბრენდები',
+                    'ongoing' => 'მიმდინარე',
+                'homepage_end' => null,
+
+                'blog_star' => null,
+                    'blog_categories' => 'ბლოგის კატეგორიები',
+                    // 'vip' => 'ვიპ - მასტერი',
+                    'vip' => 'მინის სამუშაოები',
+                    'share' => 'გააზიარე',
+                    'similar_articles' => 'მსგავსი სტატიები',
+                'blog_end' => null,
+
+                'vip_master_start' => null,
+                    'doors_windows_locks' => 'კარ-ფანჯარა და საკეტები',
+                    'electricity' => 'ელექტროობა',
+                    'sewerage' => 'კანალიზაცია',
+                    'plumbing' => 'სანტექნიკა',
+                    'heating_conditioning' => 'გათბობა/კონდიცირება',
+                    'home_appliances' => 'საყოფაცხოვრებო ტექნიკა',
+                    'universal_works' => 'უნივერსალური სამუშაოები',
+                    'available' => 'ხელმისაწვდომია',
+                    'specialist' => 'სპეციალისტი',
+                    'order' => 'შეკვეთა',
+                    'place_an_order' => 'შეკვეთის გაფორმება',
+                    'wooden_door_installation' => 'ხის კარის მონტაჟი',
+                    'specify_city' => 'მიუთითეთ ქალაქი',
+                    'region' => 'რაიონი',
+                    'when_should_we_contact_you' => 'როდის დაგიკავშირდეთ?',
+                    'any_time' => 'ნებისმიერ დროს',
+                    'specific_time' => 'კონკრეტულ დროს',
+                    'date' => 'თარიღი',
+                    'time_frame' => 'დროის შუალედი',
+                    'i_agree' => 'ვეთანხმები',
+                    'website_rules' => 'საიტის წესებს',
+                'vip_master_end' => null,
+
+                'designer_start' => null,
+                    'design_style' => 'დიზაინის სტილი',
+                    'from_render_to_reality' => 'რენდერიდან რეალურ შესრულებამდე',
+                    'render' => 'რენდერი',
+                    'reality' => 'რეალობა',
+                'designer_end' => null,
+
+                'repairs_start' => null,
+                    'why_metrix' => 'რატომ კომპანია მეტრიქსი?',
+                    'how_we_operate' => 'როგორ ვმუშაობთ?',
+                    'generate_invoice' => 'ინვოისის ჩამოტვირთვა',
+                'repairs_end' => null,
+
+                'furniture_start' => null,
+                'furniture_end' => null,
+
+                'service_modal_start' => null,
+                    'about_the_deal' => 'პაკეტის შესახებ',
+                'service_modal_end' => null,
+
+                'contact_start' => null,
+                    'choose_service' => 'აირჩიეთ მომსახურება',
+                    'message' => 'წერილი...',
+                    'send' => 'გაგზავნა',
+                'contact_end' => null,
+
+                'search_start' => null,
+                    'search_result' => 'ძიების შედეგი',
+                    'found' => 'მზადაა',
+                    'results' => 'რეზულტატი',
+                'search_end' => null,
+
+                'market_start' => null,
+                    'all_categories' => 'ყველა კატეგორია',
+                    'ascending' => 'ზრდადობით',
+                    'descending' => 'კლებადობით',
+                    'change_style' => 'სტილის შეცვლა',
+                    'on_this_page' => 'გვერდზე',
+                'market_end' => null,
+            ],
+            'it' => [
+                'repeating_start' => null,
+                    'services' => '',
+                    'designer' => '',
+                    'design' => '',
+                    'repairs' => '',
+                    'furniture_crafting' => '',
+                    'furniture' => '',
+                    'vip_master' => '',
+                    'featured_works' => '',
+                    'about_us' => '',
+                    'vacancies' => '',
+                    'terms_of_service' => '',
+                    'detailed' => '',
+                    'learn_more' => '',
+                    'all' => '',
+                    'your_name' => '',
+                    'last_name' => '',
+                    'email' => '',
+                    'phone_number' => '',
+                    'sms_code' => '',
+                'repeating_end' => null,
+
+                'navbar_start' => null,
+                    'profile' => '',
+                    'login' => '',
+                    'looking_for_something' => '',
+                    'materials' => '',
+                    'blog' => '',
+                    'contact' => '',
+                'navbar_end' => null,
+
+                'cart_start' => null,
+                    'cart' => '',
+                    'products' => '',
+                    'full_view' => '',
+                    'total' => '',
+                    'purchase' => '',
+                    'product_list' => '',
+                    'measuring_unit' => '',
+                    'price' => '',
+                    'amount' => '',
+                'cart_end' => null,
+
+                'footer_start' => null,
+                    'all_rights_reserved' => '',
+                    'how_to_contact_us' => '',
+                    'contact_form' => '',
+                    'what_do_we_provide' => '',
+                'footer_end' => null,
+
+                'homepage_start' => null,
+                    'about_metrix' => '',
+                    'befriend_us' => '',
+                    'about_service' => '',
+                    'brands' => '',
+                    'ongoing' => '',
+                'homepage_end' => null,
+
+                'blog_star' => null,
+                    'blog_categories' => '',
+                    'vip' => '',
+                    'share' => '',
+                    'similar_articles' => '',
+                'blog_end' => null,
+
+                'vip_master_start' => null,
+                    'doors_windows_locks' => 'Porte-finestre e serrature',
+                    'electricity' => 'Elettricità',
+                    'sewerage' => 'Rete fognaria',
+                    'plumbing' => 'Impianto idraulico',
+                    'heating_conditioning' => 'Riscaldamento / Aria condizionata',
+                    'home_appliances' => 'Elettrodomestici',
+                    'universal_works' => 'Lavori  universali',
+                    'available' => 'Disponibili',
+                    'specialist' => ' Specialisti',
+                    'order' => '',
+                    'place_an_order' => '',
+                    'wooden_door_installation' => '',
+                    'specify_city' => '',
+                    'region' => '',
+                    'when_should_we_contact_you' => '',
+                    'any_time' => '',
+                    'specific_time' => '',
+                    'date' => '',
+                    'time_frame' => '',
+                    'i_agree' => '',
+                    'website_rules' => '',
+                'vip_master_end' => null,
+
+                'designer_start' => null,
+                    'design_style' => '',
+                    'from_render_to_reality' => '',
+                    'render' => '',
+                    'reality' => '',
+                'designer_end' => null,
+
+                'service_modal_start' => null,
+                    'about_the_deal' => '',
+                'service_modal_end' => null,
+
+                'contact_start' => null,
+                    'choose_service' => '',
+                    'message' => '',
+                    'send' => '',
+                'contact_end' => null,
+            ]
+        ];
+        $locale = Session::get('locale');
+        
+        return $translation[$locale][$keyword];
+    }
+}

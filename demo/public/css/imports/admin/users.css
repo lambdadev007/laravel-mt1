@@ -1,0 +1,43 @@
+/** Users */
+    .admin-panel-custom-items-wrapper {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+        justify-content: space-between;
+    }
+
+    .admin-panel-custom-items-wrapper .admin-panel-custom-item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        box-shadow: 0 0 0 4px rgba(var(--metrix-secondary-accent),.5);
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+        margin: 20px 0;
+        padding: 30px;
+    }
+
+    .admin-panel-custom-items-wrapper .admin-panel-custom-item span {
+        padding: 5px 10px;
+    }
+
+    .custom-users-wrapper {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .admin-panel-custom-items-wrapper .check-for-action-label {
+        left: 0;
+        bottom: 40px;
+        right: inherit;
+        top: initial;
+    }
+
+    .admin-panel-custom-items-wrapper .delete-status {
+        left: 0;
+        bottom: 0;
+        right: inherit;
+        top: initial;
+    }
+/** Users */

@@ -1,0 +1,104 @@
+/** Fixed Navbar */
+    .fixed-navbar-wrapper {
+        width: 100%;
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        left: 0;
+        top: 0;
+        background: rgba(var(--kompot-pure-white),1);
+        z-index: 100;
+        box-shadow: 0 0 5px rgba(var(--metrix-secondary-accent),.5);
+    }
+
+    .fixed-navbar-wrapper.active {
+        display: flex;
+    }
+
+    .fixed-navbar-wrapper .bg-metrix-secondary {
+        height: 0;
+    }
+
+    .brand-logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .fixed-navbar-wrapper .brand-img {
+        width: 190px;
+        margin-left: 45px;
+    }
+
+    .fixed-navbar-wrapper .fixed-navbar-content-wrapper {
+        display: flex;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    .fixed-navbar-content-wrapper .row {
+        width: 100%;
+    }
+
+    .fixed-navbar-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .fixed-navbar-menu > div, .fixed-navbar-menu > a, .d-flex.justify-content-between > div  {
+        margin: 0 4px;
+    }
+
+    .fixed-navbar-menu .cabinet-dropdown {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+    }
+
+    .fixed-navbar-menu .cabinet-dropdown a {
+        color: rgba(var(--metrix-secondary-accent),1);
+        font-size: 0.7rem;
+        font-family: var(--Bold);
+        white-space: nowrap;
+    }
+
+    .fixed-navbar-menu .phone-numbers {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
+
+    .fixed-navbar-menu .split-button span {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        white-space: nowrap;
+        font-size: .9rem;
+        margin-top: 0;
+    }
+
+    .fixed-navbar-menu .split-button span:not(.dire-phone) {
+        display: flex;
+        align-items: center;
+        font-size: .7rem;
+        padding: 0 12px;
+    }
+
+    .fixed-navbar-menu .form-group {
+        margin-bottom: 0;
+    }
+
+    .fixed-navbar-menu .form-group .form-control {
+        padding: 8px;
+        min-width: 200px;
+        height: 40px;
+        font-size: .68rem;
+        border-radius: 0;
+        border: 1px solid rgba(var(--border-color),1);
+        transition: border .3s;
+    }
+
+    .fixed-navbar-menu .form-group .form-control:focus {
+        box-shadow: none;
+        border: 1px solid rgba(var(--focus-border),1);
+    }
+/** Fixed Navbar */

@@ -1,0 +1,423 @@
+/** Vacancies */
+    .vacancies-wrapper .vacancies-left-segment .vacancies-top-categories {
+        display: flex;
+    }
+
+    .vacancies-wrapper .vacancies-left-segment .vacancies-top-categories button {
+        width: 100%;
+        font-size: 1rem;
+        font-family: var(--Bold);
+        border: none;
+        outline: none;
+        padding: 25px 30px;
+        cursor: pointer;
+    }
+
+    .vacancies-wrapper .vacancies-top-categories button[data-type="employee"] {
+        background: rgba(var(--metrix-orange-accent),1);
+    }
+
+    .vacancies-wrapper .vacancies-top-categories button[data-type="legal-entity"] {
+        background: rgba(var(--metrix-yellow-accent),1);
+    }
+
+    .vacancies-wrapper .instructional-banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s, background .3s;
+    }
+
+    .vacancies-wrapper .instructional-banner.show {
+        max-height: 2000px;
+    }
+
+    .vacancies-wrapper .instructional-banner.employee {
+        background: rgba(var(--metrix-orange-accent),1);
+    }
+
+    .vacancies-wrapper .instructional-banner.legal-entity {
+        background: rgba(var(--metrix-yellow-accent),1);
+    }
+
+    .vacancies-wrapper .instructional-banner img {
+        display: none;
+        opacity: 0;
+        width: 100%;
+        margin: auto;
+        transition: opacity .3s;
+    }
+
+    .vacancies-wrapper .instructional-banner.employee img.employee,
+    .vacancies-wrapper .instructional-banner.legal-entity img.legal-entity {
+        display: initial;
+    }
+
+    .vacancies-wrapper .instructional-banner.opacity.employee img.employee,
+    .vacancies-wrapper .instructional-banner.opacity.legal-entity img.legal-entity {
+        opacity: 1;
+    }
+
+    .vacancies-wrapper form {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .vacancies-wrapper .vacancies-left-segment {
+        display: flex;
+        flex-direction: column;
+        width: 72.5%;
+    }
+
+    .vacancies-wrapper .vacancies-right-segment {
+        display: flex;
+        flex-direction: column;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 130px;
+        width: 25%;
+        height: 100%;
+    }
+
+    /** Tabs */
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            border-top: 1px solid rgba(var(--border-color),1);
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item,
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            background: transparent;
+            border-color: rgba(var(--border-color),1);
+            border: 1px solid rgba(var(--border-color),1);
+            border-top: none;
+            outline: none;
+            padding: 0;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .outer,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .outer {
+            width: 85px;
+            height: 80px;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .outer img,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .outer img {
+            width: 100%;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .inner,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner,
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse .inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .inner p,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner p,
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .inner input,
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse .inner p {
+            margin-bottom: 0;
+            font-size: .8rem;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .inner div:not(.d-flex),
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner div:not(.d-flex),
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse .inner div:not(.d-flex),
+        .admin-content-wrapper .send-message.shop .shop-group-wrapper button.shop-group div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .inner div span,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner div span,
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse .inner div span,
+        .admin-content-wrapper .send-message.shop .shop-group-wrapper button.shop-group div span {
+            color: rgba(var(--kompot-pure-white),1);
+            transition: transform .3s;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item:hover .inner span,
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item:hover .inner span,
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse:hover .inner div span,
+        .admin-content-wrapper .send-message.shop .shop-group-wrapper button.shop-group:hover div span {
+            transform: rotate(45deg);
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item[aria-expanded="true"] .inner span, 
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item[aria-expanded="true"] .inner span,
+        .admin-content-wrapper .vacancies-wrapper.send-message.staff .vacancies-tabs button.staff-group-collapse[aria-expanded="true"] .inner div span,
+        .admin-content-wrapper .send-message.shop .shop-group-wrapper button.shop-group[aria-expanded="true"] div span {
+            transform: rotate(90deg);
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item.show {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item {
+            height: 60px;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .outer {
+            width: 63px;
+            height: 60px;
+            border-right: 1px solid rgba(var(--border-color),1);
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner div:not(.d-flex) {
+            width: 30px;
+            height: 30px;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner p {
+            font-size: .7rem;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner div span {
+            font-size: .7rem;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item div.sub-group-item {
+            margin-bottom: 10px;
+            border: 1px solid rgba(var(--border-color),1);
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item div.sub-group-item.show {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-item,
+        .admin-content-wrapper .send-message.shop .shop-group .checkbox-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: calc(100% - 57px);
+            margin-left: auto;
+            margin-bottom: -1px;
+            margin-right: -1px;
+            padding: 10px;
+            padding-right: 30px;
+            border-color: rgba(var(--border-color),1) !important;
+            border: 1px solid rgba(var(--metrix-yellow-accent),1);
+            border-top: none;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-item.select-all,
+        .admin-content-wrapper .send-message.shop .shop-group .checkbox-item.select-all {
+            justify-content: center;
+            border-color: rgba(var(--metrix-yellow-accent),1) !important;
+            background: rgba(var(--metrix-yellow-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+            cursor: pointer;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-item.deselect-all,
+        .admin-content-wrapper .send-message.shop .shop-group .checkbox-item.deselect-all {
+            justify-content: center;
+            border-color: rgba(var(--metrix-secondary-accent),1) !important;
+            background: rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+            cursor: pointer;
+        }
+
+        .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-item label,
+        .admin-content-wrapper .send-message.shop .shop-group .checkbox-item label {
+            font-size: .6rem;
+            margin-bottom: 0;
+            color: inherit;
+        }
+    /** Tabs */
+
+    /** Admin */
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item, 
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item {
+            height: 120px;
+        }
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item {
+            height: 120px;
+        }
+
+        .admin-content-wrapper .vacancies-left-segment {
+            margin: auto;
+        }
+
+        .remove-this-employee,
+        .remove-this-legal-entity {
+            width: 100%;
+            border: none;
+            outline: none;
+            background: var(--danger);
+        }
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .group-item-wrapper,
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .sub-group,
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-items-wrapper {
+            /* border: 8px solid; */
+            margin-top: 20px;
+        }
+
+        /* .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .group-item-wrapper.sub_group {
+            border-color: #bcf60c;
+        }
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .group-item-wrapper.checkbox_item {
+            border-color: #3cb44b;
+        }
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .sub-group {
+            border-color: #000075;
+        }
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-items-wrapper {
+            border-color: rgba(var(--metrix-yellow-accent),1);
+        } */
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs button.group-item .inner input,
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs div.group-item button.sub-group-item .inner input {
+            width: 90%;
+        }
+
+        .admin-content-wrapper .vacancies-wrapper .vacancies-left-segment .vacancies-tabs .checkbox-items-wrapper .checkbox-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .admin-content-wrapper .remove-this-checkbox-item {
+            height: 42px;
+            width: 42px;
+            padding: 0;
+            background: var(--danger);
+            color: rgba(var(--metrix-secondary-accent),1);
+            border: none;
+            outline: none;
+        }
+
+        .selects-item {
+            margin-top: 5px;
+            border: 3px solid rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .admin-content-wrapper .vacancies-tabs .group {
+            border: 2px solid rgba(var(--metrix-secondary-accent),1) !important;
+            margin-top: 20px;
+        }
+
+        .admin-content-wrapper .vacancies-tabs .group .buttons-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .admin-content-wrapper .vacancies-tabs .group .delete-button {
+            color: rgba(var(--metrix-secondary-accent),1);
+            background: var(--danger);
+            height: 40px;
+            font-size: .8rem;
+            border: none;
+            outline: none;
+        }
+        /** Send Message */
+            /** Staff */
+                .vacancies-wrapper.send-message.staff .vacancies-tabs .group-item-wrapper,
+                .vacancies-wrapper.send-message.staff .vacancies-tabs .group-item-wrapper .sub-group,
+                .vacancies-wrapper.send-message.staff .vacancies-tabs .group-item-wrapper .sub-group .checkbox-items-wrapper {
+                    margin-top: 0 !important;
+                }
+
+                .send-message-buttons {
+                    border: none;
+                    outline: none;
+                    padding: 20px;
+                    border: 1px solid rgba(var(--metrix-secondary-accent),1);
+                    background: transparent;
+                    transition: background .3s, color .3s;
+                }
+
+                .send-message-buttons[disabled] {
+                    background: transparent !important;
+                    color: rgba(var(--metrix-secondary-accent),1) !important;
+                    cursor: not-allowed;
+                }
+
+                .send-message-buttons:hover {
+                    background: rgba(var(--metrix-secondary-accent),1);
+                    color: rgba(var(--kompot-pure-white),1);
+                }
+
+                .write-message-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 20px;
+                }
+
+                .call-button {
+                    color: rgba(var(--kompot-pure-white),1);
+                    background: rgba(var(--metrix-secondary-accent),1);
+                    cursor: pointer;
+                    font-size: .8rem;
+                    padding: 5px;
+                    text-decoration: none;
+                    border-radius: 3px;
+                }
+
+                .call-button:hover {
+                    background: rgba(var(--metrix-yellow-accent),1);
+                    color: rgba(var(--kompot-pure-white),1);
+                    text-decoration: none;
+                }
+            /** Staff */
+
+            /** Shops */
+                .send-message.shop .shop-group-wrapper {
+                    width: 100%;
+                    margin-top: 20px;
+                }
+
+                .send-message.shop .shop-group-wrapper button.shop-group {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: 15px;
+                    background: transparent;
+                    border: 2px solid rgba(var(--metrix-secondary-accent),1);
+                    outline: none;
+                    color: rgba(var(--metrix-secondary-accent),1);
+                }
+
+                .send-message.shop .shop-group-wrapper button.shop-group p {
+                    margin: 0;
+                }
+            /** Shops */
+        /** Send Message */
+    /** Admin */
+/** Vacancies */

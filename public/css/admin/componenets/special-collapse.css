@@ -1,0 +1,35 @@
+button.s-collapse {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none !important;
+    color: rgb(var(--metrix-yellow-accent));
+    font-family: var(--MyriadBold);
+    text-align: left;
+    border-bottom: 1px solid rgb(var(--metrix-yellow-accent));
+    font-size: 26px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+button.s-collapse.active {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+div.s-collapse {
+    overflow: hidden;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border-bottom: none;
+}
+
+div.s-collapse.show {
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    height: auto;
+    /* border-bottom: 1px solid rgb(var(--metrix-yellow-accent)); */
+}
+
+div.s-collapse.show .form-section:first-child {margin-top: 20px;}

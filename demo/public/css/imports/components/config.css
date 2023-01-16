@@ -1,0 +1,122 @@
+:root {
+    --metrix-main-accent: 241,90,41;
+    --metrix-secondary-accent: 0,46,71;
+
+    --metrix-yellow-accent: 251,176,64;
+    --metrix-orange-accent: 241,90,41;
+    --metrix-dark-blue-accent: 0,46,71;
+    --metrix-gray-accent: 188,190,192;
+    
+    --metrix-light-gray-background: 240,247,250;
+    --metrix-secondary-text-color: 128,128,128;
+    --border-color: 230,230,230;
+    --focus-border: 128,189,255;
+    --market-dropdown-active-bg: 240,247,250;
+    --partners-text-color: 125,129,133;
+    --category-active-background: 0,112,140;
+    --project-category-background : 57,88,242;
+    --mobile-dark-border: 55,61,68;
+    --mobile-dark-background: 28,31,34;
+    --kompot-dark-gray: 25,25,25;
+    --kompot-pure-white: 255,255,255;
+
+    --Regular: 'Dejavu Sansbook';
+    --Bold: 'Dejavu Sansbold';
+    --BoldSpecial: 'BPG Nino Medium Capsregular';
+}
+
+html {
+    font-size: 20px;
+    /* user-select: none !important; */
+}
+
+/** Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/** Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+/** Scroll Bar */
+    html > ::-webkit-scrollbar,
+    html > ::-webkit-scrollbar-corner,
+    html > ::-webkit-scrollbar-track-piece {
+        background: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    html > ::-webkit-scrollbar {
+        width: 15px;
+    }
+
+    html > ::-webkit-scrollbar-button {
+        height: 5px;
+        background: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    html > ::-webkit-scrollbar-thumb {
+        background: rgba(var(--metrix-main-accent),.8);
+    }
+
+    html > ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(var(--metrix-main-accent),.9);
+    }
+
+    html > ::-webkit-scrollbar-thumb:active {
+    background-color: rgba(var(--metrix-main-accent),1);
+    }
+/** Scroll Bar */
+
+body {
+    font-family: var(--Regular);
+}
+
+.bg-transparent {
+    background: transparent !important;
+}
+
+.bg-dark-transparent{
+    background: rgba(var(--metrix-secondary-accent),.25);
+}
+
+.bg-metrix-secondary {
+    background: rgba(var(--metrix-secondary-accent),1);
+}
+
+.text-main {
+    color: rgba(var(--metrix-main-accent),1);
+}
+
+
+/*
+*
+*    Custom Breakpoints : {
+*        1500px,
+*        1250px,
+*    }
+*
+*
+*   Bootstrap Breakpoints : {
+*       1200px,
+*       992px,
+*       768px,
+*       576px,
+*   }
+*
+*/
+
+/*
+*
+*   Z index Usage : {
+*       .our-production-wrapper .our-production .categories li.active::after : 10,
+*       .our-product.hovered : 15,
+*       .navbar-hover-dropdown : 50,
+*       .navbar-click-dropdown-wrapper .navbar-click-dropdown : 100,
+*       .admin-panel-sidebar : 100
+*   }
+*
+*/

@@ -1,0 +1,56 @@
+/** Call Modal */
+    #phone-call-modal .modal-dialog .modal-content .modal-body h4 {
+        font-size: .8rem;
+        font-family: var(--Bold);
+        display: flex;
+        align-items: center;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content span {
+        font-size: .65rem;
+        margin-top: 6px;
+        margin-bottom: 10px;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content .split-button span {
+        margin-bottom: 0;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content form .call-input-group {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content form .call-input-group label {
+        font-size: .65rem;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-family: var(--Bold);
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content form .radios-wrapper {
+        display: flex;
+        margin: 15px 0;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content form .radios-wrapper .radios-section {
+        margin-right: 30px;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content form .radios-wrapper .radios-section .radio-wrapper  {
+        font-size: .65rem;
+        font-family: var(--Bold);
+        margin-bottom: 10px;
+    }
+
+    #phone-call-modal .modal-dialog .modal-content .modal-body .modal-body-content form .radios-wrapper .radios-section .radio-wrapper input[type="radio"] {
+        margin-right: 12px;
+    }
+/** Call Modal */

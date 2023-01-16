@@ -1,0 +1,87 @@
+/** Deilvery */
+    .delivery-range-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .delivery-range-wrapper .rate-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .delivery-range-wrapper .rate-wrapper label {
+        margin: 0 10px;
+    }
+
+    .delivery-range-wrapper .rate-wrapper label span {
+        padding: 20px 30px !important;
+    }
+
+    .delivery-range-wrapper .rate-wrapper label span.active {
+        background: rgba(var(--metrix-main-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .delivery-range-wrapper .rate-wrapper label input[type="radio"] {
+        display: none;
+    }
+
+    .delivery-range-wrapper input[type="range"] {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 80%;
+        height: 6px;
+        outline: none;
+        margin: auto;
+        background: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .delivery-range-wrapper input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(var(--metrix-main-accent),1);
+    }
+
+    .delivery-range-wrapper input[type="range"]::-moz-range-thumb {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: rgba(var(--metrix-main-accent),1);
+    }
+
+    .delivery-range-wrapper input[type="range"].range-start::-webkit-slider-thumb {transform: translateX(-1px);}
+    .delivery-range-wrapper input[type="range"].range-start::-moz-range-thumb {transform: translateX(-1px);}
+    .delivery-range-wrapper input[type="range"].range-end::-webkit-slider-thumb {transform: translateX(1px);}
+    .delivery-range-wrapper input[type="range"].range-end::-moz-range-thumb {transform: translateX(1px);}
+
+    .delivery-range-wrapper .range-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .delivery-range-wrapper .range-info > span {
+        border: 1px solid rgba(var(--border-color),1);
+        padding: 15px 20px;
+        margin: 0 10px;
+        font-size: .8rem;
+    }
+
+    .delivery-range-wrapper .range-info > span b {
+        font-size: 1.1rem;
+        color: rgba(var(--metrix-secondary-accent),1);
+        font-family: var(--Bold);
+    }
+
+    .delivery-range-wrapper .range-info > div {
+        width: 15px;
+        height: 1px;
+        background: rgba(var(--border-color),1);
+    }
+/** Deilvery */

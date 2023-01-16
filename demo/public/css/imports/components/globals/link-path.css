@@ -1,0 +1,28 @@
+/** Link Path */
+    .link-path-wrapper {
+        display: flex;
+        margin: 10px 0;
+        /* margin-bottom: 40px; */
+    }
+
+    .link-path-wrapper .link-path {
+        display: flex;
+        align-items: center;
+    }
+
+    .link-path-wrapper .link-path .link-path-item {
+        color: rgba(var(--kompot-dark-gray),1);
+        font-size: .65rem;
+        font-family: var(--Bold);
+        text-decoration:none;
+    }
+
+    .link-path-wrapper .link-path .link-path-item.dire-right-arrow {
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    .link-path-wrapper .link-path .link-path-item:not(.dire-right-arrow):hover {
+        color: rgba(var(--metrix-secondary-accent),.25);
+    }
+/** Link Path */

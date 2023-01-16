@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'FiraGO Bold';
+    src: url('Raw/FiraGO/FiraGO-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraGO Book';
+    src: url('Raw/FiraGO/FiraGO-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraGO Book Italic';
+    src: url('Raw/FiraGO/FiraGO-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Myriad GEO Mtavruli Bold';
+    src: url('Raw/MyriadGEO/MYRIADGEOMTAVRULIBOLD.TTF') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad GEO Mtavruli Medium';
+    src: url('Raw/MyriadGEO/MYRIADGEOMTAVRULIMEDIUM.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

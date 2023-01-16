@@ -1,0 +1,67 @@
+/** Navbar Dropdowns */
+    @import url('dropdowns/globals.css');
+    @import url('dropdowns/cart.css');
+    @import url('dropdowns/market.css');
+    @import url('dropdowns/cabinet.css');
+
+    /** Dropdown Search */
+        .navbar-click-dropdown-wrapper .navbar-click-dropdown[aria-labelledby="dropdown-search"] {
+            width: 30rem;
+        }
+    /** Dropdown Search */
+
+    /** Dropdown Language */
+        .navbar-click-dropdown-wrapper .navbar-click-dropdown[aria-labelledby*="dropdown-language"] {
+            flex-direction: column;
+            padding: .2rem;
+        }
+
+        .navbar-click-dropdown-wrapper .navbar-click-dropdown[aria-labelledby*="dropdown-language"] img {
+            width: 1.5rem;
+            border: 1px solid rgba(var(--border-color),1);
+        }
+    /** Dropdown Language */
+
+    /** Dropdown Services */
+        .navbar-hover-dropdown[aria-labelledby="service-dropdown"] {
+            left: auto;
+            top: 26px;
+            transform: translateX(-20%);
+            flex-direction: column;
+        }
+
+        .navbar-hover-dropdown .service-dropdown-item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 10px 20px 10px 15px;
+            color: rgba(var(--metrix-secondary-accent),1);
+            border-bottom: 1px solid rgba(var(--metrix-secondary-accent),.25);
+            background: rgba(var(--kompot-pure-white),1);
+            text-decoration: none;
+        }
+
+        .navbar-hover-dropdown .service-dropdown-item p {
+            font-size: .8rem;
+            font-family: var(--BoldSpecial);
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-left: .5rem;
+        }
+
+        .navbar-hover-dropdown .service-dropdown-item span {
+            width: 45px;
+            border-right: 1px solid rgba(var(--metrix-secondary-accent),.25);
+            font-size: 1.75rem;
+        }
+
+        .navbar-hover-dropdown .service-dropdown-item:hover {
+            background: rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+        }
+
+        .navbar-hover-dropdown .service-dropdown-item:hover span {
+            border-right: 1px solid rgba(var(--kompot-pure-white),1);
+        }
+    /** Dropdown Services */
+/** Navbar Dropdowns */

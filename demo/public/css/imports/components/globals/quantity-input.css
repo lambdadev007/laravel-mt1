@@ -1,0 +1,39 @@
+/** Quantity Input */
+    .product-quantity {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .product-quantity input {
+        min-height: 40px;
+        text-align: center;
+        font-size: .9rem;
+        border-left: 1px solid transparent !important;
+        border-right: 1px solid transparent !important;
+        margin: 0;
+    }
+
+    .product-quantity button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        min-height: 40px;
+        height: 100%;
+        padding: 0;
+        font-size: .9rem;
+        border: none;
+        cursor: pointer;
+        border: 1px solid rgba(var(--border-color),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+        background-color: rgba(var(--metrix-light-gray-background),1);
+    }
+
+    .product-quantity button:hover {
+        background: rgba(var(--metrix-secondary-accent),1);
+        border-color: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+    }
+/** Quantity Input */

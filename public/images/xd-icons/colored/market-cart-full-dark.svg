@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.334" height="14.631" viewBox="0 0 15.334 14.631">
+  <g id="Group_218" data-name="Group 218" transform="translate(-754.352 -567)">
+    <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(760 567)" fill="none" stroke="#232f47" stroke-width="1.5">
+      <circle cx="3.5" cy="3.5" r="3.5" stroke="none"/>
+      <circle cx="3.5" cy="3.5" r="2.75" fill="none"/>
+    </g>
+    <path id="Icon_awesome-shopping-cart" data-name="Icon awesome-shopping-cart" d="M14.06,8.022l1.259-5.537A.639.639,0,0,0,14.7,1.7H4.238L3.994.511A.639.639,0,0,0,3.368,0H.639A.639.639,0,0,0,0,.639v.426A.639.639,0,0,0,.639,1.7H2.5l1.87,9.143a1.491,1.491,0,1,0,1.785.228h5.581a1.49,1.49,0,1,0,1.693-.277l.147-.646a.639.639,0,0,0-.623-.781H5.807l-.174-.852h7.8A.639.639,0,0,0,14.06,8.022Z" transform="translate(754.352 568)" fill="#232f47"/>
+  </g>
+</svg>

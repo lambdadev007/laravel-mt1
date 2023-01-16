@@ -1,0 +1,36 @@
+.form-body {
+    background: rgba(var(--metrix-light-gray-accent),1);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-logo {
+    width: 20%;
+    margin: 0 auto 60px auto;
+}
+
+.form-logo img {
+    width: 100%;
+}
+
+.admin-login-form .form-card {
+    border-radius: 0;
+    border: none;
+}
+
+.admin-login-form .form-card form .form-group {
+    padding: 0;
+    margin: 20px 0;
+}
+
+.admin-login-form .form-card form input {
+    border-radius: 0;
+    font-size: .8rem;
+    border-color: rgba(var(--metrix-dark-accent),.5);
+}
+
+.admin-login-form .form-card form input:focus {
+    box-shadow: none;
+    border-color: rgba(var(--metrix-yellow-accent),1);
+}

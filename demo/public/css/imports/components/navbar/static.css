@@ -1,0 +1,70 @@
+/** Static Navbar */
+    .main-top-bar {
+        display: flex;
+        width: 100%;
+        height: 5px;
+        background: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .static-navbar-wrapper {
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 25px;
+    }
+
+    .static-navbar-wrapper .brand-logo-wrapper {
+        display: flex;
+        position: absolute;
+        margin-left: 26px;
+        margin-top: 22px;
+    }
+
+    .static-navbar-wrapper .brand-logo-wrapper .brand-img {
+        width: 200px;
+    }
+
+    .static-navbar-wrapper .static-navbar-right-top {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .static-navbar-wrapper .static-navbar-right-top a {
+        font-size: .65rem;
+        white-space: nowrap;
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .static-navbar-wrapper .static-navbar-right-top .navigation-link {
+        display: flex;
+        align-items: center;
+        padding: 2px 15px;
+        border-right: 1px solid rgba(var(--metrix-secondary-accent),.3);
+    }
+    
+    .static-navbar-wrapper .static-navbar-right-bottom {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 16px;
+    }
+
+    .static-navbar-wrapper .static-navbar-right-bottom .static-navbar-bottom-buttons {
+        font-size: .75rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: var(--BoldSpecial);
+        color: rgba(var(--metrix-secondary-accent),1);
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 5px solid rgba(var(--metrix-secondary-accent),1);
+        padding: 0;
+        margin: 0 16px;
+        padding-bottom: 4px;
+    }
+
+    .static-navbar-bottom-buttons:hover {
+        outline: none;
+        text-decoration: none;
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+/** Static Navbar */

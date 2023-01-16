@@ -1,0 +1,66 @@
+/** Metrix Selector */
+
+    .metrix-selector-wrapper {
+        display: flex;
+        height: 40px;
+        position: relative;
+    }
+
+    .metrix-selector-wrapper select {
+        display: flex;
+        height: 100%;
+        position: relative;
+        font-size: .7rem;
+        color: rgba(var(--metrix-secondary-accent),1);
+        border: 1px solid rgba(var(--border-color),1);
+        outline: none;
+        padding: 0 80px 0 10px;
+        -webkit-appearance: none;
+    }
+
+    .metrix-selector-wrapper select[name="admin_category"] {
+        width: 100%;
+    }
+
+    .metrix-selector-wrapper select::-ms-expand {
+        display: none;
+    }
+
+    .metrix-selector-wrapper select option {
+        font-size: .9rem;
+        font-family: var(--Regular);
+        background: rgba(var(--kompot-pure-white),1);
+    }
+
+    .metrix-selector-wrapper::after {
+        content: "\e90a";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        font-size: .9rem;
+        pointer-events: none;
+        font-family: 'dire-icons';
+        background: rgba(var(--metrix-main-accent),1);
+    }
+
+    .metrix-selector-wrapper:hover::after {
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+    .metrix-selector-wrapper.disabled select {
+        cursor: not-allowed;
+        color: rgba(var(--metrix-secondary-accent),.5);
+    }
+
+    .metrix-selector-wrapper.disabled::after {
+        background: rgba(var(--metrix-secondary-accent),.25);
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+/** Metrix Selector */

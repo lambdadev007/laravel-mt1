@@ -1,0 +1,264 @@
+/** Notifications */
+    .timeframe,
+    .no-notifications {
+        text-align: center;
+        padding: 15px 0;
+        color: rgba(var(--metrix-secondary-accent),1);
+        font-family: var(--Bold);
+    }
+
+    .notification-sorting {
+        text-align-last: center;
+        margin-bottom: 10px;
+        color: rgba(var(--metrix-secondary-accent),1);
+        outline: none;
+        padding: 5px 0;
+    }
+
+    #id-sorting {
+        padding: 15px;
+        font-size: .9rem;
+        margin-bottom: 25px;
+        border: 1px solid rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    /* * Notification Collapse */
+        .notification-collapse-button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 15px;
+            padding: 15px 35px;
+            font-size: 1.3rem;
+            background: transparent;
+            color: rgba(var(--metrix-secondary-accent),1);
+            border: none;
+            border-bottom: 1px solid rgba(var(--metrix-secondary-accent),1);
+            outline: none !important;
+            text-decoration: none !important;
+            cursor: pointer;
+            transition: border .3s;
+        }
+
+        .notification-collapse-button .dire-right-arrow {transition: transform .3s;} 
+
+        .notification-collapse-button[aria-expanded="true"] {
+            border-bottom: 1px solid transparent;
+        }
+
+        .notification-collapse-button:hover .dire-right-arrow {transform: rotate(45deg);}
+        .notification-collapse-button[aria-expanded="true"] .dire-right-arrow {transform: rotate(90deg);}
+
+        .notification-collapse {
+            margin-top: -15px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .notification-collapse .info-row {
+            padding-left: 45px !important;
+            padding-right: 45px !important;
+        }
+
+        .notification-collapse.details .info-row:not(.finish) {
+            padding: 45px !important;
+        }
+
+        .notification-collapse .info-row:last-child {
+            border-bottom: none !important;
+        }
+
+        .notification-collapse .info-row select {
+            width: 100%;
+            text-align-last:center;
+            color: rgba(var(--metrix-secondary-accent),1);
+            border: 1px solid rgba(var(--metrix-secondary-accent),1);
+            outline: none;
+            margin-bottom: 10px;
+            padding: 10px 0;
+            transition: color .3s, background .3s;
+        }
+
+        .notification-collapse .info-row h5 {
+            margin-bottom: 25px;
+        }
+
+        .notification-collapse .info-row .notification-comment {
+            height: 100px;
+            font-size: .9rem;
+            color: rgba(var(--metrix-secondary-accent),1);
+            border: 1px solid rgba(var(--metrix-secondary-accent),1);
+            outline: none;
+        }
+
+        .notification-collapse .info-row .submit-notification {
+            width: 100%;
+            padding: 15px 0;
+            color: rgba(var(--metrix-secondary-accent),1);
+            border: 1px solid rgba(var(--metrix-main-accent),1);
+            background: rgba(var(--metrix-main-accent),1);
+            text-align: center;
+            transition: color .3s;
+        }
+
+        .notification-collapse .info-row .submit-notification:hover {
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+    /* * Notification Collapse */
+
+    .notifications-wrapper {
+        padding-bottom: 20px;
+    }
+
+    .notifications-wrapper .no-notifications {
+        width: 100%;
+        text-align: center;
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .notifications-wrapper .notification-category {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 25px 35px;
+        border-bottom: 1px solid rgba(var(--metrix-secondary-accent),1);
+        font-family: var(--Bold);
+        color: rgba(var(--metrix-secondary-accent),1);
+        text-decoration: none;
+    }
+
+    .notifications-wrapper .notification-category .counter {
+        display: flex;
+        align-items: center;
+    }
+
+    .notifications-wrapper .notification-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 25px 0;
+        border-radius: 3px;
+    }
+
+    .notifications-wrapper .notification-info .info-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 15px 30px;
+        color: rgba(var(--metrix-secondary-accent),1);
+        border-bottom: 1px solid rgba(var(--metrix-secondary-accent),1);
+        font-size: .8rem;
+    }
+
+    .notifications-wrapper .notification-info .info-row.finish {border-bottom: none;}
+    .notifications-wrapper .notification-info .info-row.large {flex-direction: column;}
+
+    .notifications-wrapper .notification-info .info-row .title {
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .notifications-wrapper .notification-info .info-row.finish form {width: 100%;}
+
+    .notifications-wrapper .notification-info .info-row.finish button,
+    .notifications-wrapper .notification-info .info-row.finish a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border: 1px solid rgba(var(--metrix-secondary-accent),1);
+        padding: 30px;
+        background: transparent;
+        font-size: 1rem;
+        font-family: var(--Bold);
+        text-decoration: none;
+        transition: background .3s, color .3s, border .3s;
+    }
+
+    .notifications-wrapper .notification-info .info-row.finish a span {
+        width: 100%;
+        text-align: center;
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .notifications-wrapper .notification-info .info-row.finish button:hover,
+    .notifications-wrapper .notification-info .info-row.finish a:hover {
+        background: rgba(var(--metrix-yellow-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+        border: 1px solid transparent;
+    }
+
+    .notifications-wrapper .info-row.cleaning-images img {
+        margin: auto;
+        object-fit: contain;
+    }
+
+    .identifier {
+        width: 30px;
+        height: 20px;
+        margin-left: 20px;
+        position: relative;
+        transform: skewY(25deg);
+        background: rgba(var(--metrix-dark-blue-accent),1);
+    }
+
+    .identifier.seen {background: rgba(var(--metrix-orange-accent),1);}
+    .identifier.unseen {background: rgba(var(--metrix-yellow-accent),1);}
+    .identifier.finished.successfully {background: rgba(var(--metrix-gray-accent),1);}
+    .identifier.finished.unsuccessfully {background: rgba(var(--metrix-dark-blue-accent),1);}
+
+    .identifier.shalva-unseen::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: rgba(var(--metrix-yellow-accent),1);
+        width: 15px;
+        height: 10px;
+    }
+
+    .notifications-back-button {
+        display: flex;
+        position: fixed;
+        bottom: 20px;
+        /* height: 100%; */
+        justify-content: center;
+        align-items: center;
+        color: rgba(var(--metrix-yellow-accent),1) !important;
+        background: rgba(var(--metrix-secondary-accent),1);
+        text-decoration: none !important;
+        font-family: var(--BoldSpecial);
+        font-weight: bold;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 50px;
+        padding: 5px;
+        padding-left: 0;
+        padding-top: 10px;
+        border-radius: 2px;
+        z-index: 10;
+        transition: background .3s;
+    }
+
+    .notifications-back-button span {
+        font-size: 1.25rem;
+        margin-bottom: 3px;
+        transition: color .3s;
+        border-radius: 3px;
+    }
+
+    .notifications-back-button:hover {
+        background: rgba(var(--metrix-yellow-accent),1);
+    }
+
+    .notifications-back-button:hover span {
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+/** Notifications */

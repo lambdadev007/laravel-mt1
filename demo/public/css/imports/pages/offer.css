@@ -1,0 +1,89 @@
+/** Offer */
+    .offer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .offer-wrapper .offer-left-section {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .offer-wrapper .offer-left-section img {
+        width: 100%;
+    }
+
+    .offer-wrapper .offer-right-section {
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+    }
+
+    .offer-wrapper .offer-right-section h2 {
+        font-family: var(--BoldSpecial);
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgba(var(--kompot-pure-white),1);
+        background-color: rgba(var(--metrix-secondary-accent),1);
+        padding: 10px 12px 6px 12px;
+        text-align: center;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    .offer-wrapper .offer-right-section .offer-validity {
+        display: table;
+        font-family: var(--Bold);
+        padding: 5px 15px;
+        font-size: .8rem;
+        color: rgba(var(--metrix-secondary-accent),1);
+        background-color: rgba(var(--metrix-main-accent),1);
+    }
+
+    .offer-wrapper .offer-right-section .offer-description {
+        margin-top: 20px;
+    }
+
+    .offer-wrapper .offer-right-section .offer-description h4 {
+        font-family: var(--Bold);
+        font-size: .8rem;
+    }
+
+    .offer-wrapper .offer-right-section .offer-description p {
+        font-size: .8rem;
+    }
+    /** Admin */
+        .admin-content-wrapper .offer-wrapper .offer-left-section .offer-image {
+            width: 100%;
+        }
+
+        .admin-content-wrapper .offer-wrapper .offer-right-section h2 input {
+            font-family: var(--BoldSpecial);
+            font-size: 1rem !important;
+            font-weight: bold;
+            color: rgba(var(--kompot-pure-white),1);
+            background-color: rgba(var(--metrix-secondary-accent),1);
+            padding: 10px 12px 6px 12px;
+            text-align: center;
+        }
+
+        .admin-content-wrapper .offer-wrapper .offer-right-section .offer-validity {
+            display: flex;
+            width: auto;
+            align-items: center;
+        }
+
+        .admin-content-wrapper .offer-wrapper .offer-right-section .offer-validity input {
+            box-shadow: none;
+            justify-content: center;
+            font-family: var(--Bold);
+            padding: 5px 15px;
+            font-size: .8rem;
+            border: none;
+            color: rgba(var(--metrix-secondary-accent),1);
+            background-color: rgba(var(--metrix-main-accent),1);
+        }
+    /** Admin */
+/** Offer */

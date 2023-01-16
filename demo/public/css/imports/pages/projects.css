@@ -1,0 +1,236 @@
+/** Projects */
+    .category-selector-wrapper .category-selector.project-category-selector a.active {
+        background: rgba(var(--project-category-background),1);
+    }
+
+    .projects-wrapper {
+       display: grid;
+       grid-template-columns: repeat(auto-fill, 320px);
+       justify-content: space-between;
+       margin-top: 30px;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+        text-decoration: none;
+    }
+
+    .project-card .project-card-image-wrapper {
+        height: 240px;
+        overflow: hidden;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .project-card .project-card-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+        font-family: var(--Bold);
+        font-size: .75rem;
+    }
+
+    .project-card .project-card-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        color: rgba(var(--kompot-dark-gray),1);
+        font-size: .65rem;
+        padding: 5px;
+    }
+/** Projects */
+
+/** Project */
+    .project-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .project-wrapper .project-left-section {
+        width: 55%;
+    }
+
+    .carousel-indicators {
+        padding: 10px 0;
+        background: rgba(var(--metrix-secondary-accent),1);
+        border-radius: 3px;
+    }
+
+    .project-wrapper .project-left-section #projects-carousel .carousel-indicators li {
+        background: rgba(var(--metrix-orange-accent),1);
+        width: 14px;
+        height: 14px;
+        border-radius: 30px;
+    }
+
+    .project-wrapper .project-left-section #projects-carousel .carousel-indicators li.active {
+        background: rgba(var(--metrix-yellow-accent),1);
+    }
+
+    .project-wrapper .project-left-section .carousel-inner {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-wrapper .project-left-section .carousel-inner > .carousel-item > img,
+    .project-wrapper .project-left-section .carousel-inner > .carousel-item > a > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-wrapper .project-right-section {
+        width: 40%;
+    }
+
+    .project-wrapper .project-right-section h2 {
+        font-family: var(--BoldSpecial);
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgba(var(--kompot-pure-white),1);
+        background-color: rgba(var(--metrix-secondary-accent),1);
+        padding: 10px 12px 6px 12px;
+        text-align: center;
+    }
+
+    .project-wrapper .project-right-section .project-data-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(var(--border-color),1);
+    }
+
+    .project-wrapper .project-right-section .project-data-uncolored {
+        display: flex;
+        align-items: center;
+        font-family: var(--Bold);
+        font-size: .7rem;
+    }
+
+    .project-wrapper .project-right-section .project-data-uncolored span[class*='dire'] {
+        color: rgba(var(--metrix-secondary-accent),1);
+        font-size: .8rem;
+        margin-right: 10px;
+    }
+
+    .project-wrapper .project-right-section .project-data-colored {
+        display: flex;
+        align-items: center;
+        font-family: var(--Bold);
+        color: rgba(var(--metrix-secondary-accent),1);
+        font-size: .8rem;
+    }
+
+    .project-wrapper .project-right-section .project-price-wrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .project-wrapper .project-right-section .project-price-wrapper span,
+    .project-wrapper .project-right-section .project-materials-wrapper span {
+        font-family: var(--Bold);
+        font-size: .75rem;
+    }
+
+    .project-wrapper .project-right-section .project-materials-wrapper {
+        margin-top: 20px;
+        font-size: .7rem;
+    }
+
+    .project-wrapper .project-right-section .project-materials-wrapper span {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    .project-wrapper .project-right-section .project-price-wrapper div {
+        display: flex;
+        align-items: center;
+    }
+
+    .project-wrapper .project-right-section .project-price-wrapper div span {
+        margin-left: 5px;
+        color: rgba(var(--metrix-secondary-accent),1);
+        font-size: 1rem;
+    }
+
+    .project-wrapper .project-right-section .project-price-wrapper .project-data-wrapper {
+        padding: 5px 0;
+    }
+
+    .project-wrapper .project-right-section .project-price-wrapper .project-data-wrapper .project-data-colored {
+        font-size: .7rem;
+    }
+
+    .project-wrapper .project-right-section .project-price-wrapper .project-data-wrapper .project-data-colored .dire-lari {
+        margin-left: 5px;
+        color: rgba(var(--metrix-secondary-accent),.75);
+    }
+
+    /** Admin Panel */
+        .admin-content-wrapper .project-card .project-card-image-wrapper label {height: 100%;}
+
+        .admin-content-wrapper .project-wrapper .project-right-section {width: 100%;}
+
+        .admin-content-wrapper .project-wrapper .project-right-section h2 {width: 100%;}
+
+        .admin-content-wrapper .project-wrapper .project-right-section h2 input {
+            display: table;
+            font-family: var(--BoldSpecial);
+            font-size: 1rem !important;
+            font-weight: bold;
+            border: none;
+            color: rgba(var(--metrix-secondary-accent),1);
+            background-color: rgba(var(--metrix-main-accent),1);
+            padding: 10px 12px 6px 12px;
+            text-align: center !important;
+        }
+
+        .admin-content-wrapper .project-wrapper .project-right-section .project-data-colored input,
+        .project-wrapper .project-right-section .project-price-wrapper input {
+            display: flex;
+            width: 300px;
+            font-family: var(--Bold);
+            font-size: .7rem !important;
+            text-align: right !important;
+        }
+
+        .admin-content-wrapper .project-wrapper .project-right-section .project-data-colored .datepicker-location {
+            margin: 0 5px;
+        }
+
+        .admin-content-wrapper .project-wrapper label[for*="project-"] span {
+            padding: 5px 10px;
+            background: var(--warning);
+            color: rgba(var(--kompot-pure-white),1);
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .admin-content-wrapper .project-wrapper label[for*="project-"] span.active {
+            background: var(--danger);
+            color: rgba(var(--kompot-pure-white),1);
+        }
+
+        .admin-content-wrapper .project-wrapper label[for*="project-"] input[type="checkbox"] {
+            display: none;
+        }
+    /** Admin Panel */
+/** Project */

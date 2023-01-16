@@ -1,0 +1,59 @@
+/** Category Selector */
+    .category-selector-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+
+    .category-selector-wrapper .category-selector {
+        display: flex;
+    }
+
+    .project-sub-category-selector a:not(.split-button):not(.about-navigation-item):not([tabindex]),
+    .project-sub-category-selector button:not(.split-button),
+    .category-selector-wrapper a:not(.split-button):not(.about-navigation-item):not([tabindex]),
+    .category-selector-wrapper button:not(.split-button) {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: var(--BoldSpecial);
+        font-weight: bold;
+        font-size: .75rem;
+        color: rgba(var(--kompot-dark-gray),1);
+        padding: 0 20px;
+        padding-top: 5px;
+        border: none;
+        border-right: 1px solid rgba(var(--border-color),1);
+        outline: none;
+        border-radius: 0;
+        text-decoration: none;
+        background: none;
+    }
+
+    .project-sub-category-selector a.active,
+    .project-sub-category-selector button.active {
+        color: rgba(var(--kompot-pure-white),1) !important;
+        background: rgba(var(--metrix-main-accent),1) !important;
+    }
+
+    .category-selector-wrapper .category-selector a.active,
+    .category-selector-wrapper .category-selector button.active {
+        color: rgba(var(--kompot-pure-white),1) !important;
+        background-color: rgba(var(--metrix-secondary-accent),1) !important;
+    }
+
+    .project-sub-category-selector a:not(.split-button):not(.about-navigation-item):hover,
+    .project-sub-category-selector button:not(.split-button):hover,
+    .category-selector-wrapper a:not(.split-button):not(.about-navigation-item):hover,
+    .category-selector-wrapper button:not(.split-button):hover {
+        background: rgba(var(--metrix-main-accent),1) !important;
+    }
+
+    /** Project Sub Category */
+        .project-sub-category-selector {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    /** Project Sub Category */
+/** Category Selector */

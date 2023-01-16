@@ -1,0 +1,120 @@
+/** Info Box */
+    .info-box-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .info-box-wrapper .info-box-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+        font-size: .65rem;
+        padding: 10px;
+        font-family: var(--Bold);
+    }
+
+    .info-box-wrapper .info-box-top.repairs {
+        justify-content: flex-start;
+    }
+
+    .info-box-wrapper .info-box-top.repairs span {padding: 0 5px;}
+
+    .info-box-wrapper .info-box-top.repairs span:nth-child(1) {width: 30%;}
+    .info-box-wrapper .info-box-top.repairs span:nth-child(2) {width: 50%;}
+    .info-box-wrapper .info-box-top.repairs span:nth-child(3) {
+        width: 20%;
+        text-align: end;
+    }
+
+    .info-box-wrapper .info-box-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-box-wrapper .info-box-body .info-box {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid rgba(var(--border-color),1);
+        border-top: none;
+    }
+
+    .info-box-wrapper .info-box-body .info-box .info-box-checker {
+        display: flex;
+        align-items: center;
+    }
+
+    .info-box-wrapper .info-box-body .info-box .info-box-checker label {
+        font-size: .7rem;
+        margin-bottom: 0;
+        margin-left: 10px;
+    }
+
+    .info-box-wrapper .info-box-body .info-box-bold {
+        display: flex;
+        align-items: center;
+        width: 30%;
+        font-family: var(--Bold);
+        font-size: .75rem;
+    }
+
+    .info-box-wrapper .info-box-body .info-box-text {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        font-size: .65rem;
+    }
+
+    .info-box-wrapper .info-box-body .info-box-text p {
+        margin-bottom: 0;
+    }
+
+    .info-box-wrapper .info-box-body .info-box-price {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 20%;
+        font-family: var(--Bold);
+        font-size: .8rem;
+    }
+
+    .info-box-wrapper .info-box-body .info-box-price .dire-lari {
+        color: rgba(var(--kompot-dark-gray),.5);
+    }
+    
+    /** Admin*/
+        .admin-content-wrapper .info-box-wrapper .info-box-body .info-box .remove-this-info-box {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            padding: 0;
+            font-size: .8rem;
+            background: var(--warning);
+            color: rgba(var(--kompot-dark-gray),1);
+            box-shadow: -1px 1px 0 2px rgba(var(--kompot-pure-white),1);
+            border: none;
+            transition: color .3s, background .3s;
+        }
+
+        .admin-content-wrapper .info-box-wrapper .info-box-body .info-box .remove-this-info-box:hover {
+            background: var(--danger);
+            color: rgba(var(--kompot-pure-white),1);
+        }
+
+        .admin-content-wrapper .info-box-wrapper .info-box-body .info-box-price {
+            margin-right: 20px;
+        }
+    /** Admin*/
+/** Info Box */

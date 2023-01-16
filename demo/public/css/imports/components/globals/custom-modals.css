@@ -1,0 +1,36 @@
+/** Custom Modals */
+    .modal-dialog .modal-content {
+        border-radius: 0;
+    }
+
+    .modal-dialog .modal-content .modal-header {
+        border-radius: 0;
+        padding: .5rem .75rem;
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+        display: flex;
+        align-items: center;
+    }
+
+    .modal-dialog .modal-content .modal-body {
+        padding: 1rem 1.5rem;
+    }
+
+    .modal-dialog .modal-content .modal-header .modal-title {
+        font-size: .75rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: var(--BoldSpecial);
+    }
+    .modal-dialog .modal-content .modal-header button {
+        font-size: 1.3rem;
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+    .modal-dialog .modal-content .modal-body .modal-body-header {
+        display: flex;
+        justify-content: space-between;
+        padding: .2rem;
+        border-bottom: 1px solid rgba(var(--border-color),1);
+    }
+/** Custom Modals */

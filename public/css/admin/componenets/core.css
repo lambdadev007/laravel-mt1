@@ -1,0 +1,166 @@
+.admin-wrapper,
+.admin-wrapper .admin-content-wrapper {
+    width: 100%;
+}
+
+.admin-wrapper *[contenteditable="true"] {
+    border: 1px solid rgba(var(--metrix-dark-gray-accent));
+    background-color: rgba(var(--metrix-dark-accent),.1);
+}
+
+.admin-wrapper .universal-button {background: rgb(var(--k-white));}
+
+.admin-wrapper .universal-button:hover {
+    background: rgb(var(--metrix-yellow-accent));
+    color: rgb(var(--k-white)) !important;
+}
+
+.admin-wrapper .universal-button:disabled {
+    border-color: rgb(var(--metrix-dark-gray-accent));
+    color: rgb(var(--metrix-dark-gray-accent)) !important;
+    background-color: transparent !important;
+    cursor: not-allowed;
+}
+
+.admin-wrapper #countdown {
+    font-family: var(--MyriadBold);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-reader-wrapper {
+    position: relative;
+    margin: 0;
+}
+
+.image-reader-wrapper .dire-edit {
+    position: absolute;
+    color: rgb(var(--metrix-yellow-accent));
+    left: 50%;
+    top: 50%;
+    background: rgba(var(--metrix-dark-accent),.6);
+    transform: translate(-50%) scale(0);
+    transition: transform .3s;
+}
+
+.image-reader-wrapper:hover .dire-edit {transform: translate(-50%) scale(8);}
+
+.remove-this-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 20px;
+    color: var(--danger) !important;
+    background: rgb(var(--k-white)) !important;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.remove-this-item:hover {
+    background: var(--danger) !important;
+    color: rgb(var(--k-white)) !important;
+}
+
+.form-control.slug-in-use {
+    border-color: var(--danger);
+    box-shadow: 0 0 0 4px rgba(255,0,0,.25);
+}
+
+.custom-select option {color: var(--success);}
+.custom-select option:disabled {color: var(--danger);}
+
+#cke_1_contents {
+    min-height: 1200px;
+}
+
+.w-375 {width: 375px;}
+.homepage-slider-wrapper.w-375 {height: 200px;}
+.homepage-slider-wrapper.w-375 img {height: 200px;}
+label.w-375 {height: 200px;}
+label.w-375 img {width: 100%; height: 100%;}
+
+.partner-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partner-images label,
+.partner-images img {
+    width: 285px !important;
+    height: 185px;
+}
+
+/* * Old Stuff */
+    .admin-wrapper.panel-body {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+    
+    .admin-wrapper .admin-content-wrapper {
+        width: 100%;
+        margin-top: 100px;
+        margin-left: auto;
+        padding: 20px 50px;
+        transition: width .3s;
+    }
+
+    .action-modal-caller button:disabled {
+        background: rgba(var(--metrix-dark-gray-accent),.25) !important;
+        border: 1px solid rgba(var(--metrix-dark-gray-accent),.25) !important;
+        color: rgba(var(--metrix-dark-accent),1) !important;
+    }
+
+    .check-for-action-label {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-family: var(--MyriadBold);
+        background: var(--warning);
+        color: rgba(var(--metrix-secondary-accent),1);
+        z-index: 15;
+    }
+
+    .check-for-action-label.active {
+        background: var(--danger);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .delete-status {
+        position: absolute;
+        right: 0;
+        top: 30px;
+        padding: 5px 10px;
+        font-size: 14px;
+        font-family: var(--MyriadBold);
+        background: var(--info);
+        color: rgba(var(--kompot-pure-white),1);
+        box-shadow: 0px 0px 0 4px rgba(var(--kompot-pure-white),1);
+        z-index: 15;
+    }
+
+    .delete-status.true {
+        background: var(--danger);
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    @media(min-width: 1200px) {
+        .container-fluid {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+    @media(max-width: 768px) {
+        .admin-wrapper .admin-content-wrapper {
+            margin-top: -60px;
+            padding: 0;
+        }
+    }
+/* * Old Stuff */

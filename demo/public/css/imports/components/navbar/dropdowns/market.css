@@ -1,0 +1,113 @@
+/** Dropdown Market */
+    .navbar-hover-dropdown[aria-labelledby="market-dropdown"] {
+        left: 0;
+        top: 26px;
+        width: 100%;
+        background: rgba(var(--kompot-pure-white),1);
+    }
+
+    .dropdown-market-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .dropdown-market-wrapper .categories {
+        width: 20%;
+    }
+
+    .dropdown-market-wrapper .categories ul {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .dropdown-market-wrapper .categories ul li {
+        list-style: none;
+        padding: .6rem 0 .6rem 1rem;
+        white-space: nowrap;
+        font-size: .7rem;
+        letter-spacing: 1px;
+        font-family: var(--BoldSpecial);
+        font-weight: bold;
+        border-bottom: 1px solid rgba(var(--border-color),1);
+        border-right: 1px solid rgba(var(--border-color),1);
+        background-color: rgba(var(--market-dropdown-active-bg),1);
+    }
+
+    .dropdown-market-wrapper .categories ul li.active {
+        background-color: rgba(var(--kompot-pure-white),1);
+        border-right: none;
+    }
+
+    .dropdown-market-wrapper .sub-categories {
+        width: 80%;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] {
+        display: none;
+        width: 100%;
+        justify-content: space-between;
+        padding: .75rem 1rem .25rem 1rem;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby].active {
+        display: flex;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category {
+        display: flex;
+        flex-direction: column;
+        width: 12%;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category .sub-category-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 2rem;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-size: .7rem;
+        font-family:var(--BoldSpecial);
+        font-weight: bold;
+        color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category .sub-category-image {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category ul {
+        border-top: 3px solid rgba(var(--metrix-main-accent),1);
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category ul li {
+        list-style: none;
+        margin-top: .2rem;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category ul li a {
+        display: table;
+        color: rgba(var(--metrix-secondary-accent),1);
+        text-decoration: none;
+        letter-spacing: .5px;
+        font-weight: bold;
+        padding: .3rem .5rem;
+        font-size: .65rem;
+        font-family: var(--BoldSpecial);
+        transition: padding .3s, background .3s;
+    }
+
+    .dropdown-market-wrapper .sub-categories ul li[aria-labelledby] .sub-category ul li a:hover {
+        background: rgba(var(--metrix-main-accent),1);
+    }
+/** Dropdown Market */

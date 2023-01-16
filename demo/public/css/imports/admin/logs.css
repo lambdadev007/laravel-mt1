@@ -1,0 +1,41 @@
+/** Logs */
+    .logs-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logs-wrapper .calendar-search input {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .logs-wrapper .logs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logs-wrapper .logs .log {
+        display: flex;
+        border: 1px solid;
+        border-color: rgba(var(--metrix-secondary-accent),1) !important;
+        border-top: none;
+        padding: 20px;
+        justify-content: space-between;
+    }
+
+    html body .logs-wrapper .log.border-top {
+        display: flex !important;
+    }
+
+    .logs-wrapper .logs .log span {
+        width: 50%;
+    }
+
+    .logs-wrapper .logs .log span.initiator {text-align: left;}
+    .logs-wrapper .logs .log span.action {
+        text-align: center;
+        border-right: 1px solid rgba(var(--metrix-secondary-accent),1);
+        border-left: 1px solid rgba(var(--metrix-secondary-accent),1);
+    }
+    .logs-wrapper .logs .log span.date {text-align: right;}
+/** Logs */

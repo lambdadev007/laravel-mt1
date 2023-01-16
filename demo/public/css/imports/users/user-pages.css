@@ -1,0 +1,216 @@
+/** User Profile */
+    .user-profile-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .user-profile-wrapper .form-field {
+        width: 72.5%;
+    }
+
+    .user-profile-wrapper .sidebar-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-profile-wrapper .sidebar-wrapper {
+        width: 22.5%;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 110px;
+        height: 100%;
+        border: 1px solid rgba(var(--border-color),1);
+    }
+
+    .user-profile-wrapper .sidebar-wrapper a {
+        font-family: var(--Bold);
+        color: rgba(var(--metrix-secondary-accent),1);
+        border-bottom: 1px solid rgba(var(--border-color),1);
+        font-size: .75rem;
+        text-align: center;
+        padding: 20px 0;
+        text-decoration: none;
+    }
+
+    .user-profile-wrapper .sidebar-wrapper a:hover {
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+    }
+
+    .user-profile-wrapper .sidebar-wrapper a:last-child {
+        border-bottom: none;
+    }
+/** User Profile */
+
+/** User History */
+    .user-history-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .user-history-wrapper .purchase-list {
+        display: flex;
+        flex-direction: column;
+        width: 73%;
+    }
+
+    .user-history-wrapper .purchase-list .purchase {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .user-history-wrapper .purchase-list .purchase.show .bottom {
+        display: flex;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+        font-family: var(--Bold);
+        font-size: .7rem;
+        padding: 10px;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .top span[class*="dire"] {
+        font-size: .9rem;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom {
+        display: none;
+        flex-direction: column;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid rgba(var(--border-color),1);
+        border-top: none;
+        padding: 15px;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item.important {
+        background: rgba(var(--metrix-light-gray-background),1);
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item span {
+        font-size: .7rem;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item span.right {
+        font-family: var(--Bold);
+        font-size: .8rem;
+    }
+    
+    .user-history-wrapper .purchase-list .purchase .bottom .item.segmented > span {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item.segmented > span b {
+        font-size: .8rem;
+        font-family: var(--Bold);
+        margin-right: 3px;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item.segmented .product {
+        width: 50%;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item.segmented .amount {
+        width: 20%;
+        justify-content: center;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item.segmented .price {
+        width: 20%;
+        justify-content: center;
+    }
+
+    .user-history-wrapper .purchase-list .purchase .bottom .item.segmented .sum {
+        width: 10%;
+        justify-content: flex-end;
+    }
+
+    .user-history-wrapper .statistics {
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 110px;
+        height: 100%;
+        width: 26%;
+    }
+
+    .user-history-wrapper .statistics .top {
+        background: rgba(var(--metrix-secondary-accent),1);
+        color: rgba(var(--kompot-pure-white),1);
+        font-family: var(--Bold);
+        font-size: .7rem;
+        padding: 10px;
+    }
+
+    .user-history-wrapper .statistics .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .user-history-wrapper .statistics .bottom div {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        background: rgba(var(--metrix-light-gray-background),1);
+        border: 1px solid rgba(var(--border-color),1);
+        border-top: none;
+    }
+
+    .user-history-wrapper .statistics .bottom div span {
+        font-size: 0.75rem;
+    }
+
+    .user-history-wrapper .statistics .bottom div span.right {
+        font-family: var(--Bold);
+    }
+
+    .user-history-wrapper .statistics .bottom div span.right .dire-lari,
+    .user-history-wrapper .purchase-list .purchase .bottom div span.right .dire-lari {
+        color: rgba(var(--metrix-secondary-accent),.5);
+    }
+/** User History */
+
+/** User Wishlist */
+    .user-wishlist-wrapper {
+        display: flex;
+    }
+
+    .user-wishlist-wrapper .our-production-wrapper .our-production .content {
+        width: 100%;
+    }
+
+    .user-wishlist-wrapper .our-production-wrapper .our-production .content .content-segment .our-product .product-info {
+        position: relative;
+    }
+
+    .user-wishlist-wrapper .our-production-wrapper .our-production .content .content-segment .our-product .product-info .remove-product {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 0;
+        right: 0;
+        background: rgba(var(--metrix-main-accent),1);
+        color: rgba(var(--metrix-secondary-accent),1);
+        border: none;
+        outline: none;
+        padding: 0;
+    }
+
+    .user-wishlist-wrapper .our-production-wrapper .our-production .content .content-segment .our-product .product-info .remove-product span {
+        font-size: .8rem;
+    }
+/** User Wishlist */

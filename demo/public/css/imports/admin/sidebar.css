@@ -1,0 +1,152 @@
+/** Sidebar */
+    ul.admin-panel-sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 100px;
+        width: 0;
+        min-width: 0;
+        height: calc(100vh - 100px);
+        padding: 0;
+        overflow: auto;
+        background: rgba(var(--admin-dark-accent),1);
+        z-index: 1000;
+        transition: width .3s, min-width .3s;
+    }
+
+    ul.admin-panel-sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .admin-panel-sidebar.active {
+        width: 25%;
+        min-width: 300px;
+    }
+
+    .admin-panel-sidebar.active ~ .admin-content-wrapper {
+        width: 75%;
+    }
+
+    ul.admin-panel-sidebar .admin-panel-sidebar-header {
+        font-family: var(--Bold);
+        font-size: .9rem;
+        color: rgba(var(--kompot-pure-white),1);
+        padding: 10px 20px 10px 20px;
+    }
+
+    ul.admin-panel-sidebar li.category {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul.admin-panel-sidebar li.category .category-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        background: none;
+        border: none;
+        outline: none;
+        font-size: .8rem;
+        color: rgba(var(--kompot-pure-white),1);
+        border-left: 3px solid rgba(var(--sidebar-active-color),0);
+        box-shadow: inset 0 -2px 0 1px rgba(var(--sidebar-active-category),.25);
+        border-radius: 0;
+        transition: border .3s, background .3s;
+    }
+
+    ul.admin-panel-sidebar li.category .category-button:hover {
+        background: rgba(var(--sidebar-active-category),.5);
+        border-left: 3px solid rgba(var(--sidebar-active-color),.5);
+        box-shadow: inset 0 -2px 0 1px rgba(var(--sidebar-active-category),.25);
+    }
+
+    ul.admin-panel-sidebar li.category .category-button[aria-expanded="true"] {
+        background: rgba(var(--sidebar-active-category),1);
+        border-left: 3px solid rgba(var(--sidebar-active-color),1);
+        box-shadow: inset 0 -2px 0 1px rgba(var(--sidebar-active-category),1);
+    }
+
+    ul.admin-panel-sidebar li.category .category-button span {
+        display: flex;
+        align-items: center;
+    }
+
+    ul.admin-panel-sidebar li.category .category-button span span[class*="dire"] {
+        font-size: 1.1rem;
+        margin-right: 10px;
+    }
+
+    ul.admin-panel-sidebar li.category .category-button .dire-right-arrow {
+        font-size: .6rem;
+        transition: transform .3s;
+    }
+
+    ul.admin-panel-sidebar li.category .category-button:hover .dire-right-arrow {
+        transform: rotate(45deg);
+    }
+
+    ul.admin-panel-sidebar li.category .category-button[aria-expanded="true"] .dire-right-arrow {
+        transform: rotate(90deg);
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul  {
+        padding: 0;
+        margin-bottom: 0;
+        border-left: 3px solid rgba(var(--sidebar-active-color),1);
+        background-color: rgba(var(--sidebar-active-sub-category),1);
+        transition: border .3s;
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul li {
+        list-style: none;
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul li .sub-category-button {
+        font-size: .7rem;
+        padding: 15px 20px 15px 30px;
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul li .sub-category-action {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 10px 20px 10px 40px;
+        font-size: .7rem;
+        color: rgba(var(--kompot-pure-white),.75);
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul li .sub-category-action .dire-right-arrow {
+        margin-right: 10px;
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul li .sub-category-action:hover {
+        color: rgba(var(--sidebar-active-color),.75);
+    }
+
+    .admin-content-darkener {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: scale(0);
+        background: rgba(var(--kompot-dark-gray),0);
+        z-index: 500;
+    }
+    
+    ul.admin-panel-sidebar li.category div[data-parent] ul li div[data-parent] ul li:first-child {
+        padding-top: 10px;
+    }
+
+    ul.admin-panel-sidebar li.category div[data-parent] ul li div[data-parent] ul li:last-child {
+        padding-bottom: 10px;
+    }
+/** Sidebar */

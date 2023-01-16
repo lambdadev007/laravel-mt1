@@ -1,0 +1,53 @@
+.article-cards.smaller {
+    grid-template-columns: repeat(auto-fill, 300px);
+}
+
+.article-cards.admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-cards.admin .article-card {
+    width: 308px;
+    margin-bottom: 60px;
+}
+
+.category-buttons.admin {
+    flex-direction: row;
+}
+
+.category-buttons.admin a {
+    width: 100%;
+    height: 140px;
+    position: relative;
+}
+
+.category-buttons.admin a:hover {
+    background-color: initial);
+    color: initial;
+}
+
+.category-buttons.admin a input {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.category-buttons.admin a:hover .icon#couch{background: no-repeat center url('../../../images/xd-icons/colored/couch.svg');background-size: 40px 23px;}
+.category-buttons.admin a:hover .icon#wrench{background: no-repeat center url('../../../images/xd-icons/colored/wrench.svg');background-size: contain;}
+.category-buttons.admin a:hover .icon#paint-brush{background: no-repeat center url('../../../images/xd-icons/colored/paint-brush.svg');background-size: contain;}
+.category-buttons.admin a:hover .icon#paint-roller{background: no-repeat center url('../../../images/xd-icons/colored/paint-roller.svg');background-size: contain;}
+
+.article-wrapper.admin,
+.article-wrapper.admin .article {
+    margin: auto;
+}
+
+.article-wrapper.admin .admin-action {
+    margin-bottom: 10px;
+}
+

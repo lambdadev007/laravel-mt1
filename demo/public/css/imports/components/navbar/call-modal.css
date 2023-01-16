@@ -1,0 +1,145 @@
+/** Call Modal */
+    #phone-call-modal .modal-body {
+        padding: 0;
+    }
+
+    #phone-call-modal .modal-body .modal-body-header {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 4px solid rgba(var(--metrix-main-accent),1);
+        padding: 0 20px;
+    }
+
+    #phone-call-modal .modal-body .modal-body-header .number-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px dotted rgba(var(--metrix-secondary-accent),.2);
+        padding: 15px 2px;
+        font-size: .75rem;
+    }
+
+    #phone-call-modal .modal-body .modal-body-header .number-row:last-child {
+        border-bottom: none;
+    }
+
+    #phone-call-modal .modal-body .modal-body-header .number-row .number-row-number.bold {
+        font-family: var(--Bold);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .call-inputs-text-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        background: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .call-inputs-text-wrapper .call-inputs-text {
+        font-family: var(--Bold);
+        color: rgba(var(--kompot-pure-white),1);
+        font-size: .8rem;
+        width: 40%;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .call-inputs-text-wrapper .call-inputs {
+        width: 55%;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .call-inputs-text-wrapper .call-input input {
+        font-size: .65rem;
+        padding: 10px 15px;
+        margin: 10px 0;
+        border: 1px solid rgba(188,188,188,1);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper .radio-wrapper {
+        display: flex;
+        flex: 30%;
+        align-items: center;
+        margin: 10px 0;
+        padding: 0 5px;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper .radio-wrapper p {
+        font-size: .75rem;
+        margin: 0;
+        margin-left: 10px;
+        font-family: var(--Bold);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper .radio-wrapper input {
+        display: none; /* Hidden */
+        position: relative;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper .radio-wrapper .custom-checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        border: 1px solid rgba(188,188,188,1);
+        border-radius: 50%;
+        position: relative;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper .radio-wrapper .custom-checkbox span {
+        background: rgba(var(--metrix-main-accent),1);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: transform .3s;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .radios-wrapper .radio-wrapper input:checked + .custom-checkbox span {
+        transform: scale(1);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .submition {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .submition .left {
+        display: flex;
+        width: 40%;
+        border: 1px solid rgba(188,188,188,1);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .submition .left button {
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        border-right: 1px solid rgba(188,188,188,1);
+        background: transparent;
+        outline: none;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .submition .left button:active {
+        box-shadow: inset 0 0 0 2px rgba(var(--metrix-secondary-accent),.2);
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .submition .left input {
+        border: none;
+        font-size: .7rem;
+    }
+
+    #phone-call-modal .modal-body .modal-body-content .submition .split-button {
+        width: 50%;
+    }
+/** Call Modal */

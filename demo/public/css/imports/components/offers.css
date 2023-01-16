@@ -1,0 +1,72 @@
+/** Offers */
+    .special-offers-wrapper {
+        display: grid;
+        margin-top: 20px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, 31.5%);
+        justify-content: space-between;
+    }
+
+    .special-offers-wrapper .offer-card-wrapper {
+        border: 1px solid rgba(var(--border-color),1);
+        padding: 0;
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .special-offers-wrapper .offer-card-wrapper.active {
+        border: 1px solid rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .special-offers-wrapper .offer-card-wrapper .offer-banner-container {  
+        height: 155px;
+        overflow: hidden;
+    }
+
+    .special-offers-wrapper .offer-card-wrapper .offer-banner-container img {
+        width: 100%;
+    }
+
+    .special-offers-wrapper .offer-card-wrapper span.offer-validity {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: .65rem;
+        font-family: var(--Bold);
+        padding: 5px 10px;
+        background-color: rgba(var(--metrix-main-accent),1);
+    }
+
+    .special-offers-wrapper .offer-card-wrapper .offer-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 75px;
+        padding: 0 18px;
+        background-color: rgba(var(--metrix-secondary-accent),1);
+    }
+
+    .special-offers-wrapper .offer-card-wrapper .offer-footer a:not(.metrix-button) {
+        width: 80%;
+        font-family: var(--Bold);
+        font-size: .7rem;
+        color: rgba(var(--kompot-pure-white),1);
+        text-decoration: none;
+    }
+
+    /** Hovered */
+        .special-offers-wrapper .offer-card-wrapper.hovered {
+            border-color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .special-offers-wrapper .offer-card-wrapper.hovered .offer-footer {
+            background-color: rgba(var(--kompot-pure-white),1);
+        }
+
+        .special-offers-wrapper .offer-card-wrapper.hovered .offer-footer a:not(.metrix-button) {
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+    /** Hovered */
+/** Offers */

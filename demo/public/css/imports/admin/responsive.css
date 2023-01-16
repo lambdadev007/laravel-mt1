@@ -1,0 +1,211 @@
+/** Responsive */
+    /** Content */
+        @media(max-width: 1250px) {
+            .admin-content-wrapper .create-form .multi-section {
+                flex-direction: column;
+            }
+
+            .admin-content-wrapper .create-form .multi-section .multi-section-2, .admin-content-wrapper .create-form .multi-section .multi-section-3 {
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .admin-content-wrapper {
+                padding: 20px;
+            }
+            
+            .admin-content-wrapper .page-title-wrapper {
+                margin: 10px 0;
+            }
+        }
+    /** Content */
+
+    /** Globals */
+        @media( max-width: 1250px) {
+            .action-and-sort-wrapper {
+                flex-direction: column;
+            }
+
+            .action-and-sort-wrapper .admin-sort-wrapper {
+                width: 100%;
+            }
+
+            .action-and-sort-wrapper .admin-sort-wrapper .metrix-selector-wrapper,
+            .action-and-sort-wrapper .admin-sort-wrapper .metrix-selector-wrapper select {
+                width: 100%;
+            }
+
+            .action-and-sort-wrapper .action-modal-caller {
+                margin-bottom: 15px;
+            }
+
+            .action-and-sort-wrapper .action-modal-caller button,
+            .action-and-sort-wrapper .action-modal-caller button .modal-caller-text {
+                width: 100%;
+            }
+        }
+
+        @media( max-width: 992px ) {
+            .remove-on-mobile {
+                display: none;
+            }
+        }
+    /** Globals */
+
+    /** Navbar */
+        @media(max-width: 1250px) {
+
+            .admin-panel-navbar {
+                height: 80px;
+            }
+
+            .admin-nav-toggle-right-section,
+            .admin-nav-toggle-right-section:hover,
+            .admin-nav-toggle-right-section:focus {
+                color: rgba(var(--kompot-pure-white),1);
+            }
+
+            .admin-panel-navbar .left-section {
+                width: 15%;
+                min-width: 75px;
+            }
+
+            .admin-panel-navbar .left-section a {
+                display: none;
+            }
+
+            .admin-panel-navbar .right-section {
+                width: 85%;
+                background: rgba(var(--metrix-secondary-accent),1);
+            }
+
+            .admin-panel-navbar .right-section form.dropdown-menu.show {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .admin-panel-navbar .right-section #dropdown-language {
+                background: rgba(var(--kompot-pure-white),.25);
+            }
+
+            .admin-panel-navbar .right-section #dropdown-language[aria-expanded="true"] {
+                background: rgba(var(--metrix-main-accent),1);
+            }
+
+            .admin-panel-navbar .right-section .dropdown-triangle {
+                border-color: rgba(var(--kompot-pure-white),1);
+            }
+
+            .admin-panel-navbar .right-section .dropdown-triangle::before {
+                border-color: transparent transparent rgba(var(--kompot-pure-white),1) transparent;
+            }
+
+            .admin-panel-navbar .right-section .admin-user-text {
+                color: rgba(var(--kompot-pure-white),1);
+                font-size: .8rem;
+                text-align: center;
+            }
+        }
+    /** Navbar */
+
+    /** Notifications */
+        @media(max-width: 992px) {
+            .timeframe {font-size: 1.2rem;}
+            .notification-sorting {font-size: .8rem;}
+
+            .notifications-wrapper .notification-info .info-row .title {
+                font-size: 1.2rem;
+            }
+
+            .notification-collapse-button {
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 1.1rem;
+            }
+
+            .notification-categories-wrapper {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .notifications-wrapper .notification-category {
+                font-size: .9rem;
+                padding: 20px 0px;
+                flex-wrap: wrap;
+            }
+
+            .notifications-wrapper .notification-info .info-row {
+                flex-wrap: wrap;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .notifications-wrapper .notification-info .info-row.finish button,
+            .notifications-wrapper .notification-info .info-row.finish a {
+                font-size: .8rem;
+            }
+
+            .notification-collapse.details .info-row:not(.finish) {padding: 15px 0px !important;}
+
+            .notifications-wrapper .info-row.cleaning-images img {width: 100%;}
+        }
+    /** Notifications */
+
+    /** Sidebar */
+        @media(min-width: 1800px) {
+            .admin-panel-sidebar.active ~ .admin-content-wrapper,
+            .admin-panel-navbar .right-section {
+                width: 85%;
+            }
+
+            .admin-panel-navbar .left-section,
+            .admin-panel-sidebar.active {
+                width: 15%;
+            }
+        }
+
+        @media(max-width: 1250px) {
+            .admin-panel-sidebar.active ~ .admin-content-wrapper {
+                width: 100%;
+            }
+
+            .admin-panel-sidebar.active ~ .admin-content-darkener {
+                background: rgba(var(--kompot-dark-gray),.7);
+                transform: scale(1);
+            }
+
+            ul.admin-panel-sidebar {
+                top: 80px;
+            }
+        }
+
+        @media(max-width: 992px) {
+            .admin-panel-sidebar.active {
+                width: 100%;
+                height: calc(100vh - 80px);
+            }
+
+            ul.admin-panel-sidebar li.category .category-button {
+                font-size: 1rem;
+            }
+
+            ul.admin-panel-sidebar li.category .category-button span span[class*="dire"] {
+                font-size: 1.3rem;
+            }
+
+            ul.admin-panel-sidebar li.category div[data-parent] ul li .sub-category-action {
+                font-size: .9rem;
+            }
+        }
+    /** Sidebar */
+
+    /** Users */
+        @media(max-width: 992px) {
+            .admin-panel-custom-items-wrapper {
+                grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            }
+        }
+    /** Users */
+/** Responsive */

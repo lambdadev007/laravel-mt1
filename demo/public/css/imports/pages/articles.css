@@ -1,0 +1,197 @@
+/** Articles */
+
+/** Articles */
+
+/** Article */
+    .article-header {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .article-header .article-category {
+        display: flex;
+        align-items: center;
+        font-family: var(--BoldSpecial);
+        font-size: 1rem;
+        height: 40px;
+        font-weight: bold;
+        color: rgba(var(--metrix-secondary-accent),1);
+        background-color: rgba(var(--metrix-main-accent),1);
+        padding: 0 12px;
+        padding-top: 3px;
+        text-align: center;
+    }
+
+    .article-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    /** Article Top Section */
+        .article-top-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .article-top-section .article-text {
+            display: flex;
+            width: 50%;
+            flex-direction: column;
+        }
+
+        .article-top-section .article-title,
+        .article-top-section .article-title input {
+            font-family: var(--BoldSpecial);
+            font-size: 1rem;
+            font-weight: bold;
+            color: rgba(var(--kompot-pure-white),1);
+            background-color: rgba(var(--metrix-secondary-accent),1);
+            padding: 10px 12px 6px 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .article-top-section .d-table {
+            margin-bottom: 20px;
+        }
+
+        .article-top-section .article-date-author {
+            font-family: var(--Bold);
+            padding: 5px 15px;
+            font-size: .8rem;
+            color: rgba(var(--metrix-secondary-accent),1);
+            background-color: rgba(var(--metrix-main-accent),1);
+        }
+
+        .article-top-section .article-image {
+            width: 45%;
+            margin-right: 20px;
+        }
+
+        .article-top-section .article-image img {
+            width: 100%;
+        }
+
+        .article-top-section .article-description {
+            width: 100%;
+        }
+
+        .article-top-section .article-description p {
+            font-family: var(--Regular);
+            font-size: .75rem;
+        }
+
+        .article-top-section .article-description p br {
+            margin: 10px 0;
+        }
+
+        .article-top-section .article-description p img {
+            width: 100% !important;
+        }
+    /** Article Top Section */
+
+    /** Article Content */
+        .article-content .article-content-section {
+            margin-bottom: 40px;
+        }
+
+        .article-content .article-content-section .article-content-collapse {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border: none;
+            outline: none;
+            background: rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+            outline: 1px solid rgba(var(--metrix-secondary-accent),1);
+            font-family: var(--Bold);
+            cursor: pointer;
+            transition: box-shadow .3s;
+        }
+
+        .article-content .article-content-section .article-content-collapse:hover {
+            background: rgba(var(--kompot-pure-white),1);
+            color: rgba(var(--metrix-secondary-accent),1);
+            outline: 1px solid rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .article-content .article-content-section .article-content-collapse:focus {
+            background: rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+            box-shadow: 0 0 0 .3rem rgba(var(--metrix-secondary-accent),.6);
+        }
+
+        .article-content .article-content-section .article-content-collapse span {
+            transition: transform .3s;
+        }
+
+        .article-content .article-content-section .article-content-collapse[aria-expanded="true"] span.dire-right-arrow-s {
+            transform: rotate(90deg) scale(1);
+        }
+
+        .article-content .article-content-section .article-content-collapse[aria-expanded="false"] span.dire-right-arrow-s {
+            transform: rotate(90deg) scale(-1);
+        }
+
+        .article-content .article-content-section .collapse.show {
+            display: flex;
+            flex-direction: column;
+            padding: 15px 20px;
+        }
+
+        .article-content .article-content-section .collapsing {
+            padding: 15px 20px;
+        }
+
+        .article-content .article-content-section .collapse .article-content-image,
+        .article-content .article-content-section .collapsing .article-content-image {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 20px;
+            transition: opacity .3s;
+        }
+
+        .article-content .article-content-section .collapse.show .article-content-image {
+            opacity: 1;
+        }
+
+        .article-content .article-content-section .collapsing .article-content-image {
+            opacity: 0;
+        }
+
+        .article-content .article-content-section .article-content-image img {
+            width: 80%;
+        }
+
+        .article-content .article-content-section .collapse .article-content-text,
+        .article-content .article-content-section .collapsing .article-content-text {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            font-family: var(--Regular);
+            font-size: .75rem;
+            width: 75%;
+            word-break: break-word;
+        }
+
+        .article-content .article-content-section .collapse .article-content-text li,
+        .article-content .article-content-section .collapsing .article-content-text li {
+            margin-bottom: 13px;
+        }
+    /** Article Content */
+
+    /** Admin Panel */
+        .article-top-section .article-title input {
+            padding-top: 13px !important;
+            font-size: 1.25rem !important;
+            border: none !important;
+            padding-left: 0 !important;
+        }
+    /** Admin Panel */
+/** Article */

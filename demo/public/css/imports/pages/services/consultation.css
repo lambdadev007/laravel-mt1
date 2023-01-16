@@ -1,0 +1,23 @@
+/** Consultation */
+    .consultation-service {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        border: 1px solid rgba(var(--border-color),1);
+    }
+
+    .consultation-service .service-left ul.service-list {
+        list-style-type: decimal;
+        margin-top: 15px;
+        word-wrap: break-word;
+    }
+
+    .consultation-service .service-left ul.service-list li {
+        font-size: .7rem;
+    }
+    /** Admin */
+        .admin-content-wrapper .service-list {
+            padding-left: 0;
+        }
+    /** Admin */
+/** Consultation */

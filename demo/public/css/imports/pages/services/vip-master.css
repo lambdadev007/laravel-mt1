@@ -1,0 +1,162 @@
+/** VIP Master */
+    /** VIP Master Top Section */
+        .vip-master-wrapper .services-top-section,
+        .vip-master-wrapper .vip-master-top-section, {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            background: rgba(var(--metrix-light-gray-background),1);
+            border: 1px solid rgba(var(--border-color),1);
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top > div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 75%;
+            color: rgba(var(--metrix-secondary-accent),1);
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top > div > span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.75rem;
+            margin-right: 5px;
+            width: auto;
+            height: 50px;
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top > div.active > span {
+            width: 50px;
+            font-size: 2.25rem;
+            margin-right: 10px;
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top > div .counter {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top > div .counter .text {
+            font-size: .7rem;
+            color: rgba(var(--metrix-secondary-accent),.8);
+        }
+
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .top > div .counter .number {
+            font-family: var(--Bold);
+            font-size: 1.3rem;
+        }
+        
+        .vip-master-wrapper .vip-master-top-section .vip-master-workers .bottom p {
+            font-size: .6rem;
+            color: rgba(var(--metrix-secondary-accent),.8);
+            text-align: center;
+            margin: 15px 0;
+        }
+    /** VIP Master Top Section */
+
+    /** VIP Master Services */
+        .vip-master-wrapper .services .categories {
+            display: none;
+            opacity: 1;
+            transition: opacity .3s;
+        }
+
+        .vip-master-wrapper .services .categories.show {
+            display: flex;
+            flex-direction: column;
+        }
+        .vip-master-wrapper .services .categories.clicked {opacity: 0;}
+
+        .vip-master-wrapper .services .categories .sub-category {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .vip-master-wrapper .services .categories .sub-category .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(var(--metrix-secondary-accent),1);
+            color: rgba(var(--kompot-pure-white),1);
+            padding: 10px 10px;
+            cursor: pointer;
+        }
+
+        .vip-master-wrapper .services .categories .sub-category .top h5 {
+            font-family: var(--Bold);
+            font-size: .75rem;
+            margin: 0;
+        }
+
+        .vip-master-wrapper .services .categories .sub-category .bottom {
+            display: none;
+        }
+
+        .vip-master-wrapper .services .categories .sub-category.show .bottom {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vip-master-wrapper .services .categories .sub-category .bottom .vip-master-service {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid rgba(var(--border-color),1);
+            border-top: 0;
+            padding: 15px 10px;
+            padding-left: 20px;
+        }
+
+        .vip-master-wrapper .services .categories .sub-category .bottom .vip-master-service .service-left span {
+            font-size: .7rem;
+        }
+    /** VIP Master Services */
+
+    /** Flicker */
+        .flicker {
+            animation: flicker 3s infinite;
+        }
+
+        @keyframes flicker {
+            0% {background: rgba(var(--metrix-main-accent),1)}
+            10% {background: rgba(var(--metrix-main-accent),1)}
+            20% {background: rgba(var(--metrix-main-accent),1)}
+            30% {background: rgba(var(--metrix-main-accent),1)}
+            40% {background: rgba(var(--metrix-main-accent),1)}
+            50% {background: rgba(var(--metrix-main-accent),0)}
+            60% {background: rgba(var(--metrix-main-accent),0)}
+            70% {background: rgba(var(--metrix-main-accent),0)}
+            80% {background: rgba(var(--metrix-main-accent),0)}
+            90% {background: rgba(var(--metrix-main-accent),0)}
+            100% {background: rgba(var(--metrix-main-accent),0)}
+        }
+    /** Flicker */
+
+    /** Admin */
+        .admin-content-wrapper .vip-master-wrapper.services-wrapper .services {width: 72.5%;}
+
+        .admin-content-wrapper .vip-master-wrapper.services-wrapper .trilingual-wrapper {width: 100%; display: flex; flex-direction: column;}
+        .admin-content-wrapper .vip-master-wrapper.services-wrapper .trilingual-wrapper .services {width: 100%;}
+    /** Admin */
+/** VIP Master */
