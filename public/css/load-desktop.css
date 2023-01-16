@@ -7875,3 +7875,12 @@ span.dire-edit:hover {
     } */
 
 /* * 1920 Breakpoint */
+
+.fancybox-slide img {
+    width : 100%;
+}
+@media screen and (min-width:1100px) {
+    .fancybox-slide img {
+        left: calc(50% - 500px);
+    }
+}
