@@ -1395,7 +1395,7 @@ class AdminCore extends HelpersCT
                                                 
                                   
                                     //     }
-                                    Image::make('images/vip-services/'. $model->id .'/'. $image)->encode('webp', 90)->resize(400, 400)->save('images/vip-services/'. $model->id .'/'. $image);
+                                    Image::make('images/vip-services/'. $model->id .'/'. $image)->encode('webp', 90)->save('images/vip-services/'. $model->id .'/'. $image);
                                     $model->image = 'images/vip-services/'. $model->id .'/'. $image .'?'. time();
                                 }
                             }
@@ -1669,7 +1669,7 @@ class AdminCore extends HelpersCT
                                                 
                                   
                                     //     }
-                                    Image::make('images/articles/'. $model->id .'/'. $image)->encode('webp', 90)->resize(1000, 400)->save('images/articles/'. $model->id .'/'. $image);
+                                    Image::make('images/articles/'. $model->id .'/'. $image)->encode('webp', 80)->resize(1000, 400)->save('images/articles/'. $model->id .'/'. $image);
                                     $model->banner = 'images/articles/'. $model->id .'/'. $image .'?'. time();
                                 }
                             }
@@ -2497,7 +2497,7 @@ class AdminCore extends HelpersCT
                                                                                 $image->save(public_path($dir.'/'.$fileName));
                                                                                 $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
                                                                                 
-                                                                                Image::make('images/projects/'. $model->id .'/'. $fileName)->encode('webp', 90)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                                                Image::make('images/projects/'. $model->id .'/'. $fileName)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                                                     
                                                                     
                                                                             }   

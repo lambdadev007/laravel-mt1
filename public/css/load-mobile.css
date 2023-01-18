@@ -725,14 +725,14 @@ a.box-cat1.active i#wrench, .box-cat1 a:hover i#wrench{
     margin-bottom: 8px;
   }
   .for-video-1{
-    /* height: 330px; */
+    height: 330px;
   }
   .single-gallery-mobile{
-    /* padding: unset !important;
-    background-color: unset; */
+    padding: unset !important;
+    background-color: unset;
   }
   .single-project-image-gallery-style{
-    /* height: 184px !important; */
+    height: 184px !important;
     
   }
   .cal-submit-div {
@@ -786,7 +786,7 @@ a.box-cat1.active i#wrench, .box-cat1 a:hover i#wrench{
   } */
   .similar-slider-mob .similar-slide-img{
     /* height: 418px; */
-    /* height: 380px; */
+    height: 380px;
   }
   
 

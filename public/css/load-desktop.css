@@ -7518,6 +7518,10 @@
         left: 50% !important;
         transform: translate(-50%, -50%);
     }
+    /* single project */
+    .single-pro-pad{
+        margin-bottom: 15px;
+    }
     .single-project-image-style {
         height: 340px !important;
         width: 100%;
@@ -7554,6 +7558,10 @@
     }
     .single-project-font-style-id, .single-project-font-style-address{
         margin-bottom: unset;
+    }
+    .single-pro-pad{
+        padding-left: 12px;
+        padding-right: 12px;
     }
     .projects-social-media-icons img{
         margin-right: 10px;
@@ -7598,6 +7606,10 @@
         .home-cat{
             padding: unset;
         }
+        .single-pro-pad{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
         .single-project-top-header1 {
             width: 100%;
         }
@@ -7609,6 +7621,9 @@
         }
         .universal-card.service{
             margin-bottom: 15px;
+        }
+        .single-project-image-gallery-style{
+            height: 130px !important;
         }
         .carousel-project-response.project-img {
             width: 400px;
@@ -7687,6 +7702,10 @@
         .footer-wrapper .left h5{
             justify-content: end;
         }
+        /* single project */
+        .single-pro-pad{
+            margin-bottom: 12px;
+        }
         /* categories */
         .universal-card.service{
             height: unset;
@@ -7712,6 +7731,9 @@
         }
         .projects-page-wrapper .project-img a.main-project-image img {
             height: 200px;
+        }
+        .single-project-image-gallery-style{
+            height: 185px !important;
         }
     }
     
@@ -7764,6 +7786,9 @@ color:#fff;
     @media screen and (max-width: 1300px) {
         .projects-page-wrapper .project-img a.main-project-image img{
             height: 160px;
+        }
+        .single-pro-pad{
+            margin-bottom: 16px;
         }
     }
 
@@ -7875,12 +7900,3 @@ span.dire-edit:hover {
     } */
 
 /* * 1920 Breakpoint */
-
-.fancybox-slide img {
-    width : 100%;
-}
-@media screen and (min-width:1100px) {
-    .fancybox-slide img {
-        left: calc(50% - 500px);
-    }
-}

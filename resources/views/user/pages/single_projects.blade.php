@@ -105,7 +105,7 @@
     }
     .single-project-image-gallery-style{
         /* height: 228px; */
-        /* height: 160px; */
+        height: 160px;
         /* width: 276px; */
         width: 100%;
         border-radius: 0px;
@@ -239,6 +239,7 @@
    
 </style>
 @php
+
     
     $single_projects_image = $single_projects->section_items;
     $area = json_decode($single_projects_image, true);
@@ -586,7 +587,7 @@
                                     
                                                                         <!-- <img class="image-loader" src="{{ asset( $section_item['thumbnail'] ) }}" alt="{{ $section_item['alt'] }}">
                                                                     </a> -->
-                                        <div class="gallery-projects-style  single-gallery-mobile p-2">
+                                        <div class="gallery-projects-style p-3 single-gallery-mobile">
                                             <a class="magnify-icon" data-fancybox="project-gallery" href="{{ asset( $val['thumbnail'] ) }}">
                                                 <img class="single-project-image-gallery-style" src="{{ asset($val['thumbnail']) }}" alt="{{ $val['alt'] }}" />    
                                             </a>
@@ -596,7 +597,7 @@
                 @else
                         @if ($val['type'] == 'image' && !empty($val['location']))
                     
-                            <div class="col-lg-3 col-md-6 col-sm-6 single-pro-pad mob-2-col pt-md-0 pb-md-2 px-md-2 ">
+                            <div class="col-lg-3 col-md-6 col-sm-6 single-pro-pad mob-2-col">
                             
                                                                 <!-- <img class="image-loader" src="{{ asset( $section_item['thumbnail'] ) }}" alt="{{ $section_item['alt'] }}">
                                                             </a> -->
@@ -696,14 +697,14 @@
                                                 @if($item['type']=='mobile_image')
                                                     @if($item['is_feature']=='1')
                                                         <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" >
+                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
                                                             @if($video)
                                                                 <img class="video-icon" src="/images/developer-images/video.png" alt="" >
                                                             @endif
                                                         </a>
                                                     @else
                                                         <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" >
+                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
                                                             @if($video)
                                                                 <img class="video-icon" src="/images/developer-images/video.png" alt="" >
                                                             @endif
@@ -718,7 +719,7 @@
                                                     
                                                     @if($item['is_feature']=='1')
                                                         <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}">
+                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
                                                             @if($video)
                                                                 <img class="video-icon" src="/images/developer-images/video.png" alt="" >
                                                             @endif
@@ -726,7 +727,7 @@
                                                         </a>
                                                     @else
                                                         <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}">
+                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
                                                             @if($video)
                                                                 <img class="video-icon" src="/images/developer-images/video.png" alt="" >
                                                             @endif
