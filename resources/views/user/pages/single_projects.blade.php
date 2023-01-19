@@ -588,7 +588,7 @@
                                                                         <!-- <img class="image-loader" src="{{ asset( $section_item['thumbnail'] ) }}" alt="{{ $section_item['alt'] }}">
                                                                     </a> -->
                                         <div class="gallery-projects-style p-3 single-gallery-mobile">
-                                            <a class="magnify-icon" data-fancybox="project-gallery" href="{{ asset( $val['thumbnail'] ) }}">
+                                            <a class="magnify-icon" data-fancybox="project-gallery" href="{{ asset( $val['location'] ) }}">
                                                 <img class="single-project-image-gallery-style" src="{{ asset($val['thumbnail']) }}" alt="{{ $val['alt'] }}" />    
                                             </a>
                                         </div>
@@ -602,7 +602,7 @@
                                                                 <!-- <img class="image-loader" src="{{ asset( $section_item['thumbnail'] ) }}" alt="{{ $section_item['alt'] }}">
                                                             </a> -->
                                 <div class="gallery-projects-style p-3 single-gallery-mobile">
-                                    <a class="magnify-icon" data-fancybox="project-gallery" href="{{ asset( $val['thumbnail'] ) }}">
+                                    <a class="magnify-icon" data-fancybox="project-gallery" href="{{ asset( $val['location']) }}">
                                         <img class="single-project-image-gallery-style" src="{{ asset($val['thumbnail']) }}" alt="{{ $val['alt'] }}" />    
                                     </a>
                                 </div>

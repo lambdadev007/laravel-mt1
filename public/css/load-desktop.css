@@ -7903,8 +7903,7 @@ span.dire-edit:hover {
 
 /*******************************************/
 .projects-page-wrapper .project-img a.main-project-image img {
-    object-fit : none;
-    max-width : 100%;
+    object-fit : cover;
 }
 @media screen and (min-width: 1440px){
     .fancybox-thumbs{

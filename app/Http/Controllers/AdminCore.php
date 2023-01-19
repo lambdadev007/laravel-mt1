@@ -978,6 +978,16 @@ class AdminCore extends HelpersCT
                                                         
                                                         $image = Image::make(public_path($dir.'/'.$fileName));
                                                         $imageWidth = $image->width();
+                                                        $imageHeight = $image->height();
+                                                        $width = 100; $height = 100;
+                                                        if ($imageWidth > $imageHeight) {
+                                                            $width = 500;
+                                                            $height = $width * $imageHeight / $imageWidth;                                                            
+                                                        } else {
+                                                            $height = 500;
+                                                            $width = $height * $imageWidth / $imageHeight;
+                                                        }
+
                                                         $watermarkSource =  Image::make(public_path($watermarkImagePath));//waterMark Image
 
                                                         $watermarkSize = round( $imageWidth / 20);
@@ -991,8 +1001,8 @@ class AdminCore extends HelpersCT
                                                         $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
                                                         $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-                                                        Image::make('images/projects/'. $model->id .'/'. $fileName)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);   
-                                              
+                                                        $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                        
                                                     }   
                                                 $items[] = [
                                                     'type' => 'image',
@@ -1033,6 +1043,15 @@ class AdminCore extends HelpersCT
                                                         
                                                         $image = Image::make(public_path($dir.'/'.$fileName));
                                                         $imageWidth = $image->width();
+                                                        $imageHeight = $image->height();
+                                                        $width = 100; $height = 100;
+                                                        if ($imageWidth > $imageHeight) {
+                                                            $width = 500;
+                                                            $height = $width * $imageHeight / $imageWidth;                                                            
+                                                        } else {
+                                                            $height = 500;
+                                                            $width = $height * $imageWidth / $imageHeight;
+                                                        }
                                                         $watermarkSource =  Image::make(public_path($watermarkImagePath));//waterMark Image
 
                                                         $watermarkSize = round( $imageWidth / 20);
@@ -1046,10 +1065,7 @@ class AdminCore extends HelpersCT
                                                         $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
                                                         $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-
-                                                        Image::make('images/projects/'. $model->id .'/'. $fileName)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);   
-                                                            
-                                              
+                                                        $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                     }   
                                                 $items[] = [
                                                     'type' => 'mobile_image',
@@ -2483,6 +2499,15 @@ class AdminCore extends HelpersCT
                                                                                 
                                                                                 $image = Image::make(public_path($dir.'/'.$fileName));
                                                                                 $imageWidth = $image->width();
+                                                                                $imageHeight = $image->height();
+                                                                                $width = 100; $height = 100;
+                                                                                if ($imageWidth > $imageHeight) {
+                                                                                    $width = 500;
+                                                                                    $height = $width * $imageHeight / $imageWidth;                                                            
+                                                                                } else {
+                                                                                    $height = 500;
+                                                                                    $width = $height * $imageWidth / $imageHeight;
+                                                                                }
                                                                                 $watermarkSource =  Image::make(public_path($watermarkImagePath));
                                         
                                                                                 $watermarkSize = round( $imageWidth / 20);
@@ -2496,10 +2521,7 @@ class AdminCore extends HelpersCT
                                                                                 $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                                                 $image->save(public_path($dir.'/'.$fileName));
                                                                                 $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-                                                                                
-                                                                                Image::make('images/projects/'. $model->id .'/'. $fileName)->encode('webp', 90)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
-                                                                                    
-                                                                    
+                                                                                $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                                             }   
                                                                         $items[] = [
                                                                             'type' => 'image',
@@ -2631,6 +2653,15 @@ class AdminCore extends HelpersCT
                                                             
                                                             $image = Image::make(public_path($dir.'/'.$fileName));
                                                             $imageWidth = $image->width();
+                                                            $imageHeight = $image->height();
+                                                            $width = 100; $height = 100;
+                                                            if ($imageWidth > $imageHeight) {
+                                                                $width = 500;
+                                                                $height = $width * $imageHeight / $imageWidth;                                                            
+                                                            } else {
+                                                                $height = 500;
+                                                                $width = $height * $imageWidth / $imageHeight;
+                                                            }
                                                             $watermarkSource =  Image::make(public_path($watermarkImagePath));
 
                                                             $watermarkSize = round( $imageWidth / 20);
@@ -2644,10 +2675,7 @@ class AdminCore extends HelpersCT
                                                             $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                             $image->save(public_path($dir.'/'.$fileName));
                                                             $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-
-                                                            Image::make('images/projects/'. $model->id .'/'. $fileName)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
-                                                                
-                                                
+                                                            $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                         }   
                                                     $items[] = [
                                                         'type' => 'mobile_image',
