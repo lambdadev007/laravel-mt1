@@ -909,7 +909,8 @@ a.box-cat1.active i#wrench, .box-cat1 a:hover i#wrench{
     display: none ;
 }
 .projects-page-wrapper .project-img a.main-project-image img {
-  object-fit : cover;
+    object-fit : none;
+    max-width : 100%;
 }
 .single-project-image-gallery-style {
   object-fit: cover;
