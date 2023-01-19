@@ -889,3 +889,28 @@ a.box-cat1.active i#wrench, .box-cat1 a:hover i#wrench{
 
 
 /* digiwised end */
+
+/***********************************************************/
+.fancybox-toolbar{
+  right: 0px;
+}
+.fancybox-navigation .fancybox-button--arrow_right {
+  right: 10px;
+  margin: 0;
+}
+.fancybox-navigation .fancybox-button--arrow_left{
+  left: 10px;
+  margin: 0;
+}
+.fancybox-navigation .fancybox-button {
+  top: calc(50% - 25px)!important;
+}
+.fancybox-show-thumbs .fancybox-thumbs{
+    display: none ;
+}
+.projects-page-wrapper .project-img a.main-project-image img {
+  object-fit : cover;
+}
+.single-project-image-gallery-style {
+  object-fit: cover;
+}
