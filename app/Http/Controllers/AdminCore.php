@@ -998,10 +998,11 @@ class AdminCore extends HelpersCT
                                                         $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                         /* insert watermark at bottom-left corner with 5px offset */
-                                                        $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-                                                        $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                        $image1 = $image;
                                                         $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
+                                                        $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
+                                                        $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                         
                                                     }   
                                                 $items[] = [
@@ -1062,10 +1063,11 @@ class AdminCore extends HelpersCT
                                                         $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                         /* insert watermark at bottom-left corner with 5px offset */
-                                                        $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-                                                        $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                        $image1 = $image;
                                                         $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
+                                                        $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
+                                                        $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                     }   
                                                 $items[] = [
                                                     'type' => 'mobile_image',
@@ -2518,10 +2520,11 @@ class AdminCore extends HelpersCT
                                                                                 $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                                                 /* insert watermark at bottom-left corner with 5px offset */
-                                                                                $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-                                                                                $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                                                $image1 = $image;
                                                                                 $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                                                 $image->save(public_path($dir.'/'.$fileName));
+                                                                                $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
+                                                                                $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                                             }   
                                                                         $items[] = [
                                                                             'type' => 'image',
@@ -2672,10 +2675,11 @@ class AdminCore extends HelpersCT
                                                             $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                             /* insert watermark at bottom-left corner with 5px offset */
-                                                            $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
-                                                            $image->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                            $image1 = $image;
                                                             $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                             $image->save(public_path($dir.'/'.$fileName));
+                                                            $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
+                                                            $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
                                                         }   
                                                     $items[] = [
                                                         'type' => 'mobile_image',
