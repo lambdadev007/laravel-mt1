@@ -1193,6 +1193,8 @@
             display: flex;
             flex-wrap: wrap;
             align-content: center;
+                        min-width:650px!important;
+
         }
         .custom-digi-border{
             width: 17%;
@@ -7880,8 +7882,13 @@ span.dire-edit:hover {
 }
 
 
-/*.col-md-5.home-cat.p-0 { margin-left: 20px; } div#service-vip { margin-right: 20px; } } */
- div#service-designer { margin-right: 50px; } div#service-furniture { margin-right: 50px; } div#service-repairs { margin-right: 50px; }
+/*.col-md-5.home-cat.p-0 { margin-left: 20px; }  } } */
+ 
+ div#service-vip { margin-right: 100px;}
+ 
+div#service-designer   { margin-right: 100px;}
+
+ div#service-furniture { margin-right: 100px; } div#service-repairs { margin-right: 100px; }
 
     /* h1{
         font-family: var(--FiraBook);
