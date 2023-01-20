@@ -998,7 +998,7 @@ class AdminCore extends HelpersCT
                                                         $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                         /* insert watermark at bottom-left corner with 5px offset */
-                                                        $image1 = $image;
+                                                        $image1 = Image::make(public_path($dir.'/'.$fileName));
                                                         $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
                                                         $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
@@ -1063,7 +1063,7 @@ class AdminCore extends HelpersCT
                                                         $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                         /* insert watermark at bottom-left corner with 5px offset */
-                                                        $image1 = $image;
+                                                        $image1 = Image::make(public_path($dir.'/'.$fileName));
                                                         $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
                                                         $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
@@ -2520,7 +2520,7 @@ class AdminCore extends HelpersCT
                                                                                 $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                                                 /* insert watermark at bottom-left corner with 5px offset */
-                                                                                $image1 = $image;
+                                                                                $image1 = Image::make(public_path($dir.'/'.$fileName));
                                                                                 $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                                                 $image->save(public_path($dir.'/'.$fileName));
                                                                                 $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
@@ -2675,7 +2675,7 @@ class AdminCore extends HelpersCT
                                                             $watermarkSource->resize($watermarkSize,$watermarkSize2);
                                                                                 
                                                             /* insert watermark at bottom-left corner with 5px offset */
-                                                            $image1 = $image;
+                                                            $image1 = Image::make(public_path($dir.'/'.$fileName));
                                                             $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                             $image->save(public_path($dir.'/'.$fileName));
                                                             $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
