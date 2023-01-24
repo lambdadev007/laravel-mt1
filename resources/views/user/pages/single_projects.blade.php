@@ -589,6 +589,7 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <img style="display:none" src="{{ asset($val['location']) }}" alt="{{ $val['alt'] }}" />   
                     @endif
                 @else
                         @if ($val['type'] == 'image' && !empty($val['location']))
@@ -603,6 +604,7 @@
                                     </a>
                                 </div>
                             </div>
+                            <img style="display:none" src="{{ asset($val['location']) }}" alt="{{ $val['alt'] }}" />  
                         @endif
                 @endif        
                 @endforeach

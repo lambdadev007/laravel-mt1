@@ -992,6 +992,10 @@ class AdminCore extends HelpersCT
 
                                                         $watermarkSize = round( $imageWidth / 15);
                                                         $watermarkSize2 = round( $imageWidth / 15);
+                                                        if($imageHeight > $imageWidth) {
+                                                            $watermarkSize = round( $imageWidth / 8);
+                                                            $watermarkSize2 = round( $imageWidth / 8);
+                                                        }
                                                         // $watermarkSource->resize($watermarkSize,30, function ($constraint) {
                                                         //     $constraint->aspectRatio();
                                                         // });
@@ -1057,6 +1061,10 @@ class AdminCore extends HelpersCT
 
                                                         $watermarkSize = round( $imageWidth / 15);
                                                         $watermarkSize2 = round( $imageWidth / 15);
+                                                        if($imageHeight > $imageWidth) {
+                                                            $watermarkSize = round( $imageWidth / 8);
+                                                            $watermarkSize2 = round( $imageWidth / 8);
+                                                        }
                                                         // $watermarkSource->resize($watermarkSize,30, function ($constraint) {
                                                         //     $constraint->aspectRatio();
                                                         // });
@@ -1064,7 +1072,7 @@ class AdminCore extends HelpersCT
                                                                                 
                                                         /* insert watermark at bottom-left corner with 5px offset */
                                                         $image1 = Image::make(public_path($dir.'/'.$fileName));
-                                                        $image->insert($watermarkSource, 'top-left',round($watermarkSize/1) , 0);
+                                                        $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                         $image->save(public_path($dir.'/'.$fileName));
                                                         $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
                                                         $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
@@ -2289,6 +2297,7 @@ class AdminCore extends HelpersCT
     
                             // * In Progress
                                 $model->in_progress = $request->in_progress;
+
                             // * In Progress
     
                             // * Banner
@@ -2512,8 +2521,12 @@ class AdminCore extends HelpersCT
                                                                                 }
                                                                                 $watermarkSource =  Image::make(public_path($watermarkImagePath));
                                         
-                                                                                $watermarkSize = ( $imageWidth / 20);
+                                                                                $watermarkSize = ( $imageWidth / 15);
                                                                                 $watermarkSize2 = ( $imageWidth / 15);
+                                                                                if($imageHeight > $imageWidth) {
+                                                                                    $watermarkSize = round( $imageWidth / 8);
+                                                                                    $watermarkSize2 = round( $imageWidth / 8);
+                                                                                }
                                                                                 // $watermarkSource->resize($watermarkSize,30, function ($constraint) {
                                                                                 //     $constraint->aspectRatio();
                                                                                 // });
@@ -2669,6 +2682,10 @@ class AdminCore extends HelpersCT
 
                                                             $watermarkSize = round( $imageWidth / 20);
                                                             $watermarkSize2 = round( $imageWidth / 15);
+                                                            if($imageHeight > $imageWidth) {
+                                                                $watermarkSize = round( $imageWidth / 8);
+                                                                $watermarkSize2 = round( $imageWidth / 8);
+                                                            }
                                                             // $watermarkSource->resize($watermarkSize,30, function ($constraint) {
                                                             //     $constraint->aspectRatio();
                                                             // });

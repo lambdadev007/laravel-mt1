@@ -7,7 +7,7 @@ $mobile_video= json_decode($data ['raw']['mobile_video'], true);
 $card_image= json_decode($data ['raw']['card_image'], true);
 $section_items = json_decode($data ['raw']['section_items'], true);
 // $social = json_decode($data['raw']['social'], true);
-
+$in_progress = json_decode($data["raw"]["in_progress"]);
 // echo "<pre>";
 // print_r($data);
 // echo "</pre>"; 
@@ -133,19 +133,27 @@ $section_items = json_decode($data ['raw']['section_items'], true);
                            </div>
                         </div>
                    <div class="col-4 d-flex">
-                   <label class="form-label w-25">
-                            
-                                
-                            
-                                კომპანიის ლოგო:
-                           </label>
-                           <div class="d-flex">
+                        <label class="form-label w-25">          
+                        კომპანიის ლოგო:
+                        </label>
+                        <div class="d-flex">
                             <input class="form-control image-input " type="file" name="card_image" id="card-image-input"  accept="image/png, image/jpeg" >
                             <input type="hidden" name="old_card_image" value="{{ $data['raw']['card_image'] }}">
-                            <!-- <img src="/{{ substr($card_image['location'],0,strpos($card_image['location'],'?')) }}" width="20%" alt="{{ $card_image['alt'] }}"> -->
-                        
-                           </div>
+                        <!-- <img src="/{{ substr($card_image['location'],0,strpos($card_image['location'],'?')) }}" width="20%" alt="{{ $card_image['alt'] }}"> -->
+                    
                         </div>
+                    </div>
+                    <div class="form-check pl-3 d-flex">
+                        <label class="form-label w-15">Პროგრესირებს</label>
+                        <div class="form-check form-check-inline pl-3 d-flex">
+                            <input class="form-check-input" type="radio" <?php if($in_progress == 'true') echo "checked";   ?> name="in_progress" id="inlineRadio11" value="true">
+                            <label class="form-check-label" for="inlineRadio11">დიახ</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" <?php if($in_progress != 'true') echo "checked";  ?> name="in_progress" id="inlineRadio12" value="false">
+                            <label class="form-check-label" for="inlineRadio12">არა</label>
+                        </div>
+                    </div>
                  </div>
 
                         <!-- mobile video work  -->

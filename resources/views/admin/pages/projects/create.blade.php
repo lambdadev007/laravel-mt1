@@ -103,6 +103,17 @@
                         <label class="form-label w-25">კომპანიის ლოგო:</label>
                         <input class="form-control image-input " type="file" name="card_image" id="card-image-input"  accept="image/png, image/jpeg"   >
                     </div>
+                    <div class="form-check pl-3 d-flex">
+                        <label class="form-label w-15">Პროგრესირებს</label>
+                        <div class="form-check form-check-inline pl-3 d-flex">
+                            <input class="form-check-input" type="radio" checked name="in_progress" id="inlineRadio11" value="true">
+                            <label class="form-check-label" for="inlineRadio11">დიახ</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="in_progress" id="inlineRadio12" value="false">
+                            <label class="form-check-label" for="inlineRadio12">არა</label>
+                        </div>
+                    </div>
                  </div>
                  
                  <hr> <br>
@@ -166,15 +177,15 @@
                         <input class="form-check-input" type="radio" name="img_format" id="inlineRadio2" value="jpeg">
                         <label class="form-check-label" for="inlineRadio2">JPEG</label>
                     </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="img_format" id="inlineRadio2" value="png">
-                            <label class="form-check-label" for="inlineRadio2">PNG</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="img_format" id="inlineRadio2" value="webp">
-                            <label class="form-check-label" for="inlineRadio2">WEBP</label>
-                        </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="img_format" id="inlineRadio2" value="png">
+                        <label class="form-check-label" for="inlineRadio2">PNG</label>
                     </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="img_format" id="inlineRadio2" value="webp">
+                        <label class="form-check-label" for="inlineRadio2">WEBP</label>
+                    </div>
+                </div>
                     <div class="group" id="desktop_img">
                        <label class="form-label w-25">ატვირთული სურათები(დესკტოპი):</label>
                       <div class="d-flex pt-2 w-50">

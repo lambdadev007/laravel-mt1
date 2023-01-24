@@ -10,7 +10,7 @@
     $lower_items = array_slice($data['projects'], $amount / 2);
 @endphp
 
-<div class="projects-slider-component-wrapper d-fc">
+<div class="projects-slider-component-wrapper d-fc" id="project-slider-filter">
     <div class="header container-1280">
         <span class="title">{{ $tranCT->translate('featured_works') }}</span>
         <i class="square"></i>
@@ -55,7 +55,8 @@
                         $section_items=array_reverse($section_items);
                     }
                 $video=false;
-
+                
+                $in_progress = json_decode($project['in_progress']);
 
             @endphp
             
@@ -130,6 +131,17 @@
                                <a href="/projects/single/{{ $project['id'] }}"><img class="my class owl-lazy" src="{{ asset('/images/projects/send.png') }}" width="15px" height=""></a>
                             </div>
                         </div>
+                        @if($in_progress == "true")
+                            <div class="project-in-progress"> 
+                                <img src="https://metrix.ge/images/homepage/in-progress-cog.svg" style="opacity: 1;"> 
+                                <span>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">მიმდინარე
+                                        </font>
+                                    </font>
+                                </span> 
+                            </div>
+                        @endif
                         <!-- @endif -->
                 </div>
             </div>
@@ -214,5 +226,27 @@
 }
 .projects-slider-component-wrapper .header .categories a:hover, .projects-slider-component-wrapper .header .categories a.active {
     color: rgb(var(--metrix-orange-accent));
+}
+.project-in-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: ltr;
+    width: 105px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 25px;
+    background-color: rgba(241,90,41,.5);
+    z-index: 10;
+}
+.project-in-progress img {
+    width: 15px!important;
+    height: 15px;
+    margin-right: 5px;
+}
+.project-in-progress span {
+    font-size : 12px;
+    color : white;
 }
 </style>

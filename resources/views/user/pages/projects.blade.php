@@ -94,6 +94,9 @@
 
                     }
                     $video=false;
+
+                    $in_progress = json_decode($project['in_progress']);
+
                 @endphp
                 
                         
@@ -162,12 +165,20 @@
                                         </div>
                                         <div class="arrow-top">
                                             <a class="project-arrow-top" href="/projects/single/{{ $project['id'] }}"><img class="my class" src="{{ asset('/images/developer-images/Send.png') }}" height="18px"></a>
-                                          </div>
-                                       </div>
-                                     
-                                     
-                            
-                            </div>
+                                        </div>
+                                    </div>
+                                    @if($in_progress == "true")
+                                        <div class="project-in-progress"> 
+                                            <img src="https://metrix.ge/images/homepage/in-progress-cog.svg" style="opacity: 1;"> 
+                                            <span>
+                                                <font style="vertical-align: inherit;">
+                                                    <font style="vertical-align: inherit;">მიმდინარე
+                                                    </font>
+                                                </font>
+                                            </span> 
+                                        </div>
+                                    @endif                                
+                                </div>
                             </div>
                         
                        
@@ -287,4 +298,28 @@
             @endif
         })
     </script>
+    <style>
+        .project-in-progress {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            direction: ltr;
+            width: 105px;
+            height: 30px;
+            position: absolute;
+            top: 40px;
+            left: 38px;
+            background-color: rgba(241,90,41,.5);
+            z-index: 10;
+        }
+        .project-in-progress img {
+            width: 15px!important;
+            height: 15px;
+            margin-right: 5px;
+        }
+        .project-in-progress span {
+            font-size : 12px;
+            color : white;
+        }
+    </style>
 @endsection

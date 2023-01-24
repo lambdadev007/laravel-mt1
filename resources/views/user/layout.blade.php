@@ -226,14 +226,14 @@ span.border-bott {
            
                 jQuery(document).ready(function(){
                     jQuery('[data-fancybox="project-gallery"]').fancybox({
-  baseClass: 'gallery-projects-style',
-  thumbs: {
-    autoStart: true,
-    axis: 'x',
-    zoom:true
-  },
-  animationEffect : "fade",
-});
+                        baseClass: 'gallery-projects-style',
+                        thumbs: {
+                            autoStart: true,
+                            axis: 'x',
+                            zoom:true
+                        },
+                        animationEffect : "fade",
+                    }); 
                     console.log(jQuery('input[type="checkbox"]'));
                     checkbox=jQuery('input[type="checkbox"]');
                     var btn=jQuery('.bottom , .site-terms , .check-label').find('span a');
@@ -754,7 +754,10 @@ span.border-bott {
             //         }
             //     }
             // });
-            
+            if (window.location.href.indexOf("?filter") > -1) {
+                if(window.location.href.indexOf("#") < 0) 
+                    setTimeout(()=>{ window.location.href += "#project-slider-filter"; }, 500);
+            }           
         })
     </script>
         {{-- JS --}}
