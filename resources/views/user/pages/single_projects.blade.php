@@ -4,12 +4,7 @@
     @if ( $data['exists'] )
         <meta property="og:url" content="{{ url()->current() }}"/>
         <meta property="og:type" content="website"/>
-        <meta property="og:title" content="{{ $data['raw']['meta_title'] }}"/>
-        <meta property="og:description" content="{{ $data['raw']['meta_description'] }}"/>
         <meta property="og:image" content="{{ asset('images/logos/logo.png') }}"/>
-
-        <title>{{ $data['raw']['meta_title'] }}</title>
-        <meta name="keywords" content="{{ $data['raw']['meta_keywords'] }}">
         <meta name="description" content="{{ $data['raw']['meta_description'] }}">
     @endif
 @endsection
@@ -256,6 +251,7 @@
     $card_img=json_decode($single_projects->card_image,true);
     
     $single_projects_social = $single_projects->social;
+    $title_soc = $single_projects->title;
     
 
 
@@ -889,17 +885,21 @@
                             <div class="form2-mid" id="fields">
                                 <div class="text-input-div">
                                     <p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name" required />
+                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name2"  autocomplete="new-password" required />
                                 </div>
-                                <div class="text-input-div">
-                                    <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number" required />
-                                </div>
+                               
                                 
                                 <div class="text-input-div">
                                     <p class="cal-input-text">ელ.ფოსტა</p>
-                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email" required />
+                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email2" autocomplete="new-password" required />
                                 </div>
+                                
+                                 <div class="text-input-div">
+                                    <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
+                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />
+                                </div>
+                                
+                                
                                 <div class="d-flex justify-content-between mt-4">
                                     <div class="checkbox-div">
                                         <input type="checkbox" name="terms" required class="cal1-input-check" >
@@ -1037,7 +1037,7 @@
                                 </div>
                                 <div class="text-input-div">
                                     <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number" required />
+                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" required />
                                 </div>
                                 
                                 <div class="text-input-div">

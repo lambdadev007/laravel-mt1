@@ -142,3 +142,7 @@ ul.admin-panel-sidebar li.category div[data-parent] ul li div[data-parent] ul li
 ul.admin-panel-sidebar li.category div[data-parent] ul li div[data-parent] ul li:last-child {
     padding-bottom: 10px;
 }
+
+a.sub-category-action:hover {
+    color: #232f47;
+}

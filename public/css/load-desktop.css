@@ -1194,6 +1194,7 @@
             flex-wrap: wrap;
             align-content: center;
                         min-width:650px!important;
+                        text-align:justify;
 
         }
         .custom-digi-border{
@@ -3907,6 +3908,7 @@
             .homepage-video-wrapper .text .lower .right {
                 display: flex;
                 align-items: center;
+                    margin-right: 110px
             }
 
             .homepage-video-wrapper .text .lower .right span {
@@ -7666,6 +7668,7 @@
         }
         .cat-box, .cat-rightbox-custom{
             width: 100%;
+            
         }
         a.box-cat1 {
             width: 100%;
@@ -7753,12 +7756,10 @@
     color:#fff;
 }
 
-span.edit-text a {
-color:#fff;
-}
+
 
 span.edit-text:hover {
-color:#fff;
+color:#232f47;
 }
 
     .cal-sub-div {
@@ -7884,11 +7885,11 @@ span.dire-edit:hover {
 
 /*.col-md-5.home-cat.p-0 { margin-left: 20px; }  } } */
  
- div#service-vip { margin-right: 100px;}
+ div#service-vip { margin-right: 80px;}
  
-div#service-designer   { margin-right: 100px;}
+div#service-designer   { margin-right: 80px;}
 
- div#service-furniture { margin-right: 100px; } div#service-repairs { margin-right: 100px; }
+ div#service-furniture { margin-right: 80px; } div#service-repairs { margin-right: 80px; }
 
     /* h1{
         font-family: var(--FiraBook);
@@ -7919,4 +7920,12 @@ div#service-designer   { margin-right: 100px;}
 }
 .single-project-image-gallery-style {
   object-fit: cover;
+}
+
+.fancybox-show-thumbs .fancybox-thumbs {
+    display:none!important;
+}
+
+i.square.ml-2 {
+    display: none;
 }

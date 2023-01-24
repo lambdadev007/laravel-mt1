@@ -31,6 +31,9 @@
     $tranCT = new TranslationsCT();
 @endphp
 
+
+    
+    
 @section('meta')
     <meta property="og:url" content="{{ url()->current() }}"/>
     <meta property="og:type" content="website"/>
@@ -42,6 +45,7 @@
     <meta name="keywords" content="{{ $data['service']->meta_keywords }}"/>
     <meta name="description" content="{{ $data['service']->meta_description }}"/>
 @endsection
+
 
 @section('sdk')
     <div id="fb-root"></div>

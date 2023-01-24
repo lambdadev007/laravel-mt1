@@ -444,10 +444,10 @@ class PagesCT extends HelpersCT
                 
                 
                 $data['price'] = $price;
-                $data['fill'] = $request->input('calculate_form');
-                $data['full_name'] = $request->input('full_name');
-                $data['email'] = $request->input('email');
-                $data['phone_number'] = $request->input('phone_number');
+                $data['fill'] = $request->input('calculate_form2');
+                $data['full_name'] = $request->input('full_name2');
+                $data['email'] = $request->input('email2');
+                $data['phone_number'] = $request->input('phone_number2');
                 $_SESSION['data'] = $data;
 
                 //   $smsoffice->send('597056520', 'New invoice request');

@@ -93,7 +93,7 @@
                             </div>
                             <div class="text-input-div">
                                 <p class="cal-input-text">რამდენი კვადრატია თქვენი ფართი?<span class="red-color">*</span></p>
-                                <input class="cal-input-area" type="text" placeholder="მიუთითეთ" name="calculate_form" required />
+                                <input class="cal-input-area" type="text" placeholder="მიუთითეთ" name="calculate_form2" autocomplete="new-password" required />
                             </div>
                             <div class="checkbox-div">
                                 <input type="checkbox" name="is_company" class="cal1-input-check">
@@ -139,17 +139,20 @@
                             <div class="form2-mid" id="fields">
                                 <div class="text-input-div">
                                     <p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name" required />
+                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name2" autocomplete="new-password" required />
                                 </div>
-                                <div class="text-input-div">
-                                    <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number" required />
-                                </div>
-                                
+                               
                                 <div class="text-input-div">
                                     <p class="cal-input-text">ელ.ფოსტა</p>
-                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email" required />
+                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email2" autocomplete="new-password" required />
                                 </div>
+                               
+                                <div class="text-input-div">
+                                    <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
+                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />
+                                </div>
+                                
+                               
                                 <div class="d-flex justify-content-between mt-4">
                                     <div class="checkbox-div">
                                         <input type="checkbox" name="terms" required class="cal1-input-check" >
@@ -165,7 +168,7 @@
                                   </div>
                                 </div>
                                 <div class="cal-submit-div">
-                                    <div class="cal-sub-div"><button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამორვირთვა</button></div>
+                                    <div class="cal-sub-div"><button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამოტვირთვა</button></div>
                                     <a href="javascript:void(0)" class="cal-refresh-div"><img src="{{ asset("images/homepage/reload.png") }}" class="refresh_icon"></a>
                                 </div>
                                 
@@ -239,8 +242,8 @@
                             <span class="bars-area"></span>
                         </div>
                         <div class="text-input-div">
-                            <p class="cal-input-text">tრამდენი კვადრატია თქვენი ფართი?<span class="red-color">*</span></p>
-                            <input class="cal-input-area" type="text" placeholder="მიუთითეთ" name="calculate_form" required />
+                            <p class="cal-input-text">რამდენი კვადრატია თქვენი ფართი?<span class="red-color">*</span></p>
+                            <input class="cal-input-area" type="text" placeholder="მიუთითეთ" name="calculate_form2" autocomplete="new-password" required />
                         </div>
                         <div class="checkbox-div">
                             <input type="checkbox" name="is_company" class="cal1-input-check">
@@ -285,11 +288,11 @@
                             <div class="form2-mid" id="fields-mob">
                                 <div class="text-input-div">
                                     <p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name" required />
+                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name2" required />
                                 </div>
                                 <div class="text-input-div">
                                     <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
-                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number" required />
+                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />
                                 </div>
                                 
                                 <div class="text-input-div">
@@ -311,7 +314,7 @@
                                   </div>
                                 </div>
                                 <div class="cal-submit-div">
-                                    <div class="cal-sub-div"><button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამორვირთვა</button></div>
+                                    <div class="cal-sub-div"><button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამოტვირთვა</button></div>
                                     <a href="javascript:void(0)" class="cal-refresh-div"><img src="{{ asset('images/homepage/reload.png') }}" class="refresh_icon"></a></div>
                                 </div>
                             </div>
@@ -500,11 +503,13 @@
                     @endforeach
                     @endif
                    <div class="remove-padding">
-                        <p class="w-75 pt-4 m-0">ყოველდღიური გაგებით, გავრცელებულია რწმენა, რომ მტვირთავები და მუშები ერთი და იგივე პროფესიის სახელებია. ეს გაგება ემყარება იმ ფაქტს, რომ ორივე ეს პოზიცია.</p>
+                        <p class="w-75 pt-4 m-0">ყოველდღიური გაგებით, გავრცელებულია რწმენა, რომ მტვირთავები და მუშები ერთი და იგივე პროფესიის სახელებია. ეს გაგება ემყარება იმ ფაქტს, რომ ორივე ეს პოზიცია. შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის</p>
                     </div>
                     <div class="remove-padding">
-                        <p class="w-75 pt-3 ">შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის.</p>
+                        <p class="w-75 pt-3 ">შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის.</p>
                     </div>
+                    
+                   
                     <div class=" home-button-space-bot">
                         <a href="/vip-master" class="btn text-warning border bg-white border-warning detail-full-button">დაწვრილებით</a>
                     </div>

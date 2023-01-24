@@ -312,7 +312,7 @@ span.border-bott {
             otp();
             $('.download-btn').attr('disabled','disabled');
             function otp(){
-                $('input[name="phone_number"]').blur(function(){
+                $('input[name="phone_number2"]').blur(function(){
                     console.log("blur1");
                     var number=$(this).val();
                     
@@ -350,7 +350,7 @@ span.border-bott {
                                                     var res = jQuery.parseJSON(data);
                                                     if(res.status=="success"){
                                                         console.log(res.msg);
-                                                        $('input[name="phone_number"]').addClass('border-success');
+                                                        $('input[name="phone_number2"]').addClass('border-success');
                                                         $('#otp').remove();
                                                         // $('.download-btn').removeAttr('disabled','disabled');
                                                         $btn_verify=true;
@@ -367,7 +367,7 @@ span.border-bott {
                                         });
                                     }else{
                                         alert(res.message);
-                                        $('input[name="phone_number"]').removeAttr('readonly');
+                                        $('input[name="phone_number2"]').removeAttr('readonly');
                                         $('#verify').remove();
                                     }
 
@@ -375,7 +375,7 @@ span.border-bott {
                                 error:function(data){
                                     // console.log(data.responseJSON.message,"error");
                                     alert(data.responseJSON.message);
-                                    $('input[name="phone_number"]').removeAttr('readonly');
+                                    $('input[name="phone_number2"]').removeAttr('readonly');
                                     $('#verify').remove();
                                 }
                             });
@@ -392,16 +392,19 @@ span.border-bott {
                     $('#fields').html(
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">კომპანიის დასახელება<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის სახელი" name="full_name" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის სახელი" name="full_name2"  autocomplete="new-password" required />'+
                                 '</div>'+
-                                '<div class="text-input-div">'+
-                                    '<p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ტელეფონის ნომერი" name="phone_number" required />'+
-                                '</div>'+
+                               
                                 '<div class="text-input-div">'+
                                    '<p class="cal-input-text">კომპანიის ელფოსტა</p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ელექტრონული ფოსტის მისამართი" name="email" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ელექტრონული ფოსტის მისამართი" name="email2" autocomplete="new-password" required />'+
                                 '</div>'+
+                                
+                                '<div class="text-input-div">'+
+                                    '<p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>'+
+                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />'+
+                                '</div>'+
+                               
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
                                         '<input type="checkbox" name="terms" required class="cal1-input-check" >'+
@@ -425,17 +428,20 @@ span.border-bott {
                                 $('#fields-mob').html(
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">კომპანიის დასახელება<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის სახელი" name="full_name" required />'+
-                                '</div>'+
-                                '<div class="text-input-div">'+
-                                    '<p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ტელეფონის ნომერი" name="phone_number" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის სახელი" name="full_name2" autocomplete="new-password" required />'+
                                 '</div>'+
                                 
-                                '<div class="text-input-div">'+
+                               '<div class="text-input-div">'+
                                    '<p class="cal-input-text">კომპანიის ელფოსტა</p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ელექტრონული ფოსტის მისამართი" name="email" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ელექტრონული ფოსტის მისამართი" name="email2" autocomplete="new-password" required />'+
                                 '</div>'+
+                              
+                                '<div class="text-input-div">'+
+                                    '<p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>'+
+                                    '<input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />'+
+                                '</div>'+
+                                
+                               
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
                                         '<input type="checkbox" name="terms" required class="cal1-input-check" >'+
@@ -460,16 +466,15 @@ span.border-bott {
                     $('#fields').html(
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name" required />'+
-                                '</div>'+
-                                '<div class="text-input-div">'+
-                                    '<p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number" required />'+
-                                '</div>'+
-                                
+                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name2" autocomplete="new-password" required />'+
+                                '</div>'+  
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">ელ.ფოსტა</p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email"  autocomplete="new-password" required />'+
+                                '</div>'+
+                                 '<div class="text-input-div">'+
+                                    '<p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>'+
+                                    '<input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />'+
                                 '</div>'+
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
@@ -494,16 +499,16 @@ span.border-bott {
                                 $('#fields-mob').html(
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name2" autocomplete="new-password" required />'+
                                 '</div>'+
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />'+
                                 '</div>'+
                                 
                                 '<div class="text-input-div">'+
                                     '<p class="cal-input-text">ელ.ფოსტა</p>'+
-                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email" required />'+
+                                    '<input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email"  autocomplete="new-password" required />'+
                                 '</div>'+
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
@@ -580,12 +585,12 @@ span.border-bott {
             $(".cal-step-2").hide();
             $(".calculate-sub").click(function(){
                 console.log("click d");
-                var meters=jQuery('input[name="calculate_form"]').val();
+                var meters=jQuery('input[name="calculate_form2"]').val();
                 if(meters==''){
-                    jQuery('input[name="calculate_form"]').addClass('border-danger');
+                    jQuery('input[name="calculate_form2"]').addClass('border-danger');
                     return false;
                 }else{
-                    jQuery('input[name="calculate_form"]').removeClass('border-danger');
+                    jQuery('input[name="calculate_form2"]').removeClass('border-danger');
                 }
                         var type=false;
                         if(jQuery('input[name="is_company"]').is(':checked')){
@@ -634,9 +639,9 @@ span.border-bott {
                 jQuery("#form_1 input").val('');
                 jQuery("#form_2 input").val('');
 
-                jQuery('input[name="phone_number"]').removeClass('border-success');
+                jQuery('input[name="phone_number2"]').removeClass('border-success');
                 $('#verify').remove();
-                $('input[name="phone_number"]').removeAttr('readonly');
+                $('input[name="phone_number2"]').removeAttr('readonly');
                 // const form1 = document.getElementById('form_1');
                 // const form2 = document.getElementById('form_2');
                 // form1.reset();
@@ -647,13 +652,13 @@ span.border-bott {
             $(".accord-cal-step2").hide();
             $(".accordion-calculate-sub").click(function(){
                 console.log("click M",jQuery('input[name="is_company"]'));
-                var meters=jQuery('input[name="calculate_form"]')[1].value;
+                var meters=jQuery('input[name="calculate_form2"]')[1].value;
                 console.log(meters,"mm");
                 if(meters==''){
-                    jQuery('input[name="calculate_form"]').addClass('border-danger');
+                    jQuery('input[name="calculate_form2"]').addClass('border-danger');
                     return false;
                 }else{
-                    jQuery('input[name="calculate_form"]').removeClass('border-danger');
+                    jQuery('input[name="calculate_form2"]').removeClass('border-danger');
                 }
                         var type=false;
                         if(jQuery('input[name="is_company"]').is(':checked')){

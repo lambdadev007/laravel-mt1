@@ -33,7 +33,7 @@
             <li class="category d-fc">
                 <button class="category-button waves-button" type="button" data-toggle="collapse" data-target="#staff_projects-category" aria-expanded="{{ (HelpersCT::phantom_var($data['misc'], 'sidebar-category', 'staff_projects')) ? 'true' : 'false' }}" aria-controls="administration-category">
                     <span>
-                        <span class="dire-edit"> <span class="edit-text"> <a href="/enter/staff_projects/select"> ადმინები</a></span></span>
+                        <span class="dire-edit">  <span class="edit-text"><a class="sub-category-action" href="/enter/staff_projects/select"> ადმინები</a></span></span>
                     </span> 
                     <!--<span class="dire-right-arrow"></span>
                 </button>
@@ -213,7 +213,7 @@
             <li class="category d-fc">
                 <button class="category-button waves-button" type="button" data-toggle="collapse" data-target="#projects-category" aria-expanded="{{ (HelpersCT::phantom_var($data['misc'], 'sidebar-category', 'projects')) ? 'true' : 'false' }}" aria-controls="projects-category">
                     <span>
-                        <span class="dire-edit"><span class="edit-text"><a href="/enter/projects/select"> ნამუშევრები</a></span></span> 
+                        <span class="dire-edit"><span class="edit-text"><a class="sub-category-action" href="/enter/projects/select"> ნამუშევრები</a></span></span> 
                     </span>
                 <!--    <span class="dire-right-arrow"></span>
                 </button>
@@ -279,7 +279,7 @@
             <li class="category d-fc">
                 <button class="category-button waves-button" type="button" data-toggle="collapse" data-target="#slider-category" aria-expanded="{{ (HelpersCT::phantom_var($data['misc'], 'sidebar-category', 'slider-form')) ? 'true' : 'false' }}" aria-controls="blog-category">
                     <span>
-                        <span class="dire-edit"><span class="edit-text"><a href="/enter/slider-form/select"> კონსულტაციის ფორმა </a><span><span> 
+                        <span class="dire-edit"><span class="edit-text"><a class="sub-category-action" href="/enter/slider-form/select"> კონსულტაციის ფორმა </a><span><span> 
                     </span>
                     <!-- <span class="dire-right-arrow"></span>
                 </button>
@@ -309,7 +309,7 @@
             <li class="category d-fc">
                 <button class="category-button waves-button" type="button" data-toggle="collapse" data-target="#reciever-form-category" aria-expanded="{{ (HelpersCT::phantom_var($data['misc'], 'sidebar-category', 'reciever-form')) ? 'true' : 'false' }}" aria-controls="blog-category">
                     <span>
-                        <span class="dire-edit"><span class="edit-text"><a href="/enter/reciever-form/select"> ფორმის მიმღები </a></span></span>
+                        <span class="dire-edit"><span class="edit-text"><a class="class="sub-category-action" href="/enter/reciever-form/select"> ფორმის მიმღები </a></span></span>
                     </span>
                    <!-- <span class="dire-right-arrow"></span>
                 </button>
@@ -339,7 +339,7 @@
             <li class="category d-fc">
                 <button class="category-button waves-button" type="button" data-toggle="collapse" data-target="#pdf-form-category" aria-expanded="{{ (HelpersCT::phantom_var($data['misc'], 'sidebar-category', 'pdf-form')) ? 'true' : 'false' }}" aria-controls="blog-category">
                     <span>
-                        <span class="dire-edit"><span class="edit-text"><a href="/enter/pdf-form/select">Pdf ტექსტი</a></span></span> 
+                        <span class="dire-edit"><span class="edit-text"><a class="sub-category-action" href="/enter/pdf-form/select">Pdf ტექსტი</a></span></span> 
                     </span>
                    <!-- <span class="dire-right-arrow"></span>
                 </button>
