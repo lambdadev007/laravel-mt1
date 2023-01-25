@@ -917,15 +917,15 @@ a.box-cat1.active i#wrench, .box-cat1 a:hover i#wrench{
 i.square.ml-2 {
     display: none;
 }
-.owl-stage .owl-item.active {
+[class*=projects-] .owl-stage .owl-item.active {
   width : calc(100vw - 80px)!important;
   transition : width 0.2s;
 }
-.owl-stage .owl-item:first-child:last-child.active {
+[class*=projects-] .owl-stage .owl-item:first-child:last-child.active {
   width : calc(100vw - 30px)!important;
   transition : width 0.2s;
 }
-.owl-stage .owl-item {
+[class*=projects-] .owl-stage .owl-item {
   transition : width 0.2s;
 }
 .homepage-slider-wrapper .owl-item:first-child:last-child.active {

@@ -373,7 +373,6 @@ class AdminCore extends HelpersCT
                                     $model->save();
                                     // echo'<br>';
                                     // print_r($items);
-
                                     // exit;
 
                                     return redirect('/enter/projects/edit/'.$id)->with(['delete_success' => true]);
@@ -982,10 +981,10 @@ class AdminCore extends HelpersCT
                                                         $width = 100; $height = 100;
                                                         if ($imageWidth > $imageHeight) {
                                                             $width = 500;
-                                                            $height = $width * $imageHeight / $imageWidth;                                                            
+                                                            $height = round($width * $imageHeight / $imageWidth);                                                            
                                                         } else {
                                                             $height = 500;
-                                                            $width = $height * $imageWidth / $imageHeight;
+                                                            $width = round($height * $imageWidth / $imageHeight);
                                                         }
 
                                                         $watermarkSource =  Image::make(public_path($watermarkImagePath));//waterMark Image
@@ -1052,10 +1051,10 @@ class AdminCore extends HelpersCT
                                                         $width = 100; $height = 100;
                                                         if ($imageWidth > $imageHeight) {
                                                             $width = 500;
-                                                            $height = $width * $imageHeight / $imageWidth;                                                            
+                                                            $height = round($width * $imageHeight / $imageWidth);                                                            
                                                         } else {
                                                             $height = 500;
-                                                            $width = $height * $imageWidth / $imageHeight;
+                                                            $width = round($height * $imageWidth / $imageHeight);
                                                         }
                                                         $watermarkSource =  Image::make(public_path($watermarkImagePath));//waterMark Image
 
@@ -1076,6 +1075,7 @@ class AdminCore extends HelpersCT
                                                         $image->save(public_path($dir.'/'.$fileName));
                                                         $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
                                                         $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                        
                                                     }   
                                                 $items[] = [
                                                     'type' => 'mobile_image',
@@ -2514,15 +2514,15 @@ class AdminCore extends HelpersCT
                                                                                 $width = 100; $height = 100;
                                                                                 if ($imageWidth > $imageHeight) {
                                                                                     $width = 500;
-                                                                                    $height = $width * $imageHeight / $imageWidth;                                                            
+                                                                                    $height = round($width * $imageHeight / $imageWidth);                                                            
                                                                                 } else {
                                                                                     $height = 500;
-                                                                                    $width = $height * $imageWidth / $imageHeight;
+                                                                                    $width = round($height * $imageWidth / $imageHeight);
                                                                                 }
                                                                                 $watermarkSource =  Image::make(public_path($watermarkImagePath));
                                         
-                                                                                $watermarkSize = ( $imageWidth / 15);
-                                                                                $watermarkSize2 = ( $imageWidth / 15);
+                                                                                $watermarkSize = round( $imageWidth / 15);
+                                                                                $watermarkSize2 = round( $imageWidth / 15);
                                                                                 if($imageHeight > $imageWidth) {
                                                                                     $watermarkSize = round( $imageWidth / 8);
                                                                                     $watermarkSize2 = round( $imageWidth / 8);
@@ -2534,10 +2534,11 @@ class AdminCore extends HelpersCT
                                                                                 
                                                                                 /* insert watermark at bottom-left corner with 5px offset */
                                                                                 $image1 = Image::make(public_path($dir.'/'.$fileName));
-                                                                                $image->insert($watermarkSource, 'top-left',($watermarkSize/2) , 0);
+                                                                                $image->insert($watermarkSource, 'top-left',round($watermarkSize/2) , 0);
                                                                                 $image->save(public_path($dir.'/'.$fileName));
                                                                                 $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
                                                                                 $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                                                
                                                                             }   
                                                                         $items[] = [
                                                                             'type' => 'image',
@@ -2673,14 +2674,14 @@ class AdminCore extends HelpersCT
                                                             $width = 100; $height = 100;
                                                             if ($imageWidth > $imageHeight) {
                                                                 $width = 500;
-                                                                $height = $width * $imageHeight / $imageWidth;                                                            
+                                                                $height = round($width * $imageHeight / $imageWidth);                                                            
                                                             } else {
                                                                 $height = 500;
-                                                                $width = $height * $imageWidth / $imageHeight;
+                                                                $width = round($height * $imageWidth / $imageHeight);
                                                             }
                                                             $watermarkSource =  Image::make(public_path($watermarkImagePath));
 
-                                                            $watermarkSize = round( $imageWidth / 20);
+                                                            $watermarkSize = round( $imageWidth / 15);
                                                             $watermarkSize2 = round( $imageWidth / 15);
                                                             if($imageHeight > $imageWidth) {
                                                                 $watermarkSize = round( $imageWidth / 8);
@@ -2697,6 +2698,7 @@ class AdminCore extends HelpersCT
                                                             $image->save(public_path($dir.'/'.$fileName));
                                                             $webp=substr($fileName,0,strpos($fileName,'.')).'.webp';
                                                             $image1->resize($width, $height)->encode('webp', 80)->save('images/projects/'. $model->id .'/'. 'thumbnail-'. $webp);
+                                                        
                                                         }   
                                                     $items[] = [
                                                         'type' => 'mobile_image',

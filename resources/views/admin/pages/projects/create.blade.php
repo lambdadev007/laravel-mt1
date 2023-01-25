@@ -340,6 +340,23 @@
         $(document).ready(function() {
             jQuery('input[name="amount_of_images[]"]').on('change',function(){
                 var files = jQuery(this).prop("files");
+                if(files.length > 0) { 
+                    let totalSize = 0;
+                    for(var i = 0 ; i < files.length ; i++){
+                        totalSize += files[i].size;
+                    }
+                    if (totalSize > 10*1024*1024) {
+                        window.scrollTo(0,0);
+                        jQuery("form").prepend('<div class="alert alert-danger text-center">ფაილის ზომა აღემატება</div>');
+                        setTimeout(() => {
+                            $('.alert').addClass('hide')
+                        }, 1500)
+                        setTimeout(() => {
+                            $('.alert').remove()
+                        }, 2000)
+                        return;   
+                    }
+                } else return;
                 jQuery('#desktop_img').empty();
                 jQuery('#desktop_img').append('<label class="form-label w-25">ატვირთული სურათები(დესკტოპი):</label>');
                 for(var i = 0 ; i < this.files.length ; i++){
@@ -360,8 +377,25 @@
                     jQuery(this).parents('.img-div').remove();
                 });
             });
-            jQuery('input[name="amount_of_mobile_images[]"]').on('change',function(){
+            jQuery('input[name="amount_of_mobile_images[]"]').on('change',function(){ 
                 var files = jQuery(this).prop("files");
+                if(files.length > 0) { 
+                    let totalSize = 0;
+                    for(var i = 0 ; i < files.length ; i++){
+                        totalSize += files[i].size;
+                    }
+                    if (totalSize > 10*1024*1024) {
+                        window.scrollTo(0,0);
+                        jQuery("form").prepend('<div class="alert alert-danger text-center">ფაილის ზომა აღემატება</div>');
+                        setTimeout(() => {
+                            $('.alert').addClass('hide')
+                        }, 1500)
+                        setTimeout(() => {
+                            $('.alert').remove()
+                        }, 2000)
+                        return;   
+                    }
+                } else return;
                 jQuery('#mobile_img').empty();
                 jQuery('#mobile_img').append('<label class="form-label w-25">ატვირთული სურათები(მობილური):</label>');
                 for(var i = 0 ; i < this.files.length ; i++){

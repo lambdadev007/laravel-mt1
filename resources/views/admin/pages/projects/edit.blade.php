@@ -490,6 +490,23 @@ $in_progress = json_decode($data["raw"]["in_progress"]);
             jQuery('input[name="amount_of_images[]"]').on('change',function(){
                 var files = jQuery(this).prop("files");
                 console.log(files.length,"len");
+                if(files.length > 0) { 
+                    let totalSize = 0;
+                    for(var i = 0 ; i < files.length ; i++){
+                        totalSize += files[i].size;
+                    }
+                    if (totalSize > 10*1024*1024) {
+                        window.scrollTo(0,0);
+                        jQuery("form").prepend('<div class="alert alert-danger text-center">ფაილის ზომა აღემატება</div>');
+                        setTimeout(() => {
+                            $('.alert').addClass('hide')
+                        }, 1500)
+                        setTimeout(() => {
+                            $('.alert').remove()
+                        }, 2000)
+                        return;   
+                    }
+                } else return;
                 for(var i = 0 ; i < this.files.length; i++){
                     var fileName = this.files[i].name;
                     console.log(this.files,i);
@@ -511,6 +528,23 @@ $in_progress = json_decode($data["raw"]["in_progress"]);
             var mobi=jQuery('#next_mobi_img').val();
             jQuery('input[name="amount_of_mobile_images[]"]').on('change',function(){
                 var files = jQuery(this).prop("files");
+                if(files.length > 0) { 
+                    let totalSize = 0;
+                    for(var i = 0 ; i < files.length ; i++){
+                        totalSize += files[i].size;
+                    }
+                    if (totalSize > 10*1024*1024) {
+                        window.scrollTo(0,0);
+                        jQuery("form").prepend('<div class="alert alert-danger text-center">ფაილის ზომა აღემატება</div>');
+                        setTimeout(() => {
+                            $('.alert').addClass('hide')
+                        }, 1500)
+                        setTimeout(() => {
+                            $('.alert').remove()
+                        }, 2000)
+                        return;   
+                    }
+                } else return;
                 
                 for(var i = 0 ; i < this.files.length; i++){
                     var fileName = this.files[i].name;
