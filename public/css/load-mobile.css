@@ -30,13 +30,10 @@
     justify-content: center;
     margin: auto;
 }
-.homepage-slider-wrapper img {   
+.homepage-slider-wrapper img, .universal-banner-wrapper .image-wrapper img {   
   height: 525px;
   object-fit: cover;
 };
-.universal-banner-wrapper .image-wrapper img { 
-  object-fit: cover;
-}
 .right-box{
     width: 100% !important;
 }

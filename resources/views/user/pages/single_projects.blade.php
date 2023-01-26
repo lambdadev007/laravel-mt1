@@ -671,85 +671,97 @@
             
                 <div class=" @if ( $agent->isMobile() ) owl-carousel projects-slider-component similar-slider-mob @else row @endif pt-5" @if ( $agent->isMobile() ) id="p-s-c-b" @endif>
                     @foreach($similar_projects as $index => $project)
-                    @php
-                        $card_img=json_decode($project['card_image'],true);
-                        $title=json_decode($project['title'],true);
-                        $categories=json_decode($project['categories'],true);
-                        $section_items = json_decode($project['section_items'], true);
-                    if(!empty($section_items)){
-                        $section_items=array_reverse($section_items);
-                    }
-                $video=false;
-                    @endphp
-                    <div class=" @if ( $agent->isMobile() ) carousel-block text-center pt-3 @else col-md-6 col-sm-6 col-lg-3 single-pro-pad mob-2-col @endif">
-                        <div class="gallery-projects-style p-3">
-                        @foreach($section_items as $index => $item)
-                                            
-                                            @if($item['type']=='video' && !empty($item['code']))
-                                                @php
-                                                    $video=true;
-                                                @endphp
-                                            @endif
-                                            @if ( $agent->isMobile() )
-                                                
-                                                @if($item['type']=='mobile_image')
-                                                    @if($item['is_feature']=='1')
-                                                        <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
-                                                            @if($video)
-                                                                <img class="video-icon" src="/images/developer-images/video.png" alt="" >
-                                                            @endif
-                                                        </a>
-                                                    @else
-                                                        <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
-                                                            @if($video)
-                                                                <img class="video-icon" src="/images/developer-images/video.png" alt="" >
-                                                            @endif
-    
-                                                        </a>
-                                                        
+                        @php
+                            $card_img=json_decode($project['card_image'],true);
+                            $title=json_decode($project['title'],true);
+                            $categories=json_decode($project['categories'],true);
+                            $section_items = json_decode($project['section_items'], true);
+                            if(!empty($section_items)){
+                                $section_items=array_reverse($section_items);
+
+                            }                
+                            $in_progress = json_decode($project['in_progress']);
+                            $video=false;
+                        @endphp
+                        <div class=" @if ( $agent->isMobile() ) carousel-block text-center pt-3 @else col-md-6 col-sm-6 col-lg-3 single-pro-pad mob-2-col @endif">
+                            <div class="gallery-projects-style p-3" style="position:relative">
+                                @foreach($section_items as $index => $item)                                            
+                                    @if($item['type']=='video' && !empty($item['code']))
+                                        @php
+                                            $video=true;
+                                        @endphp
+                                    @endif
+                                    @if ( $agent->isMobile() )
+                                        
+                                        @if($item['type']=='mobile_image')
+                                            @if($item['is_feature']=='1')
+                                                <a href="/projects/single/{{ $project['id'] }}">
+                                                    <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
+                                                    @if($video)
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
                                                     @endif
-                                                    @break
-                                                @endif
+                                                </a>
                                             @else
-                                                @if($item['type']=='image' )
-                                                    
-                                                    @if($item['is_feature']=='1')
-                                                        <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
-                                                            @if($video)
-                                                                <img class="video-icon" src="/images/developer-images/video.png" alt="" >
-                                                            @endif
-    
-                                                        </a>
-                                                    @else
-                                                        <a href="/projects/single/{{ $project['id'] }}">
-                                                            <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
-                                                            @if($video)
-                                                                <img class="video-icon" src="/images/developer-images/video.png" alt="" >
-                                                            @endif
-    
-                                                        </a>
-                                                        
+                                                <a href="/projects/single/{{ $project['id'] }}">
+                                                    <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
+                                                    @if($video)
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
                                                     @endif
-                                                    @break
-                                                @endif
+
+                                                </a>
+                                                
                                             @endif
-                                        @endforeach
-                                        <a href="/projects/single/{{ $project['id'] }}" style="text-decoration:none;" class="similar-link-text"><div class="single-project-font-style-similer-para d-flex justify-content-between">
+                                            @break
+                                        @endif
+                                    @else
+                                        @if($item['type']=='image' )
+                                            
+                                            @if($item['is_feature']=='1')
+                                                <a href="/projects/single/{{ $project['id'] }}">
+                                                    <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
+                                                    @if($video)
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
+                                                    @endif
+
+                                                </a>
+                                            @else
+                                                <a href="/projects/single/{{ $project['id'] }}">
+                                                    <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
+                                                    @if($video)
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
+                                                    @endif
+
+                                                </a>
+                                                
+                                            @endif
+                                            @break
+                                        @endif
+                                    @endif
+                                @endforeach
+                                <a href="/projects/single/{{ $project['id'] }}" style="text-decoration:none;" class="similar-link-text">
+                                    <div class="single-project-font-style-similer-para d-flex justify-content-between">
                                         <div class="similar-text">
                                             <h3 class="myh3style text-left pro-style">{{ $title['ka'] }}</h3>
                                             <span class="single-project-font-style-similer-para-span-2">@foreach ($categories as $ci => $category) {{ $tranCT->translate($category) }}{{ (array_key_last($categories) == $ci) ? '' : ',' }} @endforeach</span>
                                         </div>
                                         <div>
-                                            <img class="similar-arrow" src="/images/developer-images/Send.png" alt="" height="18px"></a>
-                                        </div>
-                                </div> 
-                                
-
+                                            <img class="similar-arrow" src="/images/developer-images/Send.png" alt="" height="18px">
+                                        </div>    
+                                    </div>
+                                </a>
+                                @if($in_progress == "true")
+                                    <div class="project-in-progress"> 
+                                        <img src="https://metrix.ge/images/homepage/in-progress-cog.svg" style="opacity: 1;"> 
+                                        <span>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">მიმდინარე
+                                                </font>
+                                            </font>
+                                        </span> 
+                                    </div>
+                                @endif
+                            </div>
                         </div>
-                    </div>
                     @endforeach
                     
                     
@@ -1306,5 +1318,28 @@ document.getElementById("copy-url").addEventListener("click", copyUrl);
   }
   
 </script>
-
+<style>
+    .project-in-progress {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        direction: ltr;
+        width: 105px;
+        height: 30px;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        background-color: rgba(241,90,41,.5);
+        z-index: 10;
+    }
+    .project-in-progress img {
+        width: 15px!important;
+        height: 15px;
+        margin-right: 5px;
+    }
+    .project-in-progress span {
+        font-size : 12px;
+        color : white;
+    }
+</style>
 @endsection
