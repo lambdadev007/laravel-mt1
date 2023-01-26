@@ -31,7 +31,7 @@
                         $banner = $data['raw']['banner'];
                         if ( $agent->isMobile() ) $banner = $data['raw']['mob_banner'];
                     @endphp
-                    <img style="height:215px;" src="{{ asset($banner) }}" alt="VIP მასტერი">
+                    <img id="vip-master-landing-img" src="{{ asset($banner) }}" alt="VIP მასტერი">
                 @endif
                 {{-- <div class="background-layer"></div> --}}
             </div>

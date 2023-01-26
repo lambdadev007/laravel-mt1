@@ -37,6 +37,9 @@
 .right-box{
     width: 100% !important;
 }
+#vip-master-landing-img {
+  height : 215px!important;
+}
 a.box-cat1 {
     width: 100%;
     height: 120px;
