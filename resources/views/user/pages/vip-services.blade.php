@@ -150,12 +150,12 @@
                 <div class="col-md-12 px-0" style="position: fixed; bottom: 0; z-index: 200;">
                     <div class="vip-service-card">
                         <div class="top d-flex px-0">
-                            <a href="tel:{{ $data['service']->phone_number }}" role="button"><i id="vip-service-headphones" class="gray"></i></a>
-                            <a href="tel:{{ $data['service']->phone_number }}" class="d-flex justify-content-start orange">
+                            <a href="tel:+995{{  str_replace(' ', '', $data['service']->phone_number) }}" role="button"><i id="vip-service-headphones" class="gray"></i></a>
+                            <a href="tel:+995{{  str_replace(' ', '', $data['service']->phone_number) }}" class="d-flex justify-content-start orange">
                                 <i id="vip-service-phone" class="white mr-3"></i>
                                 <div class="d-fc">
                                     <span>დარეკე ახლავე</span>
-                                    <small>{{ $company_hotline['visible_phone_number'] }}</small>
+                                    <small>{{  $data['service']->phone_number  }}</small>
                                 </div>
                             </a>
                         </div>
@@ -221,7 +221,7 @@
             <div class="col-md-3">
                 <div class="vip-service-card">
                     <div class="top d-flex">
-                        <a href="tel:{{ $data['service']->phone_number }}" role="button"><i id="vip-service-phone" class="white"></i></a>
+                        <a href="tel:+995{{ str_replace(' ', '', $data['service']->phone_number)  }}" role="button"><i id="vip-service-phone" class="white"></i></a>
                         <div class="d-fc">
                             <small>მოითხოვე სპეციალისტი</small>
                             <span>+995 {{ $data['service']->phone_number }}</span>
