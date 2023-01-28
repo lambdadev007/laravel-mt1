@@ -43,6 +43,11 @@
                         <span class="letter-counter">0/60</span>
                         <input class="form-control" type="text" name="meta_keywords" placeholder="ქივორდები" value="{{ $data['meta_keywords'] }}" maxlength="60" required>
                     </div>
+                    <div class="form-section d-fc">
+                        <h5 class="mt-3">ტელეფონის ნომერი</h5>
+                        <span class="letter-counter">0/20</span>
+                        <input class="form-control" type="text" name="phone_number" placeholder="ტელეფონის ნომერი" value="{{ $data['phone_number'] }}" maxlength="20" required>
+                    </div>
                 </div>
             </div>
         {{-- Meta --}}

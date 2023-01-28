@@ -477,7 +477,7 @@ class AdminCore extends HelpersCT
                         return $data;
                         break;
 
-                        case 'staff_projects':
+                    case 'staff_projects':
                             $this->create_log('ახალი ადმინის შექმნა');
     
                             $data = [
@@ -1386,6 +1386,7 @@ class AdminCore extends HelpersCT
                             $model->outside_title = $request->outside_title;
                             $model->meta_keywords = $request->meta_keywords;
                             $model->meta_description = $request->meta_description;
+                            $model->phone_number = $request->phone_number;
                         // * Meta
                         
                         // * Image
@@ -3004,6 +3005,7 @@ class AdminCore extends HelpersCT
                             $model->outside_title = $request->outside_title;
                             $model->meta_keywords = $request->meta_keywords;
                             $model->meta_description = $request->meta_description;
+                            $model->phone_number = $request->phone_number;
                         // * Meta
                         
                         // * Image
