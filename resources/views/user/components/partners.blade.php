@@ -8,7 +8,7 @@
 @endphp
 
 <div class="projects-slider-component-wrapper my-0">
-    <div class="header container-1280">
+    <div class="header container-1280 pl-3">
         <span class="title">{{ $tranCT->translate('brands') }}</span>
     </div>
 </div>

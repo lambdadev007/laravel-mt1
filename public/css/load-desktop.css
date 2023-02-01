@@ -1186,7 +1186,7 @@
 
         /* * Lower */
         /* digiwised */
-        .accordion-div,.container-1200.form_1.mb-5, .container-1200.form_2.mb-5{
+        .accordion-div, .container-1200.form_1.mb-5, .container-1200.form_2.mb-5{
             display: none;
         }
         .cat-rightbox-custom{
@@ -7508,7 +7508,7 @@
         opacity: 1;
     }
     .project-img a.project-link-image img {
-        height: 190px;
+        height: 170px;
         /* aspect-ratio: 3/2; */
     }
     .projects-page-wrapper .project-img a.main-project-image img {
@@ -7928,4 +7928,21 @@ div#service-designer   { margin-right: 80px;}
 
 i.square.ml-2 {
     display: none;
+}
+.accordion {
+    background-color: #232f47;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    transition: 0.4s;
+}
+.accordion.calculate-box-top:not(.active) {
+    padding-bottom : 0;
+}
+.accordion:not(.active) + .panel {
+    max-height : 0;
+    overflow : hidden;
+}
+.for-desktop .accordion {
+    display : flex;
 }

@@ -157,16 +157,326 @@
                 </div>
                 <div class="bottom-buttons justify-content-center">
                     <a href="tel:{{ $company_hotline['call_phone_number'] }}"><i class="dark" id="awesome-phone"></i> {{ $company_hotline['visible_phone_number'] }}</a>
-                    @if ( @$data['has_invoice'] )
+                    <button type="button" style="width:auto;" class="single-project-font-style-note-invoice-btn__repair px-3"  data-target="#project-modal-form-projects" data-toggle="modal">
+                        {{ $tranCT->translate('generate_invoice') }}
+                    </button>
+                    <!-- @if ( @$data['has_invoice'] )
                         <button type="button" {{ Cookie::has('invoice_sent') ? 'disabled' : '' }} id="call-invoice" class="px-3" style="width: auto; {{ Cookie::has('invoice_sent') ? 'border-color: var(--gray); color: var(--gray);' : '' }}">{{ $tranCT->translate('generate_invoice') }}</button>
-                    @endif
+                    @endif -->
                 </div>
             </div>
         @endif
     </div>
 
+    <div class="modal fade modal-background show" id="project-modal-form-projects" data-toggle="modal" tabindex="-1" role="dialog" aria-labelledby="project-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-custom modal-1160 modal-projects modal-dialog-centered" role="document">
+            <div class="modal-content">
+                @if ( $data['exists'] )
+                    <?php $i=0;?>
+                    <div class="">
+                        <!-- --------------first------------------ -->
+                        <div class="calculate-box calculate-box-custom for-desktop" id="desktop-dnone">
+                            <form action="/sliderform" method="post" >
+                                <div class="cal-form-1">
+                                    <div class="calculate-box-top">
+                                        <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" height="25px"></div>
+                                        <div class="calculate-top-text"><p>დათვალე რემონტის ხარჯები</p></div>
+                                        <div class="box-logo"><img src="{{ asset('images/logos/form-logo-1.png') }}" height="25px"></div>
+                                    </div>
+                                    <div class="calculate-mid">
+                                        @csrf
+                                        <p class="mid-top-text">მოითხოვე პროექტის ხარჯთაღრიცხვა </p>
+                                        <div class="bars-div">
+                                            <span class="bars-area-l"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area-l"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area-l"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                        </div>
+                                        <div class="text-input-div">
+                                            <p class="cal-input-text">რამდენი კვადრატია თქვენი ფართი?<span class="red-color">*</span></p>
+                                            <input class="cal-input-area" type="text" placeholder="მიუთითეთ" name="calculate_form" required />
+                                        </div>
+                                        <div class="checkbox-div">
+                                            <input type="checkbox" name="is_company" class="cal1-input-check">
+                                            <label class="check-label">მონიშნეთ კომპანიის შემთხვევაში</label>
+                                        </div>
+                                        <div class="arrow-right">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                        </div>
+                                        <div class="cal-submit-div">
+                                            <button type="button" class="calculate-sub">გაგრძელება</button>
+                                        </div>
+                                    </div>                        
+                                </div>
+                                <div class="cal-step-2">
+                                    <div class="step2-top d-flex justify-content-between align-items-center">
+                                        <div class="">
+                                            <p class="form2-top-all">სულ: <span class="first-price">₾1240.00</span></p>
+                                        </div>
+                                        <div class="bars-div">
+                                            <span class="bars-area-l"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area-l"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area-l"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                            <span class="bars-area"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form2-mid" id="fields">
+                                        <div class="text-input-div">
+                                            <p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>
+                                            <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name2"  autocomplete="new-password" required />
+                                        </div>
+                                        
+                                        
+                                        <div class="text-input-div">
+                                            <p class="cal-input-text">ელ.ფოსტა</p>
+                                            <input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email2" autocomplete="new-password" required />
+                                        </div>
+                                        
+                                            <div class="text-input-div">
+                                            <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
+                                            <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" autocomplete="new-password" required />
+                                        </div>
+                                        
+                                        
+                                        <div class="d-flex justify-content-between mt-4">
+                                            <div class="checkbox-div">
+                                                <input type="checkbox" name="terms" required class="cal1-input-check" >
+                                                <label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            </div>
+                                        </div>
+                                        <div class="cal-submit-div">
+                                            <button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამორვირთვა</button>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="form2-mid" id="company" style="display: none;">
+                                        <div class="text-input-div">
+                                            <p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>
+                                            <input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ტელეფონის ნომერი" name="phone_number" required />
+                                        </div>
+                                        <div class="text-input-div">
+                                            <p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>
+                                            <input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის სახელი" name="full_name" required />
+                                        </div>
+                                        <div class="text-input-div">
+                                            <p class="cal-input-text">კომპანიის ელფოსტა</p>
+                                            <input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ელექტრონული ფოსტის მისამართი" name="email" required />
+                                        </div>
+                                        <div class="d-flex justify-content-between mt-4">
+                                            <div class="checkbox-div">
+                                                <input type="checkbox" name="terms" required class="cal1-input-check" >
+                                                <label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            </div>
+                                        </div>
+                                        <div class="cal-submit-div">
+                                            <button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download.png') }}">ინვოისის ჩამორვირთვა</button>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </form>
+                        </div>
+                        <!-- -----------------------second-------------------- -->
+                        <div class="accordion-div" style="top:-180px !important;">
+                            <button class="accordion calculate-box-top ">
+                                <!-- <div class="calculate-box-top"> -->
+                                    <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" height="25px"></div>
+                                    <div class="calculate-top-text"><p>დათვალე რემონტის ხარჯები</p></div>
+                                    <!-- <div class="box-logo"><img src="{{ asset('images/logos/form-logo.png') }}"></div> -->
+                                <!-- </div> -->
+                            </button>
+                            <div class="panel">
+                                <form action="/sliderform" method="post">
+                                    <div class="calculate-box for-mobile">
+                                        <div class="calculate-mid accord-cal-mid">
+                                        
+                                            @csrf
+                                            <p class="mid-top-text">მოითხოვე პროექტის ხარჯთაღრიცხვა </p>
+                                            <div class="bars-div">
+                                                <span class="bars-area-l"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area-l"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area-l"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                                <span class="bars-area"></span>
+                                            </div>
+                                            <div class="text-input-div">
+                                                <p class="cal-input-text">tრამდენი კვადრატია თქვენი ფართი?<span class="red-color">*</span></p>
+                                                <input class="cal-input-area" type="text" placeholder="მიუთითეთ" name="calculate_form" required />
+                                            </div>
+                                            <div class="checkbox-div">
+                                                <input type="checkbox" name="is_company" class="cal1-input-check">
+                                                <label class="check-label">მონიშნეთ კომპანიის შემთხვევაში</label>
+                                            </div>
+                                            <div class="arrow-right">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            </div>
+                                            <div class="cal-submit-div">
+                                                <button type="button" class="accordion-calculate-sub">გაგრძელება</button>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="accord-cal-step2">
+                                            <div class="step2-top d-flex justify-content-between align-items-center">
+                                                <div class="">
+                                                    <p class="form2-top-all">სულ: <span class="first-price">₾1240.00</span></p>
+                                                </div>
+                                                <div class="bars-div">
+                                                    <span class="bars-area-l"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area-l"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area-l"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                    <span class="bars-area"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form2-mid" id="fields-mob">
+                                                <div class="text-input-div">
+                                                    <p class="cal-input-text">სახელი და გვარი<span class="red-color">*</span></p>
+                                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ სახელი და გვარი" name="full_name" required />
+                                                </div>
+                                                <div class="text-input-div">
+                                                    <p class="cal-input-text">ტელეფონის ნომერი<span class="red-color">*</span></p>
+                                                    <input class="cal-input-area" type="text" placeholder="მიუთითეთ ტელეფონის ნომერი" name="phone_number2" required />
+                                                </div>
+                                                
+                                                <div class="text-input-div">
+                                                    <p class="cal-input-text">ელ.ფოსტა</p>
+                                                    <input class="cal-input-area" type="text" placeholder="ჩაწერეთ ელ.ფოსტა" name="email" required />
+                                                </div>
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <div class="checkbox-div">
+                                                        <input type="checkbox" name="terms" required class="cal1-input-check">
+                                                        <label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>
+                                                    </div>
+                                                    <div class="arrow-right">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                </div>
+                                                </div>
+                                                <div class="cal-submit-div">
+                                                    <button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამორვირთვა</button>
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form2-mid" id="company" style="display: none;">
+                                                <div class="text-input-div">
+                                                    <p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>
+                                                    <input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ტელეფონის ნომერი" name="phone_number" required />
+                                                </div>
+                                                <div class="text-input-div">
+                                                    <p class="cal-input-text">კომპანიის ნომერი<span class="red-color">*</span></p>
+                                                    <input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის სახელი" name="full_name" required />
+                                                </div>
+                                                <div class="text-input-div">
+                                                    <p class="cal-input-text">კომპანიის ელფოსტა</p>
+                                                    <input class="cal-input-area" type="text" placeholder="შეიყვანეთ კომპანიის ელექტრონული ფოსტის მისამართი" name="email" required />
+                                                </div>
+                                                <div class="d-flex justify-content-between mt-4">
+                                                    <div class="checkbox-div">
+                                                        <input type="checkbox" name="terms" required class="cal1-input-check" >
+                                                        <label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>
+                                                    </div>
+                                                    <div class="arrow-right">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                </div>
+                                                </div>
+                                                <div class="cal-submit-div">
+                                                    <button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download.png') }}">ინვოისის ჩამორვირთვა</button>
+                                                </div>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>   
+                @endif 
+            </div>
+        </div>
+    </div>
+    <style>
+    .calculate-box-custom{
+        position: fixed;
+        left: 50%;
+        transform : translate(-50%,0);
+        top: 30px;
+    }
+    </style>
     @if ( @$data['has_invoice'] )
-        <div class="modal fade" role="dialog" id="invoice_modal">
+        <!-- <div class="modal fade" role="dialog" id="invoice_modal">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -223,7 +533,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     @endif
 
     @include('user.components.projects')
@@ -253,6 +563,75 @@
             @if ( old('requestor_email') != null )
                 $('#invoice_modal').modal()
             @endif
+            
+            $(".cal-step-2").hide();
+            $(".calculate-sub").click(function(){
+                console.log("click d");
+                var meters=jQuery('input[name="calculate_form"]').val();
+                if(meters==''){
+                    jQuery('input[name="calculate_form"]').addClass('border-danger');
+                    return false;
+                }else{
+                    jQuery('input[name="calculate_form"]').removeClass('border-danger');
+                }
+                        var type=false;
+                        if(jQuery('input[name="is_company"]').is(':checked')){
+                            type=true;
+                        }
+                        console.log(type);
+                        jQuery.ajax({
+                            url:'/sliderform',
+                            type:'POST',
+                            data:{action:'first_form',calculate_form:meters,is_company:type},
+                            success:function(data){
+                                // console.log(data);
+                                var res=jQuery.parseJSON(data);
+                                if(res.status=="success"){
+                                    jQuery('.first-price').text('₾ '+res.price);
+                                    $(".cal-form-1").hide();
+                                    $(".cal-step-2").show();
+                                }
+                                
+                            },
+                        });
+              
+            });
+            $(".accord-cal-step2").hide();
+            $(".accordion-calculate-sub").click(function(){
+                console.log("click M",jQuery('input[name="is_company"]'));
+                var meters=jQuery('input[name="calculate_form"]')[1].value;
+                console.log(meters,"mm");
+                if(meters==''){
+                    jQuery('input[name="calculate_form"]').addClass('border-danger');
+                    return false;
+                }else{
+                    jQuery('input[name="calculate_form"]').removeClass('border-danger');
+                }
+                var type=false;
+                if(jQuery('input[name="is_company"]').is(':checked')){
+                    type=true;
+                }
+                jQuery.ajax({
+                    url:'/sliderform',
+                    type:'POST',
+                    data:{action:'first_form',calculate_form:meters,is_company:type},
+                    success:function(data){
+                        // console.log(data);
+                        var res=jQuery.parseJSON(data);
+                        if(res.status=="success"){
+                            jQuery('.first-price').text('₾ '+res.price);
+                            $(".accord-cal-mid").hide();
+                            $(".accord-cal-step2").show();
+                            $('.accordion.calculate-box-top').click();
+                            $('.accordion.calculate-box-top').click();
+                            $(".container-1200.form_1.mb-5").hide();
+                            $(".container-1200.form_2.mb-5").show();
+                            
+                        }
+                        
+                    },
+                });               
+            });
         })
     </script>
 @endsection

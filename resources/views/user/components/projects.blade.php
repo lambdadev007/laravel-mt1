@@ -11,7 +11,7 @@
 @endphp
 
 <div class="projects-slider-component-wrapper d-fc" id="project-slider-filter">
-    <div class="header container-1280">
+    <div class="header container-1280 pl-3">
         <span class="title">{{ $tranCT->translate('featured_works') }}</span>
         <i class="square"></i>
         <div class="categories">
@@ -60,7 +60,7 @@
 
             @endphp
             
-            <div class="carousel-block text-center pt-3" >
+            <div class="carousel-block text-center pt-3 pl-3 pr-1" >
                 <div class ="p-3 project-img carousel-project-response" style="background-color:#F2F2F2;">
                         <!-- @if ( $item['type'] == 'image' ) -->
                         <!-- <a href="/projects/single/{{ $item['id'] }}">
@@ -227,6 +227,9 @@
 .projects-slider-component-wrapper .header .categories a:hover, .projects-slider-component-wrapper .header .categories a.active {
     color: rgb(var(--metrix-orange-accent));
 }
+.project-img {
+    position : relative;
+}
 .project-in-progress {
     display: flex;
     align-items: center;
@@ -235,7 +238,7 @@
     width: 105px;
     height: 30px;
     position: absolute;
-    top: 40px;
+    top: 25px;
     left: 25px;
     background-color: rgba(241,90,41,.5);
     z-index: 10;

@@ -264,43 +264,43 @@ span.border-bott {
                     if (panel.style.maxHeight) {
                     panel.style.maxHeight = null;
                     } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    panel.style.maxHeight = "100%";
                     } 
                 });
                 }
-                $(".single-project-font-style-note-invoice-btn").click(function(){
-                    var acc = document.getElementsByClassName("accordion");
-                var i;
-
-                for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                    } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    } 
-                });
-                }
-                    console.log("on click");
-                    setTimeout(function() {
+                $("[class*=single-project-font-style-note-invoice-btn]").click(function(){
                     var acc = document.getElementsByClassName("accordion");
                     var i;
-                    console.log("on click 2");
+
                     for (i = 0; i < acc.length; i++) {
-                    var panel = acc[i].nextElementSibling;
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    acc[i].onclick = function() {
-                        this.classList.toggle("active");
-                        var panel = this.nextElementSibling;
-                        if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                        } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
+                        acc[i].addEventListener("click", function() {
+                            this.classList.toggle("active");
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                            } else {
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                            } 
+                        });
+                    }
+                    console.log("on click");
+                    setTimeout(function() {
+                        var acc = document.getElementsByClassName("accordion");
+                        var i;
+                        console.log("on click 2");
+                        for (i = 0; i < acc.length; i++) {
+                            var panel = acc[i].nextElementSibling;
+                            panel.style.maxHeight = panel.scrollHeight + "px";
+                            acc[i].onclick = function() {
+                                this.classList.toggle("active");
+                                var panel = this.nextElementSibling;
+                                if (panel.style.maxHeight) {
+                                panel.style.maxHeight = null;
+                                } else {
+                                panel.style.maxHeight = panel.scrollHeight + "px";
+                                }
+                            }
                         }
-                    }
-                    }
                     }, 500);
                     console.log("on click3");
                 });

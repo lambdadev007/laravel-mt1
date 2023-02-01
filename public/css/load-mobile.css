@@ -609,7 +609,7 @@ a.box-cat1.active i#wrench, .box-cat1 a:hover i#wrench{
 } */
   .projects-page-wrapper .project-img a.main-project-image img {
     width: 100%;
-    height: 418px;
+    height: 300px;
   }
   
   .project-arrow-top{

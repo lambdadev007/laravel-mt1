@@ -69,6 +69,14 @@
         }(document, "script", "twitter-wjs"))
     </script>
     <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: ka_GE</script>
+    <style>
+        .upper-navbar-number {
+            display : none!important;
+        }
+        .container-1280 .right > a {
+            display : none!important;
+        }
+    </style>
 @endsection
 
 @section('content')

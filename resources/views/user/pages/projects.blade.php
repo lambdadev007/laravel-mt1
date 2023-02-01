@@ -299,6 +299,9 @@
         })
     </script>
     <style>
+        .project-img {
+            position : relative;
+        }
         .project-in-progress {
             display: flex;
             align-items: center;
@@ -307,8 +310,8 @@
             width: 105px;
             height: 30px;
             position: absolute;
-            top: 40px;
-            left: 38px;
+            top: 25px;
+            left: 25px;
             background-color: rgba(241,90,41,.5);
             z-index: 10;
         }
