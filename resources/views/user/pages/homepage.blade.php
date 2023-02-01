@@ -671,37 +671,39 @@
 
 @section('js')
 <script type="text/javascript">
-        $(document).ready(function(){
+    $(document).ready(function(){
 
-$('.about-service-wrapper .category-buttons > a').each(function() {
-                $(this).click(function() {
-                    $(this).siblings('a').removeClass('active')
-                    $(this).addClass('active')
-
-                    if ( $(this).attr('id') == 'furniture' ) {
-                        $('.service-text .upper strong').text('{{ $tranCT->translate('furniture_crafting') }}')
-                        $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_0'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
-                        $('.service-text .lower a').attr('href', 'furniture')
-                    } else if ( $(this).attr('id') == 'vip-master' ) {
-                        $('.service-text .upper strong').text('{{ $tranCT->translate('vip_master') }}')
-                        $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_1'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
-                        $('.service-text .lower a').attr('href', 'vip-master')
-                    } else if ( $(this).attr('id') == 'designer' ) {
-                        $('.service-text .upper strong').text('{{ $tranCT->translate('designer') }}')
-                        $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_2'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
-                        $('.service-text .lower a').attr('href', 'designer')
-                    } else if ( $(this).attr('id') == 'repairs' ) {
-                        $('.service-text .upper strong').text('{{ $tranCT->translate('repairs') }}')
-                        $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_3'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
-                        $('.service-text .lower a').attr('href', 'repairs')
-                    }
-                })
-            })
-
-            $('.projects-slider-wrapper .header .categories button').click(function() {
-                $(this).siblings('button').removeClass('active')
+        $('.about-service-wrapper .category-buttons > a').each(function() {
+            $(this).click(function() {
+                $(this).siblings('a').removeClass('active')
                 $(this).addClass('active')
+
+                if ( $(this).attr('id') == 'furniture' ) {
+                    $('.service-text .upper strong').text('{{ $tranCT->translate('furniture_crafting') }}')
+                    $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_0'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
+                    $('.service-text .lower a').attr('href', 'furniture')
+                } else if ( $(this).attr('id') == 'vip-master' ) {
+                    $('.service-text .upper strong').text('{{ $tranCT->translate('vip_master') }}')
+                    $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_1'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
+                    $('.service-text .lower a').attr('href', 'vip-master')
+                } else if ( $(this).attr('id') == 'designer' ) {
+                    $('.service-text .upper strong').text('{{ $tranCT->translate('designer') }}')
+                    $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_2'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
+                    $('.service-text .lower a').attr('href', 'designer')
+                } else if ( $(this).attr('id') == 'repairs' ) {
+                    $('.service-text .upper strong').text('{{ $tranCT->translate('repairs') }}')
+                    $('.service-text .middle p').html('{!! ($data['exists']) ? $data['about'][Session::get('locale')]['text_3'] : 'დააჭირეთ რომ შეცვალოთ ტექსტი.' !!}')
+                    $('.service-text .lower a').attr('href', 'repairs')
+                }
             })
         })
-    </script>
+
+        $('.projects-slider-wrapper .header .categories button').click(function() {
+            $(this).siblings('button').removeClass('active')
+            $(this).addClass('active')
+        })
+        
+        $('.for-desktop .accordion.calculate-box-top').click();
+    })
+</script>
 @endsection

@@ -66,7 +66,6 @@
     <?php $feature_img = 'images/logos/logo.png'; ?>
 @endif
 
-<?php echo json_encode($feature_img);   echo "<br />" ?>
 @section('meta')
     @if ( $data['exists'] )
         <meta property="og:url" content="{{ url()->current() }}"/>
