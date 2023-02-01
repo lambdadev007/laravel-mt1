@@ -351,7 +351,7 @@
         @endif
     </div>    
 
-        <div class="homepage-video-wrapper d-flex container-1280 new-section-home">
+        <div class="homepage-video-wrapper d-flex container-1280 new-section-home justify-content-around">
              
                 <div class="video">
                     
@@ -429,8 +429,8 @@
         </div>
 -->
         <div class="custom-digi-border"></div>
-        <div class="d-flex container-1200 pt-5 pb-5 cat-div-mobile">
-            <div class="row m-0 justify-content-between desktop-small">
+        <div class="d-flex container-1280 pt-5 pb-5 cat-div-mobile">
+            <div class="row m-0 justify-content-around desktop-small">
                 <div class="col-md-5 home-cat p-0">
                     <div class="cat-box row">
                        <div class="col-6 col-sm-6">

@@ -3851,18 +3851,13 @@
             }
 
             .homepage-video-wrapper .video .right-block {
-                position: absolute;
-                left: 0;
-                top: 50%;
-                transform: translateY(-50%);
                 height: 140px;
                 width: 530px;
                 background: rgb(var(--metrix-light-gray-accent));
-                z-index: -5;
+                margin-top : 50px;
             }
 
             .homepage-video-wrapper .text {
-                width: 710px;
                 margin-left: auto;
             }
 
@@ -3882,7 +3877,6 @@
             }
 
             .homepage-video-wrapper .text .upper p {
-                width: 90%;
                 overflow: hidden;
                 margin-bottom: 26px;
             }
@@ -7519,7 +7513,7 @@
     .project-img a .video-icon{
         position: absolute;
         width: 40px !important;
-        top: 43% !important;
+        top: 50% !important;
         left: 50% !important;
         transform: translate(-50%, -50%);
     }
@@ -7804,6 +7798,7 @@ color:#232f47;
     }
     .new-section-home .text{
         margin-left: unset;
+        max-width : 41%;
     }
     .btn, .universal-button, h1, h3, h4, h2, button{
         font-family: var(--MyriadBold);
@@ -7887,12 +7882,6 @@ span.dire-edit:hover {
 
 /*.col-md-5.home-cat.p-0 { margin-left: 20px; }  } } */
  
- div#service-vip { margin-right: 80px;}
- 
-div#service-designer   { margin-right: 80px;}
-
- div#service-furniture { margin-right: 80px; } div#service-repairs { margin-right: 80px; }
-
     /* h1{
         font-family: var(--FiraBook);
     } */
@@ -7951,5 +7940,10 @@ i.square.ml-2 {
 
 .article-cards {
     margin-left:30px;
+}
+
+.main-project-image, .project-link-image {
+    position : relative;
+    display : block;
 }
 
