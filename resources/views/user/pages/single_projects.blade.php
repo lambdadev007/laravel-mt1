@@ -38,7 +38,7 @@
 @foreach($area as $i => $v)
     @foreach($v as $key => $val)
         @if ($key == "is_feature" && $val == "1")
-            <?php   $feature_img = $v['thumbnail'];
+            <?php   $feature_img = $v['location'];
                     break;
             ?>
         @endif
