@@ -183,7 +183,7 @@
                         <a href="#"><i class="yellow" id="mobile-market-magnifying-glass"></i></a>
                     @endif -->
                     <div class="upper-facebook">
-                        <a href="#" class="upper-facebook-box">
+                        <a href="https://www.facebook.com/metrix.remonti.aveji" class="upper-facebook-box">
                             <img class="facbook-image" src="{{ asset('images/xd-icons/colored/facebook-icon-colored.png') }}" style="height:20px;width:20px;">
                         </a>
                     </div>
