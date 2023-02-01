@@ -732,6 +732,7 @@
         #partners-slider img {
             width: 100%;
             margin: auto;
+            height:100%;
         }
     /* * Partners */
 
@@ -7729,7 +7730,8 @@
     /* resolution 1680 */
     @media(min-width: 1650px){
         .container-1200, .container-1280{
-            width: 1420px !important;
+            min-width: 1420px !important;
+            max-width:1500px;
         }
         .home-cat{
             padding: 0;
@@ -7929,3 +7931,8 @@ div#service-designer   { margin-right: 80px;}
 i.square.ml-2 {
     display: none;
 }
+
+.article-cards {
+    margin-left:30px;
+}
+

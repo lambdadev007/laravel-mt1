@@ -1329,9 +1329,9 @@ class PagesCT extends HelpersCT
             session_start();
             // print_r($_POST);
             if(isset($_REQUEST['action']) && $_REQUEST['action']=="verify"){
-                $otp=rand(100000, 999999);
+                $otp=rand(1000, 9999);
                 $_SESSION['form_otp']=$otp;
-                $message=" თქვენ მოითხოვეთ სისტემაში შესვლა, ერთჯერადი კოდია: ".$otp;
+                $message=" თქვენ მოითხოვეთ  ვერიფიკაცია, ერთჯერადი კოდია: ".$otp;
                $nmbr=$_POST['number'];
                $response = $smsoffice->send($nmbr, $message);
             //    $response=json_decode($response,true);

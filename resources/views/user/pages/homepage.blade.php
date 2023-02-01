@@ -439,13 +439,13 @@
             <div class="row m-0 justify-content-between desktop-small">
                 <div class="col-md-5 home-cat p-0">
                     <div class="cat-box row">
-                        <div class="col-6 col-sm-6">
-                            <a href="#vip-masteri" class="active box-cat1 services-btn" data-name="vip">
-                                <!-- <i class="white" id="arrow-right"></i> -->
-                                <i id="wrench"></i>
-                                <p>{{ $tranCT->translate('vip_master') }}</p>
+                       <div class="col-6 col-sm-6">
+                            <a href="#remonti" class="active box-cat1 services-btn" data-name="repairs">
+                                <!-- <i class="white reverse" id="arrow-right"></i> -->
+                                <i id="paint-roller"></i>
+                                <p>{{ $tranCT->translate('repairs') }}</p>
                             </a>
-                        </div>
+                        </div>  
                         <div class="col-6 col-sm-6">
                             <a href="#dizaineri" class="box-cat1 services-btn" data-name="designer">
                                 <!-- <i class="white reverse" id="arrow-right"></i> -->
@@ -460,13 +460,16 @@
                                 <p>{{ $tranCT->translate('furniture_crafting') }}</p>
                             </a>
                         </div>
-                        <div class="col-6 col-sm-6">
-                            <a href="#remonti" class="box-cat1 services-btn" data-name="repairs">
-                                <!-- <i class="white reverse" id="arrow-right"></i> -->
-                                <i id="paint-roller"></i>
-                                <p>{{ $tranCT->translate('repairs') }}</p>
+                       
+                       <div class="col-6 col-sm-6">
+                            <a href="#vip-masteri" class="box-cat1 services-btn" data-name="vip">
+                                <!-- <i class="white" id="arrow-right"></i> -->
+                                <i id="wrench"></i>
+                                <p>{{ $tranCT->translate('vip_master') }}</p>
                             </a>
                         </div>
+                       
+                       
                     </div>    
                 <!-- <div class="box-cat1">
                     <img src="{{ asset('images/homepage/Path 7.png') }}">
@@ -481,42 +484,37 @@
                     <img src="{{ asset('images/homepage/Path 17.png') }}">
                 </div> -->
             </div>
-            <!-- vip -->
-            <div class="col-md-5 home-cat ser" id="service-vip">
+            <!-- repairs -->
+            <div class="col-md-5 home-cat ser" id="service-repairs">
                 <div class="right-box  cat-rightbox-custom">
                     <div class="d-flex flex-wrap for-home-mobile-text">
                         <h4 class="text-warning"><strong>სერვისის შესახებ</strong></h4>
-                        <p class="d-flex h4"><i class="square"></i><strong><span class="border-bott">VIP მასტერი</span></strong></p>
+                        <p class="d-flex h4"><i class="square"></i><strong><span class="border-bott">{{ $tranCT->translate('repairs') }}</span></strong></p>
                     </div>
-                    @if($data['has_vip'])
+                    @if($data['has_repairs'])
                     @php
-                        $meta=json_decode($data['vip']['meta'],true);
-                        //print_r($meta);
-
+                        //print_r($data['repairs']['meta_description']);
                         //exit;
                     @endphp
-                    @foreach($meta as $item)
-                  <!--  <div class="remove-padding">
-                        <h6 class=" pt-2 m-0">{{ $item['meta_title'] }}</h6>
-                        <p class="w-75 pl-1">{{ $item['meta_description'] }}</p>
-                    </div> -->
-                    @endforeach
+                    
+                    <div class="remove-padding">
+                        <!--<p class="w-75 pt-4 m-0">{{ $data['repairs']['meta_description'] }}</p> -->
+                    </div>
                     @endif
-                   <div class="remove-padding">
-                        <p class="w-75 pt-4 m-0">ყოველდღიური გაგებით, გავრცელებულია რწმენა, რომ მტვირთავები და მუშები ერთი და იგივე პროფესიის სახელებია. ეს გაგება ემყარება იმ ფაქტს, რომ ორივე ეს პოზიცია. შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის</p>
+                    <div class="remove-padding">
+                        <p class="w-75 pt-4 m-0">რემონტის წამოწყება უამრავ სირთულეს უკავშირდება - მაღაზიებში სირბილი, მასალის შერჩევა, კარგი ხელოსნის პოვნა, თვეობით გაწელილი ვადები და რემონტს შეწირული ნერვები. Metrix-თან თანამშრომლობისას მსგავსი შემთხვევებისგან სრულად ხართ დაცული. მეტრიქსი გამოცდილ და სანდო ხელოსნებს აერთიანებს. ისინი მზად არიან, რემონტთან დაკავშირებული ნებისმიერი უსიამოვნება საკუთარ თავზე აიღონ და დასრულებული პროექტი წინასწარ განსაზღვრულ ვადებში ჩაგაბარონ. </p>
                     </div>
                     <div class="remove-padding">
-                        <p class="w-75 pt-3 ">შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის.</p>
+                        <p class="w-75 pt-3 ">Metrix-ის ხელოსნების გუნდი გთავაზობთ სრულ სარემონტო მომსახურებას ერთ სივრცეში: იატაკის დაგება, აბაზანის მოპირკეთება, სანტექნიკის მონტაჟი, შპალერის გაკვრა, კედლის შეღებვა, გათბობა/კონდიცირების სისტემის მონტაჟი, ელექტროგაყვანილობის დაგეგმვა, კედლებისა თუ იატაკის თბოიზოლაცია, შეკიდული ჭერის მონტაჟი და სხვა. .</p>
                     </div>
-                    
-                   
                     <div class=" home-button-space-bot">
-                        <a href="/vip-master" class="btn text-warning border bg-white border-warning detail-full-button">დაწვრილებით</a>
+                        <a href="/repairs" class="btn text-warning border bg-white border-warning detail-full-button">დაწვრილებით</a>
                     </div>
                     <div class="border-bottom  border-warning"></div>
                 </div>
             </div>
-
+          
+           
             <!-- designer -->
             <div class="col-md-5 home-cat ser " id="service-designer" style="display: none;">
                 <div class="right-box  cat-rightbox-custom">
@@ -539,10 +537,11 @@
                         <p class="w-75 pt-3 "></p>
                     </div> 
                     <div class="remove-padding">
-                        <p class="w-75 pt-4 m-0">ყოველდღიური გაგებით, გავრცელებულია რწმენა, რომ მტვირთავები და მუშები ერთი და იგივე პროფესიის სახელებია. ეს გაგება ემყარება იმ ფაქტს, რომ ორივე ეს პოზიცია.</p>
+                        <p class="w-75 pt-4 m-0">არასწორი დაპროექტებით თქვენი ბინა შესაძლოა, ნაკლებად ფუნქციური და არაესთეტიკური გამოჩნდეს. დიდია ალბათობა, რომ შეუსაბამო განათებამ, ცუდად დაგეგმილმა გაყვანილობებმა თუ შეუფერებელმა ავეჯმა თქვენი ინტერიერი ერთ დიდ გაუგებრობად აქციოს და ყოველდღიური ცხოვრება გაგირთულოთ. ინტერიერისა თუ ლანდშაპტის დიზაინერის მომსახურებით საცხოვრებელ სივრცეს უფრო კომფორტულსა და ადაპტირებულს გახდით. მისი დახმარებით თქვენს სურვილებსა თუ საჭიროებებს რეალობად აქცევთ და 3D დიზაინის სახით წინასწარაც შეავლებთ თვალს. 
+</p>
                     </div> 
                     <div class="remove-padding">
-                        <p class="w-75 pt-3 ">შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის.</p>
+                        <p class="w-75 pt-3 ">Metrix-ის დიზაინერი თქვენთან შეთანხმებით შეასრულებს აზომვით სამუშაოებს, უზრუნველყოფს სწორ დაგეგმარებას და თქვენი გემოვნების შესაბამისად შეარჩევს დიზაინის სტილს. რაც მთავარია, სურვილის შემთხვევაში, აქტიურად იქნება ჩართული მიმდინარე პროცესებში და საჭირო მასალის შეძენაშიც დაგეხმარებათ.</p>
                     </div> 
                     <div class="home-button-space-bot">
                         <a href="/designer" class="btn text-warning border bg-white border-warning detail-full-button">დაწვრილებით</a>
@@ -568,10 +567,11 @@
                     </div>
                     @endif
                   <div class="remove-padding">
-                        <p class="w-75 pt-4 m-0">ყოველდღიური გაგებით, გავრცელებულია რწმენა, რომ მტვირთავები და მუშები ერთი და იგივე პროფესიის სახელებია. ეს გაგება ემყარება იმ ფაქტს, რომ ორივე ეს პოზიცია.</p>
+                        <p class="w-75 pt-4 m-0">ზოგჯერ რთულია, თქვენთვის საჭირო თუ ინტერიერის შესაფერისი ავეჯი იაფად შეიძინოთ. ასეთ დროს ავეჯის დამზადება შეკვეთით საუკეთესო გამოსავალია. შეგიძლიათ, თავად დაგეგმოთ მისი დიზაინი, რომელიმე ჟურნალიდან მოიძიოთ იდეა ან ჩვენი ხელოსნის მიერ გაცემული რეკომენდაციები გაითვალისწინოთ და საქმე Metrix-ის გამოცდილ გუნდს მიანდოთ.
+.</p>
                     </div> 
                     <div class="remove-padding">
-                        <p class="w-75 pt-3 ">შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის.</p>
+                        <p class="w-75 pt-3 "> ავეჯი სამზარეულოსთვის, აბაზანისთვის, საძინებლისთვის, მისაღები ოთახისთვის, საბავშვო ოთახისთვის, ოფისისა და ეზოსთვის - ჩვენი პროფესიონალი ხელოსნები ნებისმიერი სირთულისა თუ მოცულობის შეკვეთას უნაკლოდ და დროულად დაგიმზადებენ. რაც მთავარია, თქვენ მიერ შეკვეთილი ავეჯი მაქსიმალურად იქნება მორგებული თქვენს ფინანსებზე, საჭიროებებსა და გემოვნებაზე. </p>
                     </div>
                     <div class="remove-padding">
                         <p class="w-75 pt-3 "></p>
@@ -582,31 +582,39 @@
                     <div class="border-bottom  border-warning"></div>
                 </div>
             </div>
-            <!-- repairs -->
-            <div class="col-md-5 home-cat ser" id="service-repairs" style="display: none;">
+          
+ <!-- vip -->
+            <div class="col-md-5 home-cat ser" id="service-vip"  style="display: none;">
                 <div class="right-box  cat-rightbox-custom">
                     <div class="d-flex flex-wrap for-home-mobile-text">
                         <h4 class="text-warning"><strong>სერვისის შესახებ</strong></h4>
-                        <p class="d-flex h4"><i class="square"></i><strong><span class="border-bott">{{ $tranCT->translate('repairs') }}</span></strong></p>
+                        <p class="d-flex h4"><i class="square"></i><strong><span class="border-bott">VIP მასტერი</span></strong></p>
                     </div>
-                    @if($data['has_repairs'])
+                    @if($data['has_vip'])
                     @php
-                        //print_r($data['repairs']['meta_description']);
+                        $meta=json_decode($data['vip']['meta'],true);
+                        //print_r($meta);
+
                         //exit;
                     @endphp
-                    
-                    <div class="remove-padding">
-                        <!--<p class="w-75 pt-4 m-0">{{ $data['repairs']['meta_description'] }}</p> -->
-                    </div>
+                    @foreach($meta as $item)
+                  <!--  <div class="remove-padding">
+                        <h6 class=" pt-2 m-0">{{ $item['meta_title'] }}</h6>
+                        <p class="w-75 pl-1">{{ $item['meta_description'] }}</p>
+                    </div> -->
+                    @endforeach
                     @endif
-                    <div class="remove-padding">
-                        <p class="w-75 pt-4 m-0">ყოველდღიური გაგებით, გავრცელებულია რწმენა, რომ მტვირთავები და მუშები ერთი და იგივე პროფესიის სახელებია. ეს გაგება ემყარება იმ ფაქტს, რომ ორივე ეს პოზიცია.</p>
+                   <div class="remove-padding">
+                        <p class="w-75 pt-4 m-0"> თანამედროვე სამყაროში მომსახურება, რომელიც დროსა და ენერგიას დაგიზოგავთ, ყველაზე მეტად ფასობს. დღეს აღარ გჭირდებათ, ხელოსნის მოსაძებნად ელიავაზე ირბინოთ. მისი გამოძახება Metrix-ის დახმარებით მეტად მარტივი და კომფორტულია. Metrix გთავაზობთ ხელოსნის გამოძახების სერვისს ნებისმიერი ტიპის სამუშაოსთვის. იქნება ის სანტექნიკა, გათბობა/კონდიცირება, ელექტროობა, საყოფაცხოვრებო ტექნიკა თუ სახლის კინოთეატრის მონტაჟი.   </p>
+
                     </div>
                     <div class="remove-padding">
-                        <p class="w-75 pt-3 ">შედგება არაკვალიფიციური ფიზიკური სამუშაოს შესრულებაში. მაგრამ, მას უნდა მიეცეს დამსახურება, რადგან მათ შორის მნიშვნელოვანი განსხვავება არ არის.</p>
+                        <p class="w-75 pt-3 ">Metrix-ის VIP მასტერის გამოძახება 24/7-ზე თბილისის ნებისმიერ უბანშია შესაძლებელი. ისინი ნებისმიერი სირთულის სამუშაოს დროულად, ყოველგვარი გართულების გარეშე შეასრულებენ. რაც მთავარია, თქვენი თანხმობის შემთხვევაში სამუშაოსთვის საჭირო მასალას თავად შეიძენენ და ამ დისკომფორტსაც თავიდან აგაცილებენ.</p>
                     </div>
+                    
+                   
                     <div class=" home-button-space-bot">
-                        <a href="/repairs" class="btn text-warning border bg-white border-warning detail-full-button">დაწვრილებით</a>
+                        <a href="/vip-master" class="btn text-warning border bg-white border-warning detail-full-button">დაწვრილებით</a>
                     </div>
                     <div class="border-bottom  border-warning"></div>
                 </div>
