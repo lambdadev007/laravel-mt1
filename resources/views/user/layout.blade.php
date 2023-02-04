@@ -42,17 +42,17 @@
         <link rel="icon" href="{{ asset('images/logos/logo.ico') }}">
 
         {{-- CSS --}}
-            <link rel="stylesheet" href="{{ asset('masters/bootstrap-master/css/bootstrap.min.css') }}">
-            <link rel="stylesheet" href="{{ asset('masters/owl-master/css/owl.carousel.min.css') }}" preload>
-            <link rel="stylesheet" href="{{ asset('masters/owl-master/css/owl.theme.default.min.css') }}" preload>
-            <link rel="stylesheet" href="{{ asset('masters/fancybox-master/css/jquery.fancybox.min.css') }}" preload>
-            <link rel="stylesheet" href="{{ asset('masters/noUiSlider-master/distribute/nouislider.min.css') }}" preload>
+            <link rel="stylesheet" href="{{ asset('masters/bootstrap-master/css/bootstrap.min.css') }}" defer>
+            <link rel="stylesheet" href="{{ asset('masters/owl-master/css/owl.carousel.min.css') }}" defer>
+            <link rel="stylesheet" href="{{ asset('masters/owl-master/css/owl.theme.default.min.css') }}" defer>
+            <link rel="stylesheet" href="{{ asset('masters/fancybox-master/css/jquery.fancybox.min.css') }}" defer>
+            <link rel="stylesheet" href="{{ asset('masters/noUiSlider-master/distribute/nouislider.min.css') }}" defer>
             @php
                 $load = 'desktop';
                 if ( $agent->isMobile() ) $load = 'mobile';
                 if ( $agent->isTablet() ) $load = 'tablet';
             @endphp
-            <link rel="stylesheet" href="{{ asset('css/load-'. $load .'.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/load-'. $load .'.css') }}" defer>
         {{-- CSS --}}
 
         {{-- JS --}}
