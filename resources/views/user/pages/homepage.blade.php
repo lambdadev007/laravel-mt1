@@ -58,7 +58,7 @@
                                     <a class="btn button" href="<?php echo $add_link[$index]?>"><?php echo $add_button[$index]?></a>
                                     @endif
                                 </div>
-                            <img class="owl-lazy" data-src="{{ asset($slide['location']) }}" alt="{{ $slide['alt'] }}">
+                            <img class="owl-lazy" data-src="{{ asset($slide['location']) }}" alt="{{ $slide['alt'] }}" fetchpriority="high">
                         </div>
                             <?php $i++ ?>
                     @endforeach
