@@ -16,7 +16,7 @@
     <div class="owl-carousel" id="partners-slider">
         @foreach ( json_decode($partners['slides'], true) as $partner )
             <div class="carousel-block">
-                <img class="owl-lazy" data-src="{{ asset($partner['location']) }}" alt="{{ $partner['alt'] }}">
+                <img class="owl-lazy" data-src="{{ asset($partner['location']) }}" alt="{{ $partner['alt'] }}" loading="lazy">
             </div>
         @endforeach
     </div>

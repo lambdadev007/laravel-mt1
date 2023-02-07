@@ -78,16 +78,16 @@
                                             @if($item['type']=='mobile_image')
                                                 @if($item['is_feature']=='1')
                                                     <a href="/projects/single/{{ $project['id'] }}">
-                                                        <img class="my class owl-lazy mobile-img-project-slide project-component-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" >
+                                                        <img class="my class owl-lazy mobile-img-project-slide project-component-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}"  loading="lazy" >
                                                         @if($video)
-                                                            <img class="video-icon owl-lazy mobile-img-project-slide project-component-img" src="/images/developer-images/video.png" alt="" >
+                                                            <img class="video-icon owl-lazy mobile-img-project-slide project-component-img" src="/images/developer-images/video.png" alt=""  loading="lazy" >
                                                         @endif
                                                     </a>
                                                 @else
                                                     <a href="/projects/single/{{ $project['id'] }}">
-                                                        <img class="my class owl-lazy desktop-img-project-slide project-component-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" >
+                                                        <img class="my class owl-lazy desktop-img-project-slide project-component-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}"  loading="lazy" >
                                                         @if($video)
-                                                            <img class="video-icon owl-lazy desktop-img-project-slide project-component-img" src="/images/developer-images/video.png" alt="" >
+                                                            <img class="video-icon owl-lazy desktop-img-project-slide project-component-img" src="/images/developer-images/video.png" alt=""  loading="lazy" >
                                                         @endif
 
                                                     </a>
@@ -100,17 +100,17 @@
                                                 
                                                 @if($item['is_feature']=='1')
                                                     <a class="project-link-image" href="/projects/single/{{ $project['id'] }}">
-                                                        <img class="my class owl-lazy feature-project-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" >
+                                                        <img class="my class owl-lazy feature-project-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}"  loading="lazy" >
                                                         @if($video)
-                                                            <img class="video-icon owl-lazy" src="/images/developer-images/video.png" alt="" >
+                                                            <img class="video-icon owl-lazy" src="/images/developer-images/video.png" alt=""  loading="lazy" >
                                                         @endif
 
                                                     </a>
                                                 @else
                                                     <a class="project-link-image" href="/projects/single/{{ $project['id'] }}">
-                                                        <img class="my class owl-lazy feature-project-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" >
+                                                        <img class="my class owl-lazy feature-project-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}"  loading="lazy" >
                                                         @if($video)
-                                                            <img class="video-icon owl-lazy" src="/images/developer-images/video.png" alt="" >
+                                                            <img class="video-icon owl-lazy" src="/images/developer-images/video.png" alt=""  loading="lazy" >
                                                         @endif
 
                                                     </a>
@@ -128,12 +128,12 @@
                                 <p class="text-left m-0">@foreach ($project['categories'] as $ci => $category) {{  $tranCT->translate($category) }}{{ (array_key_last($project['categories']) == $ci) ? '' : ',' }} @endforeach</p>
                             </div>
                             <div class="mt-2">
-                               <a href="/projects/single/{{ $project['id'] }}"><img class="my class owl-lazy" src="{{ asset('/images/projects/send.png') }}" width="15px" height=""></a>
+                               <a href="/projects/single/{{ $project['id'] }}"><img class="my class owl-lazy" src="{{ asset('/images/projects/send.png') }}" width="15px" height="" loading="lazy" ></a>
                             </div>
                         </div>
                         @if($in_progress == "true")
                             <div class="project-in-progress"> 
-                                <img src="https://metrix.ge/images/homepage/in-progress-cog.svg" style="opacity: 1;"> 
+                                <img src="{{ asset('images/homepage/in-progress-cog.svg') }}" style="opacity: 1;" loading="lazy" > 
                                 <span>
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">მიმდინარე

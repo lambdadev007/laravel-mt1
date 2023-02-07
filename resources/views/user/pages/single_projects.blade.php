@@ -1518,7 +1518,7 @@
 
                                     <div class="project-in-progress"> 
 
-                                        <img src="https://metrix.ge/images/homepage/in-progress-cog.svg" style="opacity: 1;"> 
+                                        <img src="{{ asset('images/homepage/in-progress-cog.svg') }}" style="opacity: 1;"> 
 
                                         <span>
 
