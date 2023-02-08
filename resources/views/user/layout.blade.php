@@ -408,7 +408,7 @@ span.border-bott {
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
                                         '<input type="checkbox" name="terms" required class="cal1-input-check" >'+
-                                        '<label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>'+
+                                        '<label class="check-label" aria-label="I agree">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>'+
                                     '</div>'+
                                     '<div class="arrow-right">'+
                                         '<img src="{{ asset("images/homepage/right-chevron-1.png") }}" height="25px" class="right-chevron-style">' +
@@ -445,7 +445,7 @@ span.border-bott {
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
                                         '<input type="checkbox" name="terms" required class="cal1-input-check" >'+
-                                        '<label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>'+
+                                        '<label class="check-label" aria-label="I agree">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>'+
                                     '</div>'+
                                     '<div class="arrow-right">'+
                                         '<img src="{{ asset("images/homepage/right-chevron-1.png") }}" height="25px" class="right-chevron-style">' +
@@ -479,7 +479,7 @@ span.border-bott {
                                 '<div class="d-flex justify-content-between mt-4">'+
                                     '<div class="checkbox-div">'+
                                         '<input type="checkbox" name="terms" required class="cal1-input-check" >'+
-                                        '<label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>'+
+                                        '<label class="check-label" aria-label="I agree">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>'+
                                     '</div>'+
                                     '<div class="arrow-right">'+
                                         '<img src="{{ asset("images/homepage/right-chevron-1.png") }}" height="25px" class="right-chevron-style">' +

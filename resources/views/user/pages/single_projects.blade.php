@@ -709,9 +709,9 @@
 
                                     <p class="single-video-a-hide-1 single-video-icon-hide-1 ">
 
-                                        <img class="my class w-100 for-video-1" src="/images/projects/video1.png" alt="test11-regular-0" width="50%" >  
+                                        <img class="my class w-100 for-video-1" src="/images/projects/video1.png" alt="test11-regular-0" alt="video" width="50%" >  
 
-                                        <img class="single-video-icon single-video-icon-hide-1" src="/images/developer-images/video-single-1.png" alt="">
+                                        <img class="single-video-icon single-video-icon-hide-1" alt="video" src="/images/developer-images/video-single-1.png" alt="">
 
                                     </p>
 
@@ -727,9 +727,9 @@
 
                                     <p class="single-video-a-hide-2 single-video-icon-hide-2">
 
-                                        <img class="my class w-100 for-video-1" src="/images/projects/video2.png" alt="test11-regular-0" width="50%" >  
+                                        <img class="my class w-100 for-video-1" src="/images/projects/video2.png" alt="test11-regular-0" alt="video" width="50%" >  
 
-                                        <img class="single-video-icon single-video-icon-hide-2" src="/images/developer-images/video-single-2.png" alt=""> 
+                                        <img class="single-video-icon single-video-icon-hide-2" src="/images/developer-images/video-single-2.png" alt="video"> 
 
                                     </p>
 
@@ -857,7 +857,7 @@
 
                                             <img class="my class w-100" src="/images/projects/video1.png" alt="test11-regular-0" width="50%" >  
 
-                                            <a href="javascript:void(0)"><img class="single-video-icon single-video-icon-hide-2" src="/images/developer-images/video-single-1.png" alt=""></a>  
+                                            <a href="javascript:void(0)"><img class="single-video-icon single-video-icon-hide-2" src="/images/developer-images/video-single-1.png" alt="video"></a>  
 
                                         </p>
 
@@ -959,7 +959,7 @@
 
                                         <img class="my class w-100 for-video-1" src="/images/projects/video1.png" alt="test11-regular-0" width="50%" >  
 
-                                        <img class="single-video-icon single-video-icon-hide-1" src="/images/developer-images/video-single-1.png" alt="">
+                                        <img class="single-video-icon single-video-icon-hide-1" src="/images/developer-images/video-single-1.png" alt="video">
 
                                     </p>
 
@@ -1104,7 +1104,7 @@
 
                                             <img class="my class w-100" src="/images/projects/video1.png" alt="test11-regular-0" width="50%" >  
 
-                                            <a href="javascript:void(0)"><img class="single-video-icon single-video-icon-hide-2" src="/images/developer-images/video-single-1.png" alt=""></a>  
+                                            <a href="javascript:void(0)"><img class="single-video-icon single-video-icon-hide-2" src="/images/developer-images/video-single-1.png" alt="video"></a>  
 
                                         </p>
 
@@ -1246,11 +1246,11 @@
 
                 <p class="projects-social-media-icons">
 
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?=$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']?>"><img src="/images/developer-images/facebook-icon.png" height="25px" target="_blank" alt=""></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?=$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']?>"><img src="/images/developer-images/facebook-icon.png" alt="facebook" height="25px" target="_blank" ></a>
 
-                    <a href="https://www.instagram.com/sharer.php?u=<?=$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']?>"><img src="/images/developer-images/instra-icon.png" alt="" target="_blank" height="25px"></a>
+                    <a href="https://www.instagram.com/sharer.php?u=<?=$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']?>"><img src="/images/developer-images/instra-icon.png" alt="instagram" target="_blank" height="25px"></a>
 
-                    <a href="http://pinterest.com/pin/create/button/?url=<?=$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']?>"><img src="/images/developer-images/pintrest-icon.png" alt="" target="_blank" height="25px"></a>
+                    <a href="http://pinterest.com/pin/create/button/?url=<?=$_SERVER['HTTP_HOST'].''.$_SERVER['REQUEST_URI']?>"><img src="/images/developer-images/pintrest-icon.png" alt="pinterest" target="_blank" height="25px"></a>
 
                 </p>
 
@@ -1282,7 +1282,7 @@
 
                             <div class="check-image">
 
-                                <img src="/images/developer-images/check-projects.png" height="25px" alt="">
+                                <img src="/images/developer-images/check-projects.png" height="25px" alt="check">
 
                             </div>
 
@@ -1298,7 +1298,7 @@
 
                             <div class="check-image">
 
-                                <img src="/images/developer-images/check-projects.png" height="25px" alt="">
+                                <img src="/images/developer-images/check-projects.png" height="25px" alt="check">
 
                             </div>
 
@@ -1328,7 +1328,7 @@
 
                                 <a href="tel:592104040" class="single-tel-btn-anhor"><button class="btn single-tel-btn" type="button">
 
-                                    <img src="/images/developer-images/mobile-projects.png" height="25px" alt="">
+                                    <img src="/images/developer-images/mobile-projects.png" height="25px" alt="mobile">
 
                                     <span class="single-project-font-style-note-mobile">
 
@@ -1408,11 +1408,11 @@
 
                                                 <a href="/projects/single/{{ $project['id'] }}">
 
-                                                    <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" width="250px" height="180px">
+                                                    <img class="my class w-100 similar-slide-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}" alt="similar" width="250px" height="180px">
 
                                                     @if($video)
 
-                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="vieo" >
 
                                                     @endif
 
@@ -1426,7 +1426,7 @@
 
                                                     @if($video)
 
-                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="video" >
 
                                                     @endif
 
@@ -1456,7 +1456,7 @@
 
                                                     @if($video)
 
-                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="video" >
 
                                                     @endif
 
@@ -1472,7 +1472,7 @@
 
                                                     @if($video)
 
-                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="" >
+                                                        <img class="video-icon" src="/images/developer-images/video.png" alt="video" >
 
                                                     @endif
 
@@ -1506,7 +1506,7 @@
 
                                         <div>
 
-                                            <img class="similar-arrow" src="/images/developer-images/Send.png" alt="" height="18px">
+                                            <img class="similar-arrow" src="/images/developer-images/Send.png" alt="send" height="18px">
 
                                         </div>    
 
@@ -1518,7 +1518,7 @@
 
                                     <div class="project-in-progress"> 
 
-                                        <img src="{{ asset('images/homepage/in-progress-cog.svg') }}" style="opacity: 1;"> 
+                                        <img src="{{ asset('images/homepage/in-progress-cog.svg') }}" alt="in progress" style="opacity: 1;"> 
 
                                         <span>
 
@@ -1670,11 +1670,11 @@
 
                                             <div class="calculate-box-top">
 
-                                                <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" height="25px"></div>
+                                                <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" alt="calculator" height="25px"></div>
 
                                                 <div class="calculate-top-text"><p>დათვალე რემონტის ხარჯები</p></div>
 
-                                                <div class="box-logo"><img src="{{ asset('images/logos/form-logo-1.png') }}" height="25px"></div>
+                                                <div class="box-logo"><img src="{{ asset('images/logos/form-logo-1.png') }}" alt="form-logo" height="25px"></div>
 
                                             </div>
 
@@ -1736,17 +1736,17 @@
 
                                                 <div class="arrow-right">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
                                                 </div>
 
@@ -1854,17 +1854,17 @@
 
                                                     <div class="arrow-right">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
                                                     </div>
 
@@ -1872,7 +1872,7 @@
 
                                                 <div class="cal-submit-div">
 
-                                                    <button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამორვირთვა</button>
+                                                    <button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" alt="download" height="25px">ინვოისის ჩამორვირთვა</button>
 
                                                 </div>
 
@@ -1954,7 +1954,7 @@
 
                                         <!-- <div class="calculate-box-top"> -->
 
-                                            <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" height="25px"></div>
+                                            <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" alt="calculate" height="25px"></div>
 
                                             <div class="calculate-top-text"><p>დათვალე რემონტის ხარჯები</p></div>
 
@@ -2032,17 +2032,17 @@
 
                                         <div class="arrow-right">
 
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
                                     </div>
 
@@ -2142,17 +2142,17 @@
 
                                                     <div class="arrow-right">
 
-                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
-                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
 
                                                 </div>
 
@@ -2160,7 +2160,7 @@
 
                                                 <div class="cal-submit-div">
 
-                                                    <button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამორვირთვა</button>
+                                                    <button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" alt="download" height="25px">ინვოისის ჩამორვირთვა</button>
 
                                                 </div>
 

@@ -33,18 +33,18 @@
     <div class="container-1280">
         @if ( Session::get('locale') != 'ka' )
             <div class="logo d-fc w-100 h-100">
-                <img src="{{ asset('images/logos/Logo-Eng.svg') }}" style="width: 220px; margin-top: 80px;" class="mx-auto">
+                <img src="{{ asset('images/logos/Logo-Eng.svg') }}" alt="logo" style="width: 220px; margin-top: 80px;" class="mx-auto">
                 <span class="gray-text text-center mt-3">All Rights Reserved © {{ date("Y") }}</span>
             </div>
         @else
             <div class="logo d-fc footer-section">
-                <img src="{{ asset('images/logos/Logo-Geo.svg') }}">
+                <img src="{{ asset('images/logos/Logo-Geo.svg') }}" alt="logo">
                 <span class="gray-text">{{ $tranCT->translate('all_rights_reserved') }} © {{ date("Y") }}</span>
             </div>
             @if ( !$agent->isMobile() ) {{-- Needs to be reverse --}}
                 <div class="left footer-section">
                     <div class="links d-fc">
-                        <h5><img src="{{ asset('images/homepage/pin.svg') }}" class="icon"> <span>{{ $tranCT->translate('how_to_contact_us') }}</span></h5>
+                        <h5><img src="{{ asset('images/homepage/pin.svg') }}" alt="pin" class="icon"> <span>{{ $tranCT->translate('how_to_contact_us') }}</span></h5>
                         <a href="#" role="button" class="gray-text">ადამ მიცკევიჩის 29 ბ</a>
                         @if ( Session::get('locale') == 'it' )
                             <a href="tel:+393518911175" role="button" class="gray-text">+39 351 891 11 75</a>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="middle footer-section">
                     <div class="links d-fc">
-                        <h5><img src="{{ asset('images/homepage/cog-wheel.svg') }}" class="icon"> <span>{{ $tranCT->translate('what_do_we_provide') }}</span></h5>
+                        <h5><img src="{{ asset('images/homepage/cog-wheel.svg') }}" alt="wheel" class="icon"> <span>{{ $tranCT->translate('what_do_we_provide') }}</span></h5>
                         <a href="/repairs" class="gray-text">{{ $tranCT->translate('designer') }}</a>
                         <a href="/designer" class="gray-text">{{ $tranCT->translate('repairs') }}</a>
                         <a href="/furniture" class="gray-text">{{ $tranCT->translate('furniture_crafting') }}</a>
@@ -83,8 +83,8 @@
                             </div>
                         </div>
                         <div class="icon-links">
-                            <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-gray.svg') }}"></a>
-                            <a href="#"><img src="{{ asset('images/homepage/instagram-gray.svg') }}"></a>
+                            <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-gray.svg') }}" alt="facebook"></a>
+                            <a href="#"><img src="{{ asset('images/homepage/instagram-gray.svg') }}" alt="instagram"></a>
                         </div>
                     @else
                         <a href="/about" class="gray-text">{{ $tranCT->translate('about_us') }}</a>
@@ -92,8 +92,8 @@
                         <a href="#" role="button" data-toggle="modal" data-target="#terms-modal" class="gray-text">{{ $tranCT->translate('terms_of_service') }}</a>
                         <a href="/blog" class="gray-text">{{ $tranCT->translate('blog') }}</a>
                         <div class="icon-links">
-                            <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-gray.svg') }}"></a>
-                            <a href="#"><img src="{{ asset('images/homepage/instagram-gray.svg') }}"></a>
+                            <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-gray.svg') }}" alt="facebook"></a>
+                            <a href="#"><img src="{{ asset('images/homepage/instagram-gray.svg') }}" alt="instagram"></a>
                         </div>
                     @endif
                 </div>

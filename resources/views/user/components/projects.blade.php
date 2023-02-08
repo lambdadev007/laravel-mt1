@@ -80,7 +80,7 @@
                                                     <a href="/projects/single/{{ $project['id'] }}">
                                                         <img class="my class owl-lazy mobile-img-project-slide project-component-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}"  loading="lazy" >
                                                         @if($video)
-                                                            <img class="video-icon owl-lazy mobile-img-project-slide project-component-img" src="/images/developer-images/video.png" alt=""  loading="lazy" >
+                                                            <img class="video-icon owl-lazy mobile-img-project-slide project-component-img" src="/images/developer-images/video.png" alt="video"  loading="lazy" >
                                                         @endif
                                                     </a>
                                                 @else
@@ -110,7 +110,7 @@
                                                     <a class="project-link-image" href="/projects/single/{{ $project['id'] }}">
                                                         <img class="my class owl-lazy feature-project-img" src="{{ asset($item['thumbnail']) }}" alt="{{ $item['alt'] }}"  loading="lazy" >
                                                         @if($video)
-                                                            <img class="video-icon owl-lazy" src="/images/developer-images/video.png" alt=""  loading="lazy" >
+                                                            <img class="video-icon owl-lazy" src="/images/developer-images/video.png" alt="video"  loading="lazy" >
                                                         @endif
 
                                                     </a>
@@ -128,12 +128,12 @@
                                 <p class="text-left m-0">@foreach ($project['categories'] as $ci => $category) {{  $tranCT->translate($category) }}{{ (array_key_last($project['categories']) == $ci) ? '' : ',' }} @endforeach</p>
                             </div>
                             <div class="mt-2">
-                               <a href="/projects/single/{{ $project['id'] }}"><img class="my class owl-lazy" src="{{ asset('/images/projects/send.png') }}" width="15px" height="" loading="lazy" ></a>
+                               <a href="/projects/single/{{ $project['id'] }}"><img class="send owl-lazy" src="{{ asset('/images/projects/send.png') }}" alt="send" width="15px" height="" loading="lazy" ></a>
                             </div>
                         </div>
                         @if($in_progress == "true")
                             <div class="project-in-progress"> 
-                                <img src="{{ asset('images/homepage/in-progress-cog.svg') }}" style="opacity: 1;" loading="lazy" > 
+                                <img src="{{ asset('images/homepage/in-progress-cog.svg') }}" alt="in progress" style="opacity: 1;" loading="lazy" > 
                                 <span>
                                     <font style="vertical-align: inherit;">
                                         <font style="vertical-align: inherit;">მიმდინარე

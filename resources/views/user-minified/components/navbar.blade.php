@@ -29,7 +29,7 @@ $agent = new Agent();
 <div class="container-1280">
 @if ( Session::get('locale') == 'it' )
 <div class="logo d-flex align-items-center mr-auto h-100" style="width: 130px; height: 40px;">
-<a href="/" class="d-flex"><img class="w-100 h-100" src="{{ asset('images/logos/Logo-Eng.svg') }}"></a>
+<a href="/" class="d-flex"><img class="w-100 h-100" alt="logo" src="{{ asset('images/logos/Logo-Eng.svg') }}" </a>
 </div>
 @endif
 <div class="upper-navbar-number">
@@ -97,7 +97,7 @@ $agent = new Agent();
 <div class="lower container-1280">
 <div class="wrap">
 <div class="logo">
-<a href="/"><img src="{{ asset('images/logos/Logo-Geo.svg') }}"></a>
+<a href="/"><img src="{{ asset('images/logos/Logo-Geo.svg') }}" alt="logo"></a>
 </div>
 <form class="search" method="get" action="/search">
 <input type="text" name="keyword" placeholder="{{ $tranCT->translate('looking_for_something') }}" value="{{ $data['search_keyword'] ?? '' }}">
@@ -247,12 +247,12 @@ if ( Session::get('locale') != 'ka' ) $logo = 'images/logos/Logo-Eng.svg';
 <div class="container-1280">
 @if ( Session::get('locale') != 'ka' )
 <div class="logo d-fc w-100 h-100">
-<img src="{{ asset('images/logos/Logo-Eng-White.svg') }}" style="width: 220px; margin-top: 80px;" class="mx-auto">
+<img src="{{ asset('images/logos/Logo-Eng-White.svg') }}" alt="logo" style="width: 220px; margin-top: 80px;" class="mx-auto">
 <span class="gray-text text-center mt-3">All Rights Reserved © {{ date("Y") }}</span>
 </div>
 @else
 <div class="logo d-fc">
-<img src="{{ asset('images/logos/Logo-Geo-White.svg') }}">
+<img src="{{ asset('images/logos/Logo-Geo-White.svg') }}" alt="logo">
 <span class="white-text">{{ $tranCT->translate('all_rights_reserved') }} © {{ date("Y") }}</span>
 </div>
 <div class="right">
@@ -310,12 +310,12 @@ if ( Session::get('locale') != 'ka' ) $logo = 'images/logos/Logo-Eng.svg';
 <div class="container-1280">
 @if ( Session::get('locale') != 'ka' )
 <div class="logo d-fc w-100 h-100">
-<img src="{{ asset('images/logos/Logo-Eng.svg') }}" style="width: 220px; margin-top: 80px;" class="mx-auto">
+<img src="{{ asset('images/logos/Logo-Eng.svg') }}" alt="logo" style="width: 220px; margin-top: 80px;" class="mx-auto">
 <span class="gray-text text-center mt-3">All Rights Reserved © {{ date("Y") }}</span>
 </div>
 @else
 <div class="logo d-fc">
-<img src="{{ asset('images/logos/Logo-Geo-White.svg') }}">
+<img src="{{ asset('images/logos/Logo-Geo-White.svg') }}" alt="logo">
 <span class="white-text">{{ $tranCT->translate('all_rights_reserved') }} © {{ date("Y") }}</span>
 </div>
 <div class="right">

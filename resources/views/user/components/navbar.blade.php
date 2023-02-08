@@ -29,7 +29,7 @@
             <div class="container-1280 container-1200">
                 @if ( Session::get('locale') == 'it' )
                     <div class="logo d-flex align-items-center mr-auto h-100" style="width: 130px; height: 40px;">
-                        <a href="/" class="d-flex"><img class="w-100 h-100" src="{{ asset('images/logos/Logo-Eng.svg') }}"></a>
+                        <a href="/" class="d-flex"><img class="w-100 h-100" src="{{ asset('images/logos/Logo-Eng.svg') }}" alt="logo"></a>
                     </div>
                 @endif
                
@@ -47,7 +47,7 @@
                 </div>
                  <div class="upper-facebook">
                     <a href="https://www.facebook.com/metrix.remonti.aveji" class="upper-facebook-box">
-                        <img class="facbook-image" src="{{ asset('images/xd-icons/colored/facebook-icon-colored.png') }}" style="height:20px;width:20px;">
+                        <img class="facbook-image" alt="facebook" src="{{ asset('images/xd-icons/colored/facebook-icon-colored.png') }}" style="height:20px;width:20px;">
                     </a>
                 </div>
                 @if ( Session::get('locale') == 'ka' )
@@ -103,12 +103,12 @@
             <div class="lower container-1280 container-1200">
                 <div class="wrap">
                     <div class="logo">
-                        <a href="/"><img src="{{ asset('images/logos/Logo-Geo.svg') }}"></a>
+                        <a href="/"><img src="{{ asset('images/logos/Logo-Geo.svg') }}" alt="logo"></a>
                     </div>
                     <form class="search" method="get" action="/search">
-                        <img class="search-icon" src="{{ asset('images/xd-icons/colored/serach-icon.png') }}" height="25px">
+                        <img class="search-icon" src="{{ asset('images/xd-icons/colored/serach-icon.png') }}" alt="search" height="25px">
                         <input type="text" name="keyword" placeholder="{{ $tranCT->translate('looking_for_something') }}" value="{{ $data['search_keyword'] ?? '' }}">
-                        <button type="submit"><img src="{{ asset('images/xd-icons/white/arrow-right.svg') }}"></button>
+                        <button type="submit" aria-label="submit"><img src="{{ asset('images/xd-icons/white/arrow-right.svg') }}" alt="arrow"></button>
                     </form>
                     <div class="links">
                         <div class="link-dropdown">
@@ -175,8 +175,8 @@
                         $logo = 'images/logos/Logo-Geo.svg';
                         if ( Session::get('locale') != 'ka' ) $logo = 'images/logos/Logo-Eng.svg';
                     @endphp
-                    <button type="button" class="toggle-mobile-navbar-general"><i class="orange" id="market-bars"></i></button>
-                    <a href="/" class="logo"><img src="{{ asset($logo) }}"></a>
+                    <button type="button" class="toggle-mobile-navbar-general" aria-label="menu"><i class="orange" id="market-bars"></i></button>
+                    <a href="/" class="logo"><img src="{{ asset($logo) }}" alt="logo"></a>
                 </div>
                 <div class="right">
                     <!-- @if ( $agent->isTablet() )
@@ -184,10 +184,10 @@
                     @endif -->
                     <div class="upper-facebook">
                         <a href="https://www.facebook.com/metrix.remonti.aveji" class="upper-facebook-box">
-                            <img class="facbook-image" src="{{ asset('images/xd-icons/colored/facebook-icon-colored.png') }}" style="height:20px;width:20px;">
+                            <img class="facbook-image" alt="facebook" src="{{ asset('images/xd-icons/colored/facebook-icon-colored.png') }}" style="height:20px;width:20px;">
                         </a>
                     </div>
-                    <a href="tel:{{ $company_hotline['call_phone_number'] }}" class="{{ (Session::get('locale') != 'ka') ? 'mr-0' : '' }}"><i class="yellow" id="awesome-phone"></i></a>
+                    <a href="tel:{{ $company_hotline['call_phone_number'] }}" aria-label="call" class="{{ (Session::get('locale') != 'ka') ? 'mr-0' : '' }}"><i class="yellow" id="awesome-phone"></i></a>
                     @if ( Session::get('locale') == 'ka' )
                         <div class="upper-navbar-cart">
                             <button type="button" class="cart-button toggle-cart-popup">
@@ -225,7 +225,7 @@
                     <i class="white toggle-mobile-search" id="mobile-market-magnifying-glass"></i>
                     <form class="mobile-search d-none" method="get" action="/search" style="width: 330px; position: absolute; top: 50px; left: 0; transform:translateX(-50%); padding: 0 0 30px 20px; background-color: rgb(var(--metrix-dark-accent))">
                         <input type="text" name="keyword" placeholder="{{ $tranCT->translate('looking_for_something') }}" value="{{ $data['search_keyword'] ?? '' }}" style="width: calc(100% - 70px); height: 40px">
-                        <button type="submit"><img src="{{ asset('images/xd-icons/colored/arrow-right-yellow.svg') }}"></button>
+                        <button type="submit"><img src="{{ asset('images/xd-icons/colored/arrow-right-yellow.svg') }}" alt="right"></button>
                     </form>
                 </div>
             @endif
@@ -259,12 +259,12 @@
                     <div class="container-1280">
                         @if ( Session::get('locale') != 'ka' )
                                 <div class="logo d-fc w-100 h-100">
-                                    <img src="{{ asset('images/logos/Logo-Eng-White.svg') }}" style="width: 220px; margin-top: 80px;" class="mx-auto">
+                                    <img src="{{ asset('images/logos/Logo-Eng-White.svg') }}" alt="logo" style="width: 220px; margin-top: 80px;" class="mx-auto">
                                     <span class="gray-text text-center mt-3">All Rights Reserved © {{ date("Y") }}</span>
                                 </div>
                             @else
                             <div class="logo d-fc">
-                                <img src="{{ asset('images/logos/Logo-Geo-White.svg') }}">
+                                <img src="{{ asset('images/logos/Logo-Geo-White.svg') }}" alt="logo">
                                 <span class="white-text">{{ $tranCT->translate('all_rights_reserved') }} © {{ date("Y") }}</span>
                             </div>
                             <div class="right">
@@ -280,8 +280,8 @@
                                         </div>
                                     </div>
                                     <div class="icon-links">
-                                        <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-white.svg') }}"></a>
-                                        <a href="#"><img src="{{ asset('images/homepage/instagram-white.svg') }}"></a>
+                                        <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-white.svg') }}" alt="facebook"></a>
+                                        <a href="#"><img src="{{ asset('images/homepage/instagram-white.svg') }}" alt="instragram"></a>
                                     </div>
                                 </div>
                             </div>
@@ -322,12 +322,12 @@
                         <div class="container-1280">
                             @if ( Session::get('locale') != 'ka' )
                                 <div class="logo d-fc w-100 h-100">
-                                    <img src="{{ asset('images/logos/Logo-Eng.svg') }}" style="width: 220px; margin-top: 80px;" class="mx-auto">
+                                    <img src="{{ asset('images/logos/Logo-Eng.svg') }}" alt="logo" style="width: 220px; margin-top: 80px;" class="mx-auto">
                                     <span class="gray-text text-center mt-3">All Rights Reserved © {{ date("Y") }}</span>
                                 </div>
                             @else
                                 <div class="logo d-fc">
-                                    <img src="{{ asset('images/logos/Logo-Geo-White.svg') }}">
+                                    <img src="{{ asset('images/logos/Logo-Geo-White.svg') }}" alt="logo" >
                                     <span class="white-text">{{ $tranCT->translate('all_rights_reserved') }} © {{ date("Y") }}</span>
                                 </div>
                                 <div class="right">
@@ -343,8 +343,8 @@
                                             </div>
                                         </div>
                                         <div class="icon-links">
-                                            <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-white.svg') }}"></a>
-                                            <a href="#"><img src="{{ asset('images/homepage/instagram-white.svg') }}"></a>
+                                            <a href="https://www.facebook.com/metrixgeorgia/"><img src="{{ asset('images/homepage/facebook-white.svg') }}" alt="facebook"></a>
+                                            <a href="#"><img src="{{ asset('images/homepage/instagram-white.svg') }}" alt="instagram"></a>
                                         </div>
                                     </div>
                                 </div>

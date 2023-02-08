@@ -58,16 +58,16 @@
                                     <a class="btn button" href="<?php echo $add_link[$index]?>"><?php echo $add_button[$index]?></a>
                                     @endif
                                 </div>
-                            <img class="owl-lazy" data-src="{{ asset($slide['location']) }}" alt="{{ $slide['alt'] }}" fetchpriority="high" style="background : url('/masters/owl-master/css/ajax-loader.gif') no-repeat; min-height : 500px;">
+                            <img class="owl-lazy" alt="lazy-load" data-src="{{ asset($slide['location']) }}" alt="{{ $slide['alt'] }}" fetchpriority="high" style="background : url('/masters/owl-master/css/ajax-loader.gif') no-repeat; min-height : 500px;">
                         </div>
                             <?php $i++ ?>
                     @endforeach
                 </div>
                 <div class="calculate-box for-desktop">
                     <button class="accordion calculate-box-top">
-                        <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" height="25px"></div>
+                        <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" alt="calculator" height="25px"></div>
                         <div class="calculate-top-text"><p>დათვალე რემონტის ხარჯები</p></div>
-                        <div class="box-logo"><img src="{{ asset('images/logos/form-logo-1.png') }}" height="25px"></div>
+                        <div class="box-logo"><img src="{{ asset('images/logos/form-logo-1.png') }}" "form-logo" height="25px"></div>
                     </button>
                     <div class="panel">
                         <form action="/sliderform" method="post" id="form_1">
@@ -100,12 +100,12 @@
                                     <label class="check-label">მონიშნეთ კომპანიის შემთხვევაში</label>
                                 </div>
                                 <div class="arrow-right">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
                                 </div>
                                 <div class="cal-submit-div">
                                     <button type="button" class="calculate-sub">გაგრძელება</button>
@@ -157,17 +157,17 @@
                                             <label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>
                                         </div>
                                         <div class="arrow-right">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron"  height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron"  height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
                                         </div>
                                     </div>
                                     <div class="cal-submit-div">
-                                        <div class="cal-sub-div"><button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამოტვირთვა</button></div>
-                                        <a href="javascript:void(0)" class="cal-refresh-div"><img src="{{ asset("images/homepage/reload.png") }}" class="refresh_icon"></a>
+                                        <div class="cal-sub-div"><button type="submit" disabled class="calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" alt="download" height="25px">ინვოისის ჩამოტვირთვა</button></div>
+                                        <a href="javascript:void(0)" class="cal-refresh-div"><img src="{{ asset("images/homepage/reload.png") }}" alt="refresh" class="refresh_icon"></a>
                                     </div>
                                 </div>                               
                             </div>
@@ -208,7 +208,7 @@
                 <div class="accordion-div">
                     <button class="accordion calculate-box-top ">
                         <!-- <div class="calculate-box-top"> -->
-                            <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" height="25px"></div>
+                            <div class="box-calculate"><img src="{{ asset('images/homepage/calculator-1.png') }}" alt="calculator" height="25px"></div>
                             <div class="calculate-top-text"><p>დათვალე რემონტის ხარჯები</p></div>
                             <!-- <div class="box-logo"><img src="{{ asset('images/logos/form-logo.png') }}"></div> -->
                         <!-- </div> -->
@@ -245,12 +245,12 @@
                                     <label class="check-label">მონიშნეთ კომპანიის შემთხვევაში</label>
                                 </div>
                                 <div class="arrow-right">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                    <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
                                 </div>
                                 <div class="cal-submit-div">
                                     <button type="button" class="accordion-calculate-sub">გაგრძელება</button>
@@ -299,17 +299,17 @@
                                             <label class="check-label">გავეცანი <span><a href="#" role="button" data-toggle="modal" data-target="#terms-modal"><span>წესებს</span> და <span class="">პირობებს</span></a></span></label>
                                         </div>
                                         <div class="arrow-right">
-                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
-                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" height="25px" class="right-chevron-style">
+                                            <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
+                                        <img src="{{ asset('images/homepage/right-chevron-1.png') }}" alt="chevron" height="25px" class="right-chevron-style">
                                     </div>
                                     </div>
                                     <div class="cal-submit-div">
-                                        <div class="cal-sub-div"><button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" height="25px">ინვოისის ჩამოტვირთვა</button></div>
-                                        <a href="javascript:void(0)" class="cal-refresh-div"><img src="{{ asset('images/homepage/reload.png') }}" class="refresh_icon"></a></div>
+                                        <div class="cal-sub-div"><button type="submit" disabled class="accord-calculate-sub-2 download-btn btn"><img src="{{ asset('images/xd-icons/white/cloud-download-1.png') }}" alt="download" height="25px">ინვოისის ჩამოტვირთვა</button></div>
+                                        <a href="javascript:void(0)" class="cal-refresh-div"><img src="{{ asset('images/homepage/reload.png') }}" alt="refresh" class="refresh_icon"></a></div>
                                     </div>
                                 </div>
                                 <!-- <div class="form2-mid" id="company" style="display: none;">

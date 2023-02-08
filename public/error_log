@@ -10,3 +10,5 @@
 [04-Feb-2023 16:53:38 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/dire/new.metrix.ge/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
 [04-Feb-2023 16:54:18 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/dire/new.metrix.ge/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
 [04-Feb-2023 17:01:26 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/dire/new.metrix.ge/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
+[04-Feb-2023 17:52:20 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/dire/new.metrix.ge/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
+[04-Feb-2023 17:53:03 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12288 bytes) in /home/dire/new.metrix.ge/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
