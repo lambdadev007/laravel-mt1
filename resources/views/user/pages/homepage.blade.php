@@ -24,6 +24,13 @@
         <title>{{ $data['raw']['meta_title'] }}</title>
         <meta name="keywords" content="{{ $data['raw']['meta_keywords'] }}">
         <meta name="description" content="{{ $data['raw']['meta_description'] }}">
+        <?php
+            $slides = $data['slides'];
+            if ( $agent->isMobile() ) $slides = $data['mob_slides']; 
+        ?>   
+        @foreach ( $slides as $index => $slide )
+            <link rel="preload" fetchpriority="high" as="image" href="{{ asset($slide['location']) }}" type="image/jpg">
+        @endforeach     
     @endsection
 @endif
 
