@@ -232,8 +232,22 @@ span.border-bott {
                             axis: 'x',
                             zoom:true
                         },
-                        animationEffect : "fade",
+                        animationEffect : "zoom",
+                        animationDuration: 366,
+                        transitionEffect: "slide",
+
+                        // Duration in ms for transition animation
+                        transitionDuration: 566,
+
+                        slideShow: {
+                            autoStart: false,
+                            speed: 3000
+                        },
                     }); 
+                    // jQuery("button[data-fancybox-next]").click(()=>{
+                    //     console.log("dadadadada")
+                    //     jQuery('[data-fancybox="project-gallery"]').fancybox().getInstance().next();
+                    // })
                     console.log(jQuery('input[type="checkbox"]'));
                     checkbox=jQuery('input[type="checkbox"]');
                     var btn=jQuery('.bottom , .site-terms , .check-label').find('span a');
