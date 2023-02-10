@@ -36,7 +36,7 @@
     <div class="homepage-wrapper d-fc">
         @if ( $data['exists'] )
         <?php $i=0;?>
-            <div class="homepage-slider-wrapper">
+            <div class="homepage-slider-wrapper" style="width:100%; min-height : 500px;background : url('/masters/owl-master/css/ajax-loader.gif') no-repeat; background-attachment: fixed; background-position:center 250px; ">
                 <div class="owl-carousel owl-theme" id="homepage-slider">
                     @php
                         $slides = $data['slides'];
@@ -58,7 +58,7 @@
                                     <a class="btn button" href="<?php echo $add_link[$index]?>"><?php echo $add_button[$index]?></a>
                                     @endif
                                 </div>
-                            <img class="owl-lazy" alt="lazy-load" data-src="{{ asset($slide['location']) }}" alt="{{ $slide['alt'] }}" fetchpriority="high" style="background : url('/masters/owl-master/css/ajax-loader.gif') no-repeat; min-height : 500px;">
+                            <img class="owl-lazy" alt="lazy-load" data-src="{{ asset($slide['location']) }}" alt="{{ $slide['alt'] }}" fetchpriority="high"  >
                         </div>
                             <?php $i++ ?>
                     @endforeach

@@ -232,10 +232,7 @@ span.border-bott {
                             axis: 'x',
                             zoom:true
                         },
-                        animationEffect : "zoom",
-                        animationDuration: 366,
                         transitionEffect: "slide",
-
                         // Duration in ms for transition animation
                         transitionDuration: 566,
 
